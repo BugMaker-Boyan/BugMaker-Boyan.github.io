@@ -21,6 +21,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 
 
 # 🔥 News
+- *2025.01*: &nbsp;🎉🎉 I was awarded the **Merit Prize** for the 2024 DSA Excellent Research Award!
 - *2024.09*: &nbsp;🎉🎉 Paper [Are Large Language Models Good Statisticians?](https://arxiv.org/abs/2406.07815) has been accepted by NIPS'24. 
 - *2024.06*: &nbsp;🎉🎉 Paper [The Dawn of Natural Language to SQL: Are We Fully Ready?](https://arxiv.org/abs/2406.01265) has been accepted by VLDB'24. 
 - *2024.04*: &nbsp;🎉🎉 Ppaer [Efficient Deep Spiking Multilayer Perceptrons With Multiplication-Free Inference](https://ieeexplore.ieee.org/abstract/document/10535518) has been accepted by TNNLS'24.
@@ -117,8 +118,9 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 </div>
 
 # 🎖 Honors and Awards
-- *2023.07* Highest Honors in Computer Science and Engineering, Southern University of Science and Technology.
-- *2023.07* Outstanding Graduates, Southern University of Science and Technology.
+- *2025.01*: Merit Prize for the 2024 DSA Excellent Research Award.
+- *2023.07*: Highest Honors in Computer Science and Engineering, Southern University of Science and Technology.
+- *2023.07*: Outstanding Graduates, Southern University of Science and Technology.
 
 # 📖 Educations
 - *2024.09 - Present*, PhD Student, Hong Kong University of Science and Technology (Guangzhou).
