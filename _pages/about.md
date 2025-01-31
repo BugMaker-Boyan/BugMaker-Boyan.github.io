@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a PhD student at the [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/), supervised by Professor [Yuyu Luo](https://luoyuyu.vip/). Previously, I obtained my bachelor's degree from the [Southern University of Science and Technology](https://www.sustech.edu.cn/). My current research interest includes Text-to-SQL translation and evaluation.
+I am a PhD student at the [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/), supervised by Professor [Yuyu Luo](https://luoyuyu.vip/). Previously, I obtained my bachelor's degree from the [Southern University of Science and Technology](https://www.sustech.edu.cn/) (GPA 3.91/4.0, ranking 2/183). My current research interest includes Text-to-SQL translation and evaluation.
 
 
 # 🔥 News
