@@ -32,6 +32,23 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 
   <div class='paper-box-image'>
     <div>
+      <div class="badge">ARXIV 2025</div>
+      <img src='images/paper/Alpha-SQL-overview.png' alt="sym" width="100%">
+    </div>
+  </div>
+
+  <div class='paper-box-text' markdown="1">
+  [Alpha-SQL: Zero-Shot Text-to-SQL using Monte Carlo Tree Search](https://arxiv.org/abs/2502.17248) \\
+  **Boyan Li**, Jiayi Zhang, Ju Fan, Yanwei Xu, Chong Chen, Nan Tang, Yuyu Luo
+
+  </div>
+
+</div>
+
+<div class='paper-box'>
+
+  <div class='paper-box-image'>
+    <div>
       <div class="badge">ARXIV 2024</div>
       <img src='images/paper/nl_rewriter.png' alt="sym" width="100%">
     </div>
