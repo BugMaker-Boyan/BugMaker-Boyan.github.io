@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Boyan Li"
-description              : "PHD Student."
+description              : 
 repository               : "bugmaker-boyan/bugmaker-boyan.github.io"
 google_scholar_stats_use_cdn : true
 
