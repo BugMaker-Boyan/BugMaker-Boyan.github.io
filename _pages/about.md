@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a PhD student at the [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/), supervised by Professor [Yuyu Luo](https://luoyuyu.vip/). Previously, I obtained my bachelor's degree from the [Southern University of Science and Technology](https://www.sustech.edu.cn/) (GPA 3.91/4.0, ranking 2/183). My current research interest includes Text-to-SQL translation and evaluation.
+I am a PhD student at the [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/), supervised by Professor [Yuyu Luo](https://luoyuyu.vip/). Previously, I obtained my bachelor's degree from the [Southern University of Science and Technology](https://www.sustech.edu.cn/). My current research interest includes Text-to-SQL translation and evaluation.
 
 
 # 🔥 News
@@ -143,7 +143,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 # 📖 Educations
 - *2024.09 - Present*, PhD Student, Hong Kong University of Science and Technology (Guangzhou).
 - *2023.07 - 2024.09*, Research Assistant, Hong Kong University of Science and Technology (Guangzhou).
-- *2019.09 - 2023.07*, Bachelor of Computer Science and Technology, Southern University of Science and Technology. 
+- *2019.09 - 2023.07*, Bachelor of Computer Science and Technology, Southern University of Science and Technology. (GPA 3.91/4.0, Ranking 2/183)
 
 # 💻 Internships
 - *2022.07 - 2022.09*, [Huawei Central Research Institute](https://www.huawei.com/cn/), Shenzhen, China.
