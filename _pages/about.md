@@ -21,7 +21,10 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 
 
 # 🔥 News
+- *2025.03*: &nbsp;🎉🎉 We proposed [NL2SQL-BUGS](https://nl2sql-bugs.github.io/), a new benchmark dedicated to detecting and categorizing semantic errors in NL2SQL translation.
+- *2025.03*: &nbsp;🎉🎉 We proposed [nvBench 2.0](https://nvbench2.github.io/), a new benchmark designed to evaluate NL2VIS systems in scenarios involving ambiguous queries.
 - *2025.01*: &nbsp;🎉🎉 We proposed [Alpha-SQL](https://arxiv.org/abs/2502.17248), the o1 moment for NL2SQL!
+- *2025.01*: &nbsp;🎉🎉 Paper [Augmenting Realistic Charts with Virtual Overlays](#) has been accepted by CHI'25.
 - *2025.01*: &nbsp;🎉🎉 I was awarded the **Merit Prize** for the 2024 DSA Excellent Research Award!
 - *2024.09*: &nbsp;🎉🎉 Paper [Are Large Language Models Good Statisticians?](https://arxiv.org/abs/2406.07815) has been accepted by NIPS'24. 
 - *2024.06*: &nbsp;🎉🎉 Paper [The Dawn of Natural Language to SQL: Are We Fully Ready?](https://arxiv.org/abs/2406.01265) has been accepted by VLDB'24. 
@@ -44,6 +47,49 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 
   </div>
 
+</div>
+
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">ARXIV 2025</div>
+      <img src='images/paper/nl2sql-bugs.png' alt="sym" width="100%">
+    </div>
+  </div>
+  <div class='paper-box-text' markdown="1">
+  [NL2SQL-BUGs: A Benchmark for Detecting Semantic Errors in NL2SQL Translation](https://arxiv.org/abs/2503.11984) \\
+  Xinyu Liu, Shuyu Shen, **Boyan Li**, Nan Tang, Yuyu Luo
+
+  [**Project**](https://nl2sql-bugs.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/NL2SQL-Bugs-Benchmark?style=social&label=Code+Stars)](https://github.com/HKUSTDial/NL2SQL-Bugs-Benchmark)
+  </div>
+</div>
+
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">ARXIV 2025</div>
+      <img src='images/paper/nl2sql-bugs.png' alt="sym" width="100%">
+    </div>
+  </div>
+  <div class='paper-box-text' markdown="1">
+  [nvBench 2.0: A Benchmark for Natural Language to Visualization under Ambiguity](https://arxiv.org/abs/2503.12880) \\
+  Tianqi Luo, Chuhan Huang, Leixian Shen, **Boyan Li**, Shuyu Shen, Wei Zeng, Nan Tang, Yuyu Luo
+
+  [**Project**](https://nvbench2.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/nvBench-2.0?style=social&label=Code+Stars)](https://github.com/HKUSTDial/nvBench-2.0)
+  </div>
+</div>
+
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">CHI 2025</div>
+      <img src='images/paper/harvis.png' alt="sym" width="100%">
+    </div>
+  </div>
+  <div class='paper-box-text' markdown="1">
+  [Augmenting Realistic Charts with Virtual Overlays](#) \\
+  Yao Shi, **Boyan Li**, Yuyu Luo, Lei Chen, Nan Tang
+  </div>
 </div>
 
 <div class='paper-box'>
