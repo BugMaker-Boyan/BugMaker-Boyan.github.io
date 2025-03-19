@@ -68,7 +68,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
   <div class='paper-box-image'>
     <div>
       <div class="badge">ARXIV 2025</div>
-      <img src='images/paper/nl2sql-bugs.png' alt="sym" width="100%">
+      <img src='images/paper/nvbench2.png' alt="sym" width="100%">
     </div>
   </div>
   <div class='paper-box-text' markdown="1">
