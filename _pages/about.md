@@ -50,6 +50,24 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 </div>
 
 <div class='paper-box'>
+
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">ARXIV 2025</div>
+      <img src='images/paper/EllieSQL.png' alt="sym" width="100%">
+    </div>
+  </div>
+
+  <div class='paper-box-text' markdown="1">
+  [EllieSQL: Cost-Efficient Text-to-SQL with Complexity-Aware Routing](https://arxiv.org/abs/2503.22402) \\
+  Yizhang Zhu, Runzhi Jiang, **Boyan Li**, Nan Tang, Yuyu Luo
+
+  [**Project**](https://https://elliesql.github.io/)
+  </div>
+
+</div>
+
+<div class='paper-box'>
   <div class='paper-box-image'>
     <div>
       <div class="badge">ARXIV 2025</div>
