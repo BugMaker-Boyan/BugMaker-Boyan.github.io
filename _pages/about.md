@@ -21,7 +21,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 
 
 # 🔥 News
-- *2025.04* &nbsp;🎉🎉 We proposed [EllieSQL](https://https://elliesql.github.io/), a complexity-aware routing framework that assigns queries to suitable SQL generation methods based on estimated complexity.
+- *2025.04* &nbsp;🎉🎉 We proposed [EllieSQL](https://elliesql.github.io/), a complexity-aware routing framework that assigns queries to suitable SQL generation methods based on estimated complexity.
 - *2025.03*: &nbsp;🎉🎉 We proposed [NL2SQL-BUGS](https://nl2sql-bugs.github.io/), a new benchmark dedicated to detecting and categorizing semantic errors in NL2SQL translation.
 - *2025.03*: &nbsp;🎉🎉 We proposed [nvBench 2.0](https://nvbench2.github.io/), a new benchmark designed to evaluate NL2VIS systems in scenarios involving ambiguous queries.
 - *2025.01*: &nbsp;🎉🎉 We proposed [Alpha-SQL](https://arxiv.org/abs/2502.17248), the o1 moment for NL2SQL!
