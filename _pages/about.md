@@ -21,6 +21,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 
 
 # 🔥 News
+- *2025.04* &nbsp;🎉🎉 We proposed [EllieSQL](https://https://elliesql.github.io/), a complexity-aware routing framework that assigns queries to suitable SQL generation methods based on estimated complexity.
 - *2025.03*: &nbsp;🎉🎉 We proposed [NL2SQL-BUGS](https://nl2sql-bugs.github.io/), a new benchmark dedicated to detecting and categorizing semantic errors in NL2SQL translation.
 - *2025.03*: &nbsp;🎉🎉 We proposed [nvBench 2.0](https://nvbench2.github.io/), a new benchmark designed to evaluate NL2VIS systems in scenarios involving ambiguous queries.
 - *2025.01*: &nbsp;🎉🎉 We proposed [Alpha-SQL](https://arxiv.org/abs/2502.17248), the o1 moment for NL2SQL!
@@ -62,7 +63,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
   [EllieSQL: Cost-Efficient Text-to-SQL with Complexity-Aware Routing](https://arxiv.org/abs/2503.22402) \\
   Yizhang Zhu, Runzhi Jiang, **Boyan Li**, Nan Tang, Yuyu Luo
 
-  [**Project**](https://https://elliesql.github.io/)
+  [**Homepage**](https://https://elliesql.github.io/)
   </div>
 
 </div>
@@ -78,7 +79,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
   [NL2SQL-BUGs: A Benchmark for Detecting Semantic Errors in NL2SQL Translation](https://arxiv.org/abs/2503.11984) \\
   Xinyu Liu, Shuyu Shen, **Boyan Li**, Nan Tang, Yuyu Luo
 
-  [**Project**](https://nl2sql-bugs.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/NL2SQL-Bugs-Benchmark?style=social&label=Code+Stars)](https://github.com/HKUSTDial/NL2SQL-Bugs-Benchmark)
+  [**Homepage**](https://nl2sql-bugs.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/NL2SQL-Bugs-Benchmark?style=social&label=Code+Stars)](https://github.com/HKUSTDial/NL2SQL-Bugs-Benchmark)
   </div>
 </div>
 
@@ -93,7 +94,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
   [nvBench 2.0: A Benchmark for Natural Language to Visualization under Ambiguity](https://arxiv.org/abs/2503.12880) \\
   Tianqi Luo, Chuhan Huang, Leixian Shen, **Boyan Li**, Shuyu Shen, Wei Zeng, Nan Tang, Yuyu Luo
 
-  [**Project**](https://nvbench2.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/nvBench-2.0?style=social&label=Code+Stars)](https://github.com/HKUSTDial/nvBench-2.0)
+  [**Homepage**](https://nvbench2.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/nvBench-2.0?style=social&label=Code+Stars)](https://github.com/HKUSTDial/nvBench-2.0)
   </div>
 </div>
 
@@ -140,7 +141,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
   [A Survey of NL2SQL with Large Language Models: Where are we, and where are we going?](https://arxiv.org/abs/2408.05109) \\
   Xinyu Liu, Shuyu Shen, **Boyan Li**, Peixian Ma, Runzhi Jiang, Yuyu Luo, Yuxin Zhang, Ju Fan, Guoliang Li, Nan Tang
 
-  [**Project**](https://github.com/HKUSTDial/NL2SQL_Handbook) \| [![](https://img.shields.io/github/stars/HKUSTDial/NL2SQL_Handbook?style=social&label=Code+Stars)](https://github.com/HKUSTDial/NL2SQL_Handbook)
+  [**Homepage**](https://github.com/HKUSTDial/NL2SQL_Handbook) \| [![](https://img.shields.io/github/stars/HKUSTDial/NL2SQL_Handbook?style=social&label=Code+Stars)](https://github.com/HKUSTDial/NL2SQL_Handbook)
   </div>
 
 </div>
@@ -158,7 +159,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
   [The Dawn of Natural Language to SQL: Are We Fully Ready?](https://arxiv.org/abs/2406.01265) \\
   **Boyan Li**, Yuyu Luo, Chengliang Chai, Guoliang Li, Nan Tang
 
-  [**Project**](https://github.com/HKUSTDial/NL2SQL360) \| [**Leaderboard**](https://nl2sql360.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/NL2SQL360?style=social&label=Code+Stars)](https://github.com/HKUSTDial/NL2SQL360)
+  [**Homepage**](https://nl2sql360.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/NL2SQL360?style=social&label=Code+Stars)](https://github.com/HKUSTDial/NL2SQL360)
   </div>
 
 </div>
@@ -176,7 +177,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
   [Are Large Language Models Good Statisticians?](https://arxiv.org/abs/2406.07815) \\
   Yizhang Zhu, Shiyin Du, **Boyan Li**, Yuyu Luo, Nan Tang
 
-  [**Project**](https://github.com/HKUSTDial/StatQA) \| [![](https://img.shields.io/github/stars/derrickzhuyz/StatQA?style=social&label=Code+Stars)](https://github.com/HKUSTDial/StatQA)
+  [**Homepage**](https://statqa.github.io/) \| [![](https://img.shields.io/github/stars/derrickzhuyz/StatQA?style=social&label=Code+Stars)](https://github.com/HKUSTDial/StatQA)
   </div>
 
 </div>
@@ -194,7 +195,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
   [Efficient Deep Spiking Multi-Layer Perceptrons with Multiplication-Free Inference](https://ieeexplore.ieee.org/abstract/document/10535518) \\
   **Boyan Li**, Luziwei Leng, Shuaijie Shen, Kaixuan Zhang, Jianguo Zhang, Jianxing Liao, Ran Cheng
 
-  [**Project**](https://github.com/EMI-Group/mixer-snn) \| [![](https://img.shields.io/github/stars/EMI-Group/mixer-snn?style=social&label=Code+Stars)](https://github.com/EMI-Group/mixer-snn)
+  [**Code**](https://github.com/EMI-Group/mixer-snn) \| [![](https://img.shields.io/github/stars/EMI-Group/mixer-snn?style=social&label=Code+Stars)](https://github.com/EMI-Group/mixer-snn)
   </div>
 
 </div>
