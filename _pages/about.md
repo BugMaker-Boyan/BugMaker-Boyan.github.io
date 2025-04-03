@@ -63,7 +63,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
   [EllieSQL: Cost-Efficient Text-to-SQL with Complexity-Aware Routing](https://arxiv.org/abs/2503.22402) \\
   Yizhang Zhu, Runzhi Jiang, **Boyan Li**, Nan Tang, Yuyu Luo
 
-  [**Homepage**](https://https://elliesql.github.io/)
+  [**Homepage**](https://https://elliesql.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/EllieSQL?style=social&label=Code+Stars)](https://github.com/HKUSTDial/EllieSQL)
   </div>
 
 </div>
