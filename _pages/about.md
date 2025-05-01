@@ -21,11 +21,12 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 
 
 # 🔥 News
+- *2025.05*  &nbsp;🎉🎉 Our [Alpha-SQL](https://arxiv.org/abs/2502.17248) paper has been accepted by ICML'25, see you in [Vancouver](https://icml.cc/)!
 - *2025.04* &nbsp;🎉🎉 We proposed [EllieSQL](https://elliesql.github.io/), a complexity-aware routing framework that assigns queries to suitable SQL generation methods based on estimated complexity.
 - *2025.03*: &nbsp;🎉🎉 We proposed [NL2SQL-BUGS](https://nl2sql-bugs.github.io/), a new benchmark dedicated to detecting and categorizing semantic errors in NL2SQL translation.
 - *2025.03*: &nbsp;🎉🎉 We proposed [nvBench 2.0](https://nvbench2.github.io/), a new benchmark designed to evaluate NL2VIS systems in scenarios involving ambiguous queries.
 - *2025.01*: &nbsp;🎉🎉 We proposed [Alpha-SQL](https://arxiv.org/abs/2502.17248), the o1 moment for NL2SQL!
-- *2025.01*: &nbsp;🎉🎉 Paper [Augmenting Realistic Charts with Virtual Overlays](#) has been accepted by CHI'25.
+- *2025.01*: &nbsp;🎉🎉 Paper [Augmenting Realistic Charts with Virtual Overlays](https://dl.acm.org/doi/full/10.1145/3706598.3714320) has been accepted by CHI'25.
 - *2025.01*: &nbsp;🎉🎉 I was awarded the **Merit Prize** for the 2024 DSA Excellent Research Award!
 - *2024.09*: &nbsp;🎉🎉 Paper [Are Large Language Models Good Statisticians?](https://arxiv.org/abs/2406.07815) has been accepted by NIPS'24. 
 - *2024.06*: &nbsp;🎉🎉 Paper [The Dawn of Natural Language to SQL: Are We Fully Ready?](https://arxiv.org/abs/2406.01265) has been accepted by VLDB'24. 
@@ -37,7 +38,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 
   <div class='paper-box-image'>
     <div>
-      <div class="badge">ARXIV 2025</div>
+      <div class="badge">ICML 2025</div>
       <img src='images/paper/Alpha-SQL-overview.png' alt="sym" width="100%">
     </div>
   </div>
@@ -106,7 +107,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
     </div>
   </div>
   <div class='paper-box-text' markdown="1">
-  [Augmenting Realistic Charts with Virtual Overlays](#) \\
+  [Augmenting Realistic Charts with Virtual Overlays](https://dl.acm.org/doi/full/10.1145/3706598.3714320) \\
   Yao Shi, **Boyan Li**, Yuyu Luo, Lei Chen, Nan Tang
   </div>
 </div>
