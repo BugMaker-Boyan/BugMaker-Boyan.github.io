@@ -49,7 +49,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
   [Alpha-SQL: Zero-Shot Text-to-SQL using Monte Carlo Tree Search](https://arxiv.org/abs/2502.17248) \\
   **Boyan Li**, Jiayi Zhang, Ju Fan, Yanwei Xu, Chong Chen, Nan Tang, Yuyu Luo
 
-  [**Homepage**](https://alpha-sql-hkust.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/Alpha-SQL?style=social&label=Code+Stars)](https://github.com/HKUSTDial/Alpha-SQL)
+  [**Homepage**](https://alpha-sql-hkust.github.io/) \| [**Slides**](presentations/Alpha-SQL.pdf) \| [**PDF**](presentations/Alpha-SQL.pdf) \| [![](https://img.shields.io/github/stars/HKUSTDial/Alpha-SQL?style=social&label=Code+Stars)](https://github.com/HKUSTDial/Alpha-SQL) 
 
   </div>
 
