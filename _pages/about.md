@@ -21,6 +21,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 
 
 # 🔥 News
+- *2025.07* Our [EllieSQL](https://elliesql.github.io/) paper has benn accepted by [COLM'25](https://colmweb.org/), a complexity-aware routing framework that assigns queries to suitable SQL generation pipelines based on estimated complexity.
 - *2025.05* &nbsp;🎉🎉 Our [NL2SQL-BUGs](https://nl2sql-bugs.github.io/) paper has benn accepted by [KDD'25](https://kdd2025.kdd.org/), the first benchmark specifically designed to detect and categorize semantic errors in NL2SQL translation.
 - *2025.05* &nbsp;🎉🎉 Our [Alpha-SQL](https://arxiv.org/abs/2502.17248) paper has been accepted by [ICML'25](https://icml.cc/), see you in [Vancouver, Canada](https://icml.cc/)!
 - *2025.04* &nbsp;🎉🎉 We proposed [Advances and Challenges in Foundation Agents](https://arxiv.org/abs/2504.01990), a survey covers the design, evaluation, and improvement of intelligent agents based on modular, brain-inspired architectures, focusing on self-enhancement, multi-agent collaboration, and safety in AI systems.
@@ -59,7 +60,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 
   <div class='paper-box-image'>
     <div>
-      <div class="badge">ARXIV 2025</div>
+      <div class="badge">COLM 2025</div>
       <img src='images/paper/EllieSQL.png' alt="sym" width="100%">
     </div>
   </div>
