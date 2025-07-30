@@ -182,6 +182,9 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
   **Boyan Li**, Yuyu Luo, Chengliang Chai, Guoliang Li, Nan Tang
 
   [**Homepage**](https://nl2sql360.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/NL2SQL360?style=social&label=Code+Stars)](https://github.com/HKUSTDial/NL2SQL360)
+
+  [**VLDB 2024 Highly Cited Papers Top-2 (Google Metrics)**](https://scholar.google.com/citations?hl=en&view_op=list_hcore&venue=HgMIeQ05CyMJ.2025&vq=eng_databasesinformationsystems&cstart=60)
+
   </div>
 
 </div>
