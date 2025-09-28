@@ -21,6 +21,8 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 
 
 # 🔥 News
+- *2025.09* &nbsp;🎉🎉 Our [nvBench 2.0](https://nvbench2.github.io) paper has benn accepted by [NIPS'25](https://neurips.cc/Conferences/2025), a new benchmark designed to evaluate Text2VIS systems in scenarios involving ambiguous queries.
+- *2025.07* &nbsp;🎉🎉 Our [DeepVIS](https://arxiv.org/abs/2508.01700) paper has benn accepted by [VIS'25](https://ieeevis.org/year/2025/welcome), an interactive visual interface that tightly integrates with the CoT reasoning process, allowing users to inspect reasoning steps, identify errors, and make targeted adjustments to improve visualization outcomes.
 - *2025.07* &nbsp;🎉🎉 Our [NL2SQL-Survey](https://arxiv.org/abs/2408.05109) paper has benn accepted by [TKDE'25](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69)! For a comprehensive overview of the latest Text-to-SQL techniques and practical guidance, we warmly invite you to read our continuously updated [NL2SQL Handbook](https://github.com/HKUSTDial/NL2SQL_Handbook).
 - *2025.07* &nbsp;🎉🎉 Our [EllieSQL](https://elliesql.github.io/) paper has benn accepted by [COLM'25](https://colmweb.org/), a complexity-aware routing framework that assigns queries to suitable SQL generation pipelines based on estimated complexity.
 - *2025.05* &nbsp;🎉🎉 Our [NL2SQL-BUGs](https://nl2sql-bugs.github.io/) paper has benn accepted by [KDD'25](https://kdd2025.kdd.org/), the first benchmark specifically designed to detect and categorize semantic errors in NL2SQL translation.
@@ -58,21 +60,19 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 </div>
 
 <div class='paper-box'>
-
   <div class='paper-box-image'>
     <div>
-      <div class="badge">COLM 2025</div>
-      <img src='images/paper/EllieSQL.png' alt="sym" width="100%">
+      <div class="badge">VIS 2025</div>
+      <img src='images/paper/nvbench2.png' alt="sym" width="100%">
     </div>
   </div>
-
   <div class='paper-box-text' markdown="1">
-  [EllieSQL: Cost-Efficient Text-to-SQL with Complexity-Aware Routing](https://arxiv.org/abs/2503.22402) \\
-  Yizhang Zhu, Runzhi Jiang, **Boyan Li**, Nan Tang, Yuyu Luo
+  [DeepVIS: Bridging Natural Language and Data Visualization Through Step-wise Reasoning](https://arxiv.org/abs/2508.01700) \\
+  Zhihao Shuai<sup>*</sup>, **Boyan Li**<sup>*</sup>, Siyu Yan, Yuyu Luo, Weikai Yang
+  <br><small>*Equal contribution</small>
 
-  [**Homepage**](https://elliesql.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/EllieSQL?style=social&label=Code+Stars)](https://github.com/HKUSTDial/EllieSQL)
+  [**Homepage**](https://nvbench2.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/nvBench-2.0?style=social&label=Code+Stars)](https://github.com/HKUSTDial/nvBench-2.0)
   </div>
-
 </div>
 
 <div class='paper-box'>
@@ -88,6 +88,39 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 
   [**Homepage**](https://nl2sql-bugs.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/NL2SQL-Bugs-Benchmark?style=social&label=Code+Stars)](https://github.com/HKUSTDial/NL2SQL-Bugs-Benchmark)
   </div>
+</div>
+
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">NIPS 2025</div>
+      <img src='images/paper/nvbench2.png' alt="sym" width="100%">
+    </div>
+  </div>
+  <div class='paper-box-text' markdown="1">
+  [nvBench 2.0: A Benchmark for Natural Language to Visualization under Ambiguity](https://arxiv.org/abs/2503.12880) \\
+  Tianqi Luo, Chuhan Huang, Leixian Shen, **Boyan Li**, Shuyu Shen, Wei Zeng, Nan Tang, Yuyu Luo
+
+  [**Homepage**](https://nvbench2.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/nvBench-2.0?style=social&label=Code+Stars)](https://github.com/HKUSTDial/nvBench-2.0)
+  </div>
+</div>
+
+<div class='paper-box'>
+
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">COLM 2025</div>
+      <img src='images/paper/EllieSQL.png' alt="sym" width="100%">
+    </div>
+  </div>
+
+  <div class='paper-box-text' markdown="1">
+  [EllieSQL: Cost-Efficient Text-to-SQL with Complexity-Aware Routing](https://arxiv.org/abs/2503.22402) \\
+  Yizhang Zhu, Runzhi Jiang, **Boyan Li**, Nan Tang, Yuyu Luo
+
+  [**Homepage**](https://elliesql.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/EllieSQL?style=social&label=Code+Stars)](https://github.com/HKUSTDial/EllieSQL)
+  </div>
+
 </div>
 
 <div class='paper-box'>
@@ -120,21 +153,6 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
   Bang Liu, ..., Boyan Li, et al.
 
   [**Top-1 Daily Paper in Hugging Face**](https://huggingface.co/papers/2504.01990) \| [![](https://img.shields.io/github/stars/FoundationAgents/awesome-foundation-agents?style=social&label=Code+Stars)](https://github.com/FoundationAgents/awesome-foundation-agents)
-  </div>
-</div>
-
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">ARXIV 2025</div>
-      <img src='images/paper/nvbench2.png' alt="sym" width="100%">
-    </div>
-  </div>
-  <div class='paper-box-text' markdown="1">
-  [nvBench 2.0: A Benchmark for Natural Language to Visualization under Ambiguity](https://arxiv.org/abs/2503.12880) \\
-  Tianqi Luo, Chuhan Huang, Leixian Shen, **Boyan Li**, Shuyu Shen, Wei Zeng, Nan Tang, Yuyu Luo
-
-  [**Homepage**](https://nvbench2.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/nvBench-2.0?style=social&label=Code+Stars)](https://github.com/HKUSTDial/nvBench-2.0)
   </div>
 </div>
 
@@ -235,9 +253,9 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 - *2023.07 - 2024.09*, Research Assistant, Hong Kong University of Science and Technology (Guangzhou).
 - *2019.09 - 2023.07*, Bachelor of Computer Science and Technology, Southern University of Science and Technology. (GPA 3.91/4.0, Ranking 2/183)
 
-# 💻 Internships
+# 💻 Experience
 - *2022.07 - 2022.09*, [Huawei Central Research Institute](https://www.huawei.com/cn/), Shenzhen, China.
-
+- *2025.06 - Present*, Exchange Student, [Tsinghua University](https://www.tsinghua.edu.cn), Beijing, China.
 
 <!-- <div style="text-align: center;">
   <span>Website Record:&nbsp;</span>
