@@ -71,7 +71,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
   Zhihao Shuai<sup>*</sup>, **Boyan Li**<sup>*</sup>, Siyu Yan, Yuyu Luo, Weikai Yang
   <br><small>*Equal contribution</small>
 
-  [**Homepage**](https://nvbench2.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/nvBench-2.0?style=social&label=Code+Stars)](https://github.com/HKUSTDial/nvBench-2.0)
+  [![](https://img.shields.io/github/stars/Bvivib-shuai/DeepVIS?style=social&label=Code+Stars)](https://github.com/Bvivib-shuai/DeepVIS)
   </div>
 </div>
 
