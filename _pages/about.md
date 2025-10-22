@@ -21,6 +21,7 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 
 
 # 🔥 News
+- *2025.10* &nbsp;🎉🎉 We proposed [DeeyEye-SQL](https://arxiv.org/abs/2510.17586), a software-engineering-inspired Text-to-SQL framework, achieving 73.5% EX on BIRD-Dev and 89.8% EX on Spider-Test using a ~30B LLM without any fine-tuning!
 - *2025.09* &nbsp;🎉🎉 Our [nvBench 2.0](https://nvbench2.github.io) paper has benn accepted by [NIPS'25](https://neurips.cc/Conferences/2025), a new benchmark designed to evaluate Text2VIS systems in scenarios involving ambiguous queries.
 - *2025.07* &nbsp;🎉🎉 Our [DeepVIS](https://arxiv.org/abs/2508.01700) paper has benn accepted by [VIS'25](https://ieeevis.org/year/2025/welcome), an interactive visual interface that tightly integrates with the CoT reasoning process, allowing users to inspect reasoning steps, identify errors, and make targeted adjustments to improve visualization outcomes.
 - *2025.07* &nbsp;🎉🎉 Our [NL2SQL-Survey](https://arxiv.org/abs/2408.05109) paper has benn accepted by [TKDE'25](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69)! For a comprehensive overview of the latest Text-to-SQL techniques and practical guidance, we warmly invite you to read our continuously updated [NL2SQL Handbook](https://github.com/HKUSTDial/NL2SQL_Handbook).
@@ -39,6 +40,23 @@ I am a PhD student at the [Hong Kong University of Science and Technology (Guang
 - *2024.04*: &nbsp;🎉🎉 Paper [Efficient Deep Spiking Multilayer Perceptrons With Multiplication-Free Inference](https://ieeexplore.ieee.org/abstract/document/10535518) has been accepted by TNNLS'24.
 
 # 📝 Publications 
+
+<div class='paper-box'>
+
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">Arxiv 2025</div>
+      <img src='images/paper/deepeye-sql.png' alt="sym" width="100%">
+    </div>
+  </div>
+
+  <div class='paper-box-text' markdown="1">
+  [DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework](https://arxiv.org/abs/2510.17586) \\
+  **Boyan Li**, Chong Chen, Zhujun Xue, Yinan Mei, Yuyu Luo
+
+  </div>
+
+</div>
 
 <div class='paper-box'>
 
