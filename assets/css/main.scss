@@ -107,3 +107,43 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+
+.news-scroll-container {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 1em;
+    margin-top: 1em;
+    
+    // 自定义滚动条样式（Webkit浏览器）
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 4px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+        
+        &:hover {
+            background: #555;
+        }
+    }
+    
+    // Firefox 滚动条样式
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+    
+    ul {
+        margin: 0;
+        padding-left: 1.5em;
+    }
+    
+    li {
+        margin-bottom: 0.8em;
+        line-height: 1.6;
+    }
+}
