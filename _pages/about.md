@@ -23,23 +23,25 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
 # 🔥 News
 
 <div class="news-scroll-container">
-- *2025.10* &nbsp;🎉🎉 We proposed [DeeyEye-SQL](https://arxiv.org/abs/2510.17586), a software-engineering-inspired Text-to-SQL framework, achieving 73.5% EX on BIRD-Dev and 89.8% EX on Spider-Test using a ~30B LLM without any fine-tuning!
-- *2025.09* &nbsp;🎉🎉 Our [nvBench 2.0](https://nvbench2.github.io) paper has benn accepted by [NIPS'25](https://neurips.cc/Conferences/2025), a new benchmark designed to evaluate Text2VIS systems in scenarios involving ambiguous queries.
-- *2025.07* &nbsp;🎉🎉 Our [DeepVIS](https://arxiv.org/abs/2508.01700) paper has benn accepted by [VIS'25](https://ieeevis.org/year/2025/welcome), an interactive visual interface that tightly integrates with the CoT reasoning process, allowing users to inspect reasoning steps, identify errors, and make targeted adjustments to improve visualization outcomes.
-- *2025.07* &nbsp;🎉🎉 Our [NL2SQL-Survey](https://arxiv.org/abs/2408.05109) paper has benn accepted by [TKDE'25](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69)! For a comprehensive overview of the latest Text-to-SQL techniques and practical guidance, we warmly invite you to read our continuously updated [NL2SQL Handbook](https://github.com/HKUSTDial/NL2SQL_Handbook).
-- *2025.07* &nbsp;🎉🎉 Our [EllieSQL](https://elliesql.github.io/) paper has benn accepted by [COLM'25](https://colmweb.org/), a complexity-aware routing framework that assigns queries to suitable SQL generation pipelines based on estimated complexity.
-- *2025.05* &nbsp;🎉🎉 Our [NL2SQL-BUGs](https://nl2sql-bugs.github.io/) paper has benn accepted by [KDD'25](https://kdd2025.kdd.org/), the first benchmark specifically designed to detect and categorize semantic errors in NL2SQL translation.
-- *2025.05* &nbsp;🎉🎉 Our [Alpha-SQL](https://arxiv.org/abs/2502.17248) paper has been accepted by [ICML'25](https://icml.cc/), see you in [Vancouver, Canada](https://icml.cc/)!
-- *2025.04* &nbsp;🎉🎉 We proposed [Advances and Challenges in Foundation Agents](https://arxiv.org/abs/2504.01990), a survey covers the design, evaluation, and improvement of intelligent agents based on modular, brain-inspired architectures, focusing on self-enhancement, multi-agent collaboration, and safety in AI systems.
-- *2025.04* &nbsp;🎉🎉 We proposed [EllieSQL](https://elliesql.github.io/), a complexity-aware routing framework that assigns queries to suitable SQL generation methods based on estimated complexity.
-- *2025.03*: &nbsp;🎉🎉 We proposed [NL2SQL-BUGs](https://nl2sql-bugs.github.io/), a new benchmark dedicated to detecting and categorizing semantic errors in NL2SQL translation.
-- *2025.03*: &nbsp;🎉🎉 We proposed [nvBench 2.0](https://nvbench2.github.io/), a new benchmark designed to evaluate NL2VIS systems in scenarios involving ambiguous queries.
-- *2025.01*: &nbsp;🎉🎉 We proposed [Alpha-SQL](https://arxiv.org/abs/2502.17248), the o1 moment for NL2SQL!
-- *2025.01*: &nbsp;🎉🎉 Paper [Augmenting Realistic Charts with Virtual Overlays](https://dl.acm.org/doi/full/10.1145/3706598.3714320) has been accepted by CHI'25.
-- *2025.01*: &nbsp;🎉🎉 I was awarded the **Merit Prize** for the 2024 DSA Excellent Research Award!
-- *2024.09*: &nbsp;🎉🎉 Paper [Are Large Language Models Good Statisticians?](https://arxiv.org/abs/2406.07815) has been accepted by NIPS'24. 
-- *2024.06*: &nbsp;🎉🎉 Paper [The Dawn of Natural Language to SQL: Are We Fully Ready?](https://arxiv.org/abs/2406.01265) has been accepted by VLDB'24. 
-- *2024.04*: &nbsp;🎉🎉 Paper [Efficient Deep Spiking Multilayer Perceptrons With Multiplication-Free Inference](https://ieeexplore.ieee.org/abstract/document/10535518) has been accepted by TNNLS'24.
+<ul>
+<li>*2025.10* &nbsp;🎉🎉 We proposed [DeeyEye-SQL](https://arxiv.org/abs/2510.17586), a software-engineering-inspired Text-to-SQL framework, achieving 73.5% EX on BIRD-Dev and 89.8% EX on Spider-Test using a ~30B LLM without any fine-tuning!</li>
+<li>*2025.09* &nbsp;🎉🎉 Our [nvBench 2.0](https://nvbench2.github.io) paper has benn accepted by [NIPS'25](https://neurips.cc/Conferences/2025), a new benchmark designed to evaluate Text2VIS systems in scenarios involving ambiguous queries.</li>
+<li>*2025.07* &nbsp;🎉🎉 Our [DeepVIS](https://arxiv.org/abs/2508.01700) paper has benn accepted by [VIS'25](https://ieeevis.org/year/2025/welcome), an interactive visual interface that tightly integrates with the CoT reasoning process, allowing users to inspect reasoning steps, identify errors, and make targeted adjustments to improve visualization outcomes.</li>
+<li>*2025.07* &nbsp;🎉🎉 Our [NL2SQL-Survey](https://arxiv.org/abs/2408.05109) paper has benn accepted by [TKDE'25](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69)! For a comprehensive overview of the latest Text-to-SQL techniques and practical guidance, we warmly invite you to read our continuously updated [NL2SQL Handbook](https://github.com/HKUSTDial/NL2SQL_Handbook).</li>
+<li>*2025.07* &nbsp;🎉🎉 Our [EllieSQL](https://elliesql.github.io/) paper has benn accepted by [COLM'25](https://colmweb.org/), a complexity-aware routing framework that assigns queries to suitable SQL generation pipelines based on estimated complexity.</li>
+<li>*2025.05* &nbsp;🎉🎉 Our [NL2SQL-BUGs](https://nl2sql-bugs.github.io/) paper has benn accepted by [KDD'25](https://kdd2025.kdd.org/), the first benchmark specifically designed to detect and categorize semantic errors in NL2SQL translation.</li>
+<li>*2025.05* &nbsp;🎉🎉 Our [Alpha-SQL](https://arxiv.org/abs/2502.17248) paper has been accepted by [ICML'25](https://icml.cc/), see you in [Vancouver, Canada](https://icml.cc/)!</li>
+<li>*2025.04* &nbsp;🎉🎉 We proposed [Advances and Challenges in Foundation Agents](https://arxiv.org/abs/2504.01990), a survey covers the design, evaluation, and improvement of intelligent agents based on modular, brain-inspired architectures, focusing on self-enhancement, multi-agent collaboration, and safety in AI systems.</li>
+<li>*2025.04* &nbsp;🎉🎉 We proposed [EllieSQL](https://elliesql.github.io/), a complexity-aware routing framework that assigns queries to suitable SQL generation methods based on estimated complexity.</li>
+<li>*2025.03*: &nbsp;🎉🎉 We proposed [NL2SQL-BUGs](https://nl2sql-bugs.github.io/), a new benchmark dedicated to detecting and categorizing semantic errors in NL2SQL translation.</li>
+<li>*2025.03*: &nbsp;🎉🎉 We proposed [nvBench 2.0](https://nvbench2.github.io/), a new benchmark designed to evaluate NL2VIS systems in scenarios involving ambiguous queries.</li>
+<li>*2025.01*: &nbsp;🎉🎉 We proposed [Alpha-SQL](https://arxiv.org/abs/2502.17248), the o1 moment for NL2SQL!</li>
+<li>*2025.01*: &nbsp;🎉🎉 Paper [Augmenting Realistic Charts with Virtual Overlays](https://dl.acm.org/doi/full/10.1145/3706598.3714320) has been accepted by CHI'25.</li>
+<li>*2025.01*: &nbsp;🎉🎉 I was awarded the **Merit Prize** for the 2024 DSA Excellent Research Award!</li>
+<li>*2024.09*: &nbsp;🎉🎉 Paper [Are Large Language Models Good Statisticians?](https://arxiv.org/abs/2406.07815) has been accepted by NIPS'24.</li>
+<li>*2024.06*: &nbsp;🎉🎉 Paper [The Dawn of Natural Language to SQL: Are We Fully Ready?](https://arxiv.org/abs/2406.01265) has been accepted by VLDB'24.</li>
+<li>*2024.04*: &nbsp;🎉🎉 Paper [Efficient Deep Spiking Multilayer Perceptrons With Multiplication-Free Inference](https://ieeexplore.ieee.org/abstract/document/10535518) has been accepted by TNNLS'24.</li>
+</ul>
 </div>
 
 # 📝 Publications 
