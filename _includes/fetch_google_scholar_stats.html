@@ -1,11 +1,7 @@
 <script>
     $(document).ready(function () {
-        {% if site.google_scholar_stats_use_cdn %}
-        var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'
-        {% else %}
-        var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
-        {% endif %}
-        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+        var gsDataUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/refs/heads/google-scholar-stats/gs_data.json';
+        $.getJSON(gsDataUrl, function (data) {
             // 更新总引用数
             var totalCitation = data['citedby']
             if (document.getElementById('total_cit')) {
