@@ -12,20 +12,18 @@
                 document.getElementById('total_cit').innerHTML = totalCitation;
             }
             
-            // 更新 h-index (支持多种字段名格式)
-            if (data['indices']) {
-                var hIndex = data['indices']['hindex'] || data['indices']['h_index'];
-                if (hIndex && document.getElementById('h_index')) {
-                    document.getElementById('h_index').innerHTML = hIndex;
-                }
+            // 更新 h-index (支持多种字段名格式和位置)
+            var hIndex = data['hindex'] || data['h_index'] || 
+                        (data['indices'] && (data['indices']['hindex'] || data['indices']['h_index']));
+            if (hIndex && document.getElementById('h_index')) {
+                document.getElementById('h_index').innerHTML = hIndex;
             }
             
-            // 更新 i10-index (支持多种字段名格式)
-            if (data['indices']) {
-                var i10Index = data['indices']['i10index'] || data['indices']['i10_index'];
-                if (i10Index && document.getElementById('i10_index')) {
-                    document.getElementById('i10_index').innerHTML = i10Index;
-                }
+            // 更新 i10-index (支持多种字段名格式和位置)
+            var i10Index = data['i10index'] || data['i10_index'] || 
+                          (data['indices'] && (data['indices']['i10index'] || data['indices']['i10_index']));
+            if (i10Index && document.getElementById('i10_index')) {
+                document.getElementById('i10_index').innerHTML = i10Index;
             }
             
             // 更新每篇论文的引用数
