@@ -7,6 +7,7 @@ from scholarly._proxy_generator import MaxTriesExceededException
 
 try:
     print("正在查找作者信息...")
+    
     # Setup proxy
     pg = ProxyGenerator()
     pg.FreeProxies()  # Use free rotating proxies
