@@ -24,6 +24,7 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
 
 <div class="news-scroll-container">
 <ul>
+<li><em>2025.10</em>  We proposed <a href="https://arxiv.org/abs/2510.23587">A Survey of Data Agents: Emerging Paradigm or Overstated Hype?</a>, introducing the first systematic hierarchical taxonomy for data agents with six levels (L0-L5) that delineate progressive shifts in autonomy, from manual operations to fully autonomous data agents. This survey clarifies capability boundaries and responsibility allocation, offering a structured review of existing research and a forward-looking roadmap. <strong>Ranked Top-3 in <a href="https://huggingface.co/papers/2510.23587">Hugging Face Daily Papers</a>!</strong></li>
 <li><em>2025.10</em>  We proposed <a href="https://arxiv.org/abs/2510.17586">DeeyEye-SQL</a>, a software-engineering-inspired Text-to-SQL framework, achieving 73.5% EX on BIRD-Dev and 89.8% EX on Spider-Test using a ~30B LLM without any fine-tuning!</li>
 <li><em>2025.09</em>  Our <a href="https://nvbench2.github.io">nvBench 2.0</a> paper has benn accepted by <a href="https://neurips.cc/Conferences/2025">NIPS'25</a>, a new benchmark designed to evaluate Text2VIS systems in scenarios involving ambiguous queries.</li>
 <li><em>2025.07</em>  Our <a href="https://arxiv.org/abs/2508.01700">DeepVIS</a> paper has benn accepted by <a href="https://ieeevis.org/year/2025/welcome">VIS'25</a>, an interactive visual interface that tightly integrates with the CoT reasoning process, allowing users to inspect reasoning steps, identify errors, and make targeted adjustments to improve visualization outcomes.</li>
@@ -63,7 +64,7 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
     <div class="stat-detail">Google Scholar</div>
   </div>
   <div class="stat-card">
-    <div class="stat-number">13</div>
+    <div class="stat-number">14</div>
     <div class="stat-label">Total Papers</div>
     <div class="stat-detail">Published & Accepted</div>
   </div>
@@ -81,6 +82,26 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
   <div class='paper-box-text' markdown="1">
   [DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework](https://arxiv.org/abs/2510.17586) \\
   **Boyan Li**, Chong Chen, Zhujun Xue, Yinan Mei, Yuyu Luo
+
+  </div>
+
+</div>
+
+
+<div class='paper-box'>
+
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">Arxiv 2025</div>
+      <img src='images/paper/data-agent-survey.png' alt="sym" width="100%">
+    </div>
+  </div>
+
+  <div class='paper-box-text' markdown="1">
+  [A Survey of Data Agents: Emerging Paradigm or Overstated Hype?](https://arxiv.org/abs/2510.23587) \\
+  Yizhang Zhu, ..., **Boyan Li**, et.al
+
+  [**Awesome Data Agents**](https://github.com/HKUSTDial/awesome-data-agents/) \| [**Slides**](https://github.com/HKUSTDial/awesome-data-agents/blob/main/slides/从智能问数到数据智能体：范式演进与反思.pdf) \| [![](https://img.shields.io/github/stars/HKUSTDial/awesome-data-agents?style=social&label=Code+Stars)](https://github.com/HKUSTDial/awesome-data-agents) 
 
   </div>
 
