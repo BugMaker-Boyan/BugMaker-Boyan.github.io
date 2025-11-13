@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  jekyll:
+    image: jekyll/jekyll:latest
+    user: root
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      - .:/srv/jekyll
+    command: sh -c "gem sources --remove https://rubygems.org/ && gem sources --add https://gems.ruby-china.com/ && bundle config mirror.https://rubygems.org https://gems.ruby-china.com && rm -f Gemfile.lock && bundle install && jekyll serve --force_polling --host 0.0.0.0"
+    environment:
+      - JEKYLL_ENV=development
+

@@ -20,31 +20,54 @@ redirect_from:
 I am a second-year PhD student at the [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/), honored to be supervised by Professor [Yuyu Luo](https://luoyuyu.vip/). Currently, I am working as a research intern in the Database Group led by Professor [Guoliang Li](https://dbgroup.cs.tsinghua.edu.cn/ligl/) at [Tsinghua University](https://www.tsinghua.edu.cn). Previously, I obtained my bachelor's degree from the [Southern University of Science and Technology](https://www.sustech.edu.cn/). My current research interests focus on Text-to-SQL and Data Agent, which are intelligent systems that can autonomously handle data-related tasks such as query generation, data analysis, and visualization through natural language interaction.
 
 
-# 🔥 News
+# <i class="fas fa-newspaper"></i> News
 
 <div class="news-scroll-container">
 <ul>
-<li>*2025.10* &nbsp;🎉🎉 We proposed [DeeyEye-SQL](https://arxiv.org/abs/2510.17586), a software-engineering-inspired Text-to-SQL framework, achieving 73.5% EX on BIRD-Dev and 89.8% EX on Spider-Test using a ~30B LLM without any fine-tuning!</li>
-<li>*2025.09* &nbsp;🎉🎉 Our [nvBench 2.0](https://nvbench2.github.io) paper has benn accepted by [NIPS'25](https://neurips.cc/Conferences/2025), a new benchmark designed to evaluate Text2VIS systems in scenarios involving ambiguous queries.</li>
-<li>*2025.07* &nbsp;🎉🎉 Our [DeepVIS](https://arxiv.org/abs/2508.01700) paper has benn accepted by [VIS'25](https://ieeevis.org/year/2025/welcome), an interactive visual interface that tightly integrates with the CoT reasoning process, allowing users to inspect reasoning steps, identify errors, and make targeted adjustments to improve visualization outcomes.</li>
-<li>*2025.07* &nbsp;🎉🎉 Our [NL2SQL-Survey](https://arxiv.org/abs/2408.05109) paper has benn accepted by [TKDE'25](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69)! For a comprehensive overview of the latest Text-to-SQL techniques and practical guidance, we warmly invite you to read our continuously updated [NL2SQL Handbook](https://github.com/HKUSTDial/NL2SQL_Handbook).</li>
-<li>*2025.07* &nbsp;🎉🎉 Our [EllieSQL](https://elliesql.github.io/) paper has benn accepted by [COLM'25](https://colmweb.org/), a complexity-aware routing framework that assigns queries to suitable SQL generation pipelines based on estimated complexity.</li>
-<li>*2025.05* &nbsp;🎉🎉 Our [NL2SQL-BUGs](https://nl2sql-bugs.github.io/) paper has benn accepted by [KDD'25](https://kdd2025.kdd.org/), the first benchmark specifically designed to detect and categorize semantic errors in NL2SQL translation.</li>
-<li>*2025.05* &nbsp;🎉🎉 Our [Alpha-SQL](https://arxiv.org/abs/2502.17248) paper has been accepted by [ICML'25](https://icml.cc/), see you in [Vancouver, Canada](https://icml.cc/)!</li>
-<li>*2025.04* &nbsp;🎉🎉 We proposed [Advances and Challenges in Foundation Agents](https://arxiv.org/abs/2504.01990), a survey covers the design, evaluation, and improvement of intelligent agents based on modular, brain-inspired architectures, focusing on self-enhancement, multi-agent collaboration, and safety in AI systems.</li>
-<li>*2025.04* &nbsp;🎉🎉 We proposed [EllieSQL](https://elliesql.github.io/), a complexity-aware routing framework that assigns queries to suitable SQL generation methods based on estimated complexity.</li>
-<li>*2025.03*: &nbsp;🎉🎉 We proposed [NL2SQL-BUGs](https://nl2sql-bugs.github.io/), a new benchmark dedicated to detecting and categorizing semantic errors in NL2SQL translation.</li>
-<li>*2025.03*: &nbsp;🎉🎉 We proposed [nvBench 2.0](https://nvbench2.github.io/), a new benchmark designed to evaluate NL2VIS systems in scenarios involving ambiguous queries.</li>
-<li>*2025.01*: &nbsp;🎉🎉 We proposed [Alpha-SQL](https://arxiv.org/abs/2502.17248), the o1 moment for NL2SQL!</li>
-<li>*2025.01*: &nbsp;🎉🎉 Paper [Augmenting Realistic Charts with Virtual Overlays](https://dl.acm.org/doi/full/10.1145/3706598.3714320) has been accepted by CHI'25.</li>
-<li>*2025.01*: &nbsp;🎉🎉 I was awarded the **Merit Prize** for the 2024 DSA Excellent Research Award!</li>
-<li>*2024.09*: &nbsp;🎉🎉 Paper [Are Large Language Models Good Statisticians?](https://arxiv.org/abs/2406.07815) has been accepted by NIPS'24.</li>
-<li>*2024.06*: &nbsp;🎉🎉 Paper [The Dawn of Natural Language to SQL: Are We Fully Ready?](https://arxiv.org/abs/2406.01265) has been accepted by VLDB'24.</li>
-<li>*2024.04*: &nbsp;🎉🎉 Paper [Efficient Deep Spiking Multilayer Perceptrons With Multiplication-Free Inference](https://ieeexplore.ieee.org/abstract/document/10535518) has been accepted by TNNLS'24.</li>
+<li><em>2025.10</em>  We proposed <a href="https://arxiv.org/abs/2510.17586">DeeyEye-SQL</a>, a software-engineering-inspired Text-to-SQL framework, achieving 73.5% EX on BIRD-Dev and 89.8% EX on Spider-Test using a ~30B LLM without any fine-tuning!</li>
+<li><em>2025.09</em>  Our <a href="https://nvbench2.github.io">nvBench 2.0</a> paper has benn accepted by <a href="https://neurips.cc/Conferences/2025">NIPS'25</a>, a new benchmark designed to evaluate Text2VIS systems in scenarios involving ambiguous queries.</li>
+<li><em>2025.07</em>  Our <a href="https://arxiv.org/abs/2508.01700">DeepVIS</a> paper has benn accepted by <a href="https://ieeevis.org/year/2025/welcome">VIS'25</a>, an interactive visual interface that tightly integrates with the CoT reasoning process, allowing users to inspect reasoning steps, identify errors, and make targeted adjustments to improve visualization outcomes.</li>
+<li><em>2025.07</em>  Our <a href="https://arxiv.org/abs/2408.05109">NL2SQL-Survey</a> paper has benn accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69">TKDE'25</a>! For a comprehensive overview of the latest Text-to-SQL techniques and practical guidance, we warmly invite you to read our continuously updated <a href="https://github.com/HKUSTDial/NL2SQL_Handbook">NL2SQL Handbook</a>.</li>
+<li><em>2025.07</em>  Our <a href="https://elliesql.github.io/">EllieSQL</a> paper has benn accepted by <a href="https://colmweb.org/">COLM'25</a>, a complexity-aware routing framework that assigns queries to suitable SQL generation pipelines based on estimated complexity.</li>
+<li><em>2025.05</em>  Our <a href="https://nl2sql-bugs.github.io/">NL2SQL-BUGs</a> paper has benn accepted by <a href="https://kdd2025.kdd.org/">KDD'25</a>, the first benchmark specifically designed to detect and categorize semantic errors in NL2SQL translation.</li>
+<li><em>2025.05</em>  Our <a href="https://arxiv.org/abs/2502.17248">Alpha-SQL</a> paper has been accepted by <a href="https://icml.cc/">ICML'25</a>, see you in <a href="https://icml.cc/">Vancouver, Canada</a>!</li>
+<li><em>2025.04</em>  We proposed <a href="https://arxiv.org/abs/2504.01990">Advances and Challenges in Foundation Agents</a>, a survey covers the design, evaluation, and improvement of intelligent agents based on modular, brain-inspired architectures, focusing on self-enhancement, multi-agent collaboration, and safety in AI systems.</li>
+<li><em>2025.04</em>  We proposed <a href="https://elliesql.github.io/">EllieSQL</a>, a complexity-aware routing framework that assigns queries to suitable SQL generation methods based on estimated complexity.</li>
+<li><em>2025.03</em>  We proposed <a href="https://nl2sql-bugs.github.io/">NL2SQL-BUGs</a>, a new benchmark dedicated to detecting and categorizing semantic errors in NL2SQL translation.</li>
+<li><em>2025.03</em>  We proposed <a href="https://nvbench2.github.io/">nvBench 2.0</a>, a new benchmark designed to evaluate NL2VIS systems in scenarios involving ambiguous queries.</li>
+<li><em>2025.01</em>  We proposed <a href="https://arxiv.org/abs/2502.17248">Alpha-SQL</a>, the o1 moment for NL2SQL!</li>
+<li><em>2025.01</em>  Paper <a href="https://dl.acm.org/doi/full/10.1145/3706598.3714320">Augmenting Realistic Charts with Virtual Overlays</a> has been accepted by CHI'25.</li>
+<li><em>2025.01</em>  I was awarded the <strong>Merit Prize</strong> for the 2024 DSA Excellent Research Award!</li>
+<li><em>2024.09</em>  Paper <a href="https://arxiv.org/abs/2406.07815">Are Large Language Models Good Statisticians?</a> has been accepted by NIPS'24.</li>
+<li><em>2024.06</em>  Paper <a href="https://arxiv.org/abs/2406.01265">The Dawn of Natural Language to SQL: Are We Fully Ready?</a> has been accepted by VLDB'24.</li>
+<li><em>2024.04</em>  Paper <a href="https://ieeexplore.ieee.org/abstract/document/10535518">Efficient Deep Spiking Multilayer Perceptrons With Multiplication-Free Inference</a> has been accepted by TNNLS'24.</li>
 </ul>
 </div>
 
-# 📝 Publications 
+# <i class="fas fa-file-alt"></i> Publications 
+
+<div class="publication-stats">
+  <div class="stat-card">
+    <div class="stat-number" id="total_cit">-</div>
+    <div class="stat-label">Total Citations</div>
+    <div class="stat-detail">Google Scholar</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number" id="h_index">-</div>
+    <div class="stat-label">h-index</div>
+    <div class="stat-detail">Google Scholar</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number" id="i10_index">-</div>
+    <div class="stat-label">i10-index</div>
+    <div class="stat-detail">Google Scholar</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">13</div>
+    <div class="stat-label">Total Papers</div>
+    <div class="stat-detail">Published & Accepted</div>
+  </div>
+</div>
 
 <div class='paper-box'>
 
@@ -266,19 +289,126 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
 
 </div>
 
-# 🎖 Honors and Awards
-- *2025.01*: Merit Prize for the 2024 DSA Excellent Research Award.
-- *2023.07*: Highest Honors in Computer Science and Engineering, Southern University of Science and Technology.
-- *2023.07*: Outstanding Graduates, Southern University of Science and Technology.
+# <i class="fas fa-trophy"></i> Honors and Awards
 
-# 📖 Educations
-- *2024.09 - Present*, PhD Student, Hong Kong University of Science and Technology (Guangzhou).
-- *2023.07 - 2024.09*, Research Assistant, Hong Kong University of Science and Technology (Guangzhou).
-- *2019.09 - 2023.07*, Bachelor of Computer Science and Technology, Southern University of Science and Technology. (GPA 3.91/4.0, Ranking 2/183)
+<div class="honors-timeline">
+  <div class="honor-card">
+    <div class="timeline-icon">
+      <i class="fas fa-trophy"></i>
+    </div>
+    <div class="honor-content">
+      <div class="honor-date">2025.01</div>
+      <div class="honor-title">Merit Prize for the 2024 DSA Excellent Research Award</div>
+      <div class="honor-description">Recognized for outstanding research contributions in Data Science and Analytics.</div>
+    </div>
+  </div>
+  
+  <div class="honor-card">
+    <div class="timeline-icon">
+      <i class="fas fa-medal"></i>
+    </div>
+    <div class="honor-content">
+      <div class="honor-date">2023.07</div>
+      <div class="honor-title">Highest Honors in Computer Science and Engineering</div>
+      <div class="honor-description">Southern University of Science and Technology</div>
+    </div>
+  </div>
+  
+  <div class="honor-card">
+    <div class="timeline-icon">
+      <i class="fas fa-award"></i>
+    </div>
+    <div class="honor-content">
+      <div class="honor-date">2023.07</div>
+      <div class="honor-title">Outstanding Graduates</div>
+      <div class="honor-description">Southern University of Science and Technology</div>
+    </div>
+  </div>
+</div>
 
-# 💻 Experience
-- *2022.07 - 2022.09*, [Huawei Central Research Institute](https://www.huawei.com/cn/), Shenzhen, China.
-- *2025.06 - Present*, Exchange Student, [Tsinghua University](https://www.tsinghua.edu.cn), Beijing, China.
+# <i class="fas fa-graduation-cap"></i> Education
+
+<div class="education-timeline">
+  <div class="education-card">
+    <div class="timeline-icon">
+      <i class="fas fa-graduation-cap"></i>
+    </div>
+    <div class="education-content">
+      <div class="education-date">2024.09 - Present</div>
+      <div class="education-title">PhD Student</div>
+      <div class="education-institution"><a href="https://www.hkust-gz.edu.cn/" target="_blank">Hong Kong University of Science and Technology (Guangzhou)</a></div>
+      <div class="education-description">Pursuing doctoral studies in Data Science and Analytics</div>
+    </div>
+  </div>
+  
+  <div class="education-card">
+    <div class="timeline-icon">
+      <i class="fas fa-university"></i>
+    </div>
+    <div class="education-content">
+      <div class="education-date">2019.09 - 2023.07</div>
+      <div class="education-title">Bachelor of Computer Science and Technology</div>
+      <div class="education-institution"><a href="https://www.sustech.edu.cn/" target="_blank">Southern University of Science and Technology</a></div>
+      <div class="education-description">GPA 3.91/4.0, Ranking 2/183</div>
+    </div>
+  </div>
+</div>
+
+# <i class="fas fa-briefcase"></i> Experience
+
+<div class="experience-timeline">
+  <div class="experience-card">
+    <div class="timeline-icon">
+      <i class="fas fa-exchange-alt"></i>
+    </div>
+    <div class="experience-content">
+      <div class="experience-date">2025.06 - Present</div>
+      <div class="experience-title">Exchange Student</div>
+      <div class="experience-institution"><a href="https://www.tsinghua.edu.cn" target="_blank">Tsinghua University</a></div>
+      <div class="experience-location">Beijing, China</div>
+      <div class="experience-description">Working as a research intern in the Database Group led by Professor Guoliang Li</div>
+    </div>
+  </div>
+  
+  <div class="experience-card">
+    <div class="timeline-icon">
+      <i class="fas fa-flask"></i>
+    </div>
+    <div class="experience-content">
+      <div class="experience-date">2023.07 - 2024.09</div>
+      <div class="experience-title">Research Assistant</div>
+      <div class="experience-institution"><a href="https://www.hkust-gz.edu.cn/" target="_blank">Hong Kong University of Science and Technology (Guangzhou)</a></div>
+      <div class="experience-location">Guangzhou, China</div>
+      <div class="experience-description">Conducted research in Text-to-SQL and Data Agent systems</div>
+    </div>
+  </div>
+  
+  <div class="experience-card">
+    <div class="timeline-icon">
+      <i class="fas fa-building"></i>
+    </div>
+    <div class="experience-content">
+      <div class="experience-date">2022.07 - 2022.09</div>
+      <div class="experience-title">Research Intern</div>
+      <div class="experience-institution"><a href="https://www.huawei.com/cn/" target="_blank">Huawei Central Research Institute</a></div>
+      <div class="experience-location">Shenzhen, China</div>
+    </div>
+  </div>
+</div>
+
+# <i class="fas fa-handshake"></i> Services
+
+<div class="services-grid">
+  <div class="service-card">
+    <div class="service-icon">
+      <i class="fas fa-clipboard-check"></i>
+    </div>
+    <div class="service-content">
+      <div class="service-title">Conference Reviewer</div>
+      <div class="service-detail">ICLR 2026</div>
+    </div>
+  </div>
+</div>
 
 <!-- <div style="text-align: center;">
   <span>Website Record:&nbsp;</span>

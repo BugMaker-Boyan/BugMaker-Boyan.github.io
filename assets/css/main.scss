@@ -48,17 +48,29 @@
     flex-wrap: wrap;
     border-bottom: 1px #efefef solid;
     padding: 2em 0 2em 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 8px;
+    margin-bottom: 1em;
     
+    // 悬停效果：阴影加深、轻微上移
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        border-bottom-color: rgba(34, 75, 141, 0.2);
+        background-color: rgba(248, 249, 250, 0.5);
+    }
 
     .paper-box-image{
         justify-content: center;
         display: flex;
         width: 100%;
         order: 2;
+        position: relative;
         img {
             max-width: 400px;
             box-shadow: 3px 3px 6px #888;
             object-fit: cover;
+            transition: box-shadow 0.3s ease;
         }
     }
     
@@ -81,10 +93,14 @@
             max-width: 60%;
             order: 2;
         }
-
     }
-
-
+    
+    // 移动端禁用悬停上移效果
+    @media (hover: none) {
+        &:hover {
+            transform: none;
+        }
+    }
 }
 
 $scroll_offset : 2em;
@@ -97,53 +113,1288 @@ h1:before, .anchor:before {
     margin-top: -$scroll_offset;
 }
 
+// 图标系统优化 - 统一标题图标样式
+h1 {
+    i.fas {
+        color: #224b8d;
+        margin-right: 0.5em;
+        font-size: 0.9em;
+        vertical-align: middle;
+    }
+}
+
+// 背景装饰元素
+.page {
+    position: relative;
+    
+    // 微妙的渐变背景
+    &::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(248, 249, 250, 0.8) 0%, rgba(255, 255, 255, 1) 50%, rgba(240, 244, 255, 0.6) 100%);
+        z-index: -1;
+        pointer-events: none;
+    }
+    
+    // 几何装饰图形 - 圆形
+    &::after {
+        content: '';
+        position: fixed;
+        top: 10%;
+        right: 5%;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(circle, rgba(34, 75, 141, 0.05) 0%, transparent 70%);
+        border-radius: 50%;
+        z-index: -1;
+        pointer-events: none;
+        opacity: 0.6;
+        
+        @include breakpoint($small) {
+            width: 200px;
+            height: 200px;
+            top: 5%;
+            right: 2%;
+        }
+    }
+}
+
+// 为页面内容区域添加装饰元素
+.page__content {
+    position: relative;
+    
+    // 左侧装饰线条
+    &::before {
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: linear-gradient(to bottom, transparent, rgba(34, 75, 141, 0.1), transparent);
+        z-index: 0;
+        
+        @include breakpoint($small) {
+            display: none;
+        }
+    }
+}
+
 .badge {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0.5em 1em;
     position: absolute;
     margin-top: .5em;
     margin-left: -.5em;
     color: white;
-    background-color: #00369f;
+    background: linear-gradient(135deg, #224b8d 0%, #4a7bc8 50%, #6b9de8 100%);
     font-size: .8em;
+    font-weight: 600;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(34, 75, 141, 0.3);
+    z-index: 10;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    
+    // 悬停效果
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(34, 75, 141, 0.4);
+    }
+    
+    // 不同会议/期刊的渐变颜色变体
+    &[class*="top-tier"],
+    &[class*="a-tier"] {
+        background: linear-gradient(135deg, #d32f2f 0%, #f44336 50%, #ff6b6b 100%);
+        box-shadow: 0 2px 8px rgba(211, 47, 47, 0.3);
+    }
+}
+
+// 论文统计概览卡片
+.publication-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5em;
+    margin: 2em 0 3em 0;
+    padding: 0;
+    
+    .stat-card {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 250, 0.95) 100%);
+        border-radius: 12px;
+        padding: 1.5em;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        border: 1px solid rgba(34, 75, 141, 0.1);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        
+        // 装饰性渐变背景
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #224b8d 0%, #4a7bc8 50%, #6b9de8 100%);
+        }
+        
+        // 悬停效果
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(34, 75, 141, 0.15);
+            border-color: rgba(34, 75, 141, 0.3);
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #224b8d;
+            line-height: 1.2;
+            margin-bottom: 0.3em;
+            background: linear-gradient(135deg, #224b8d 0%, #4a7bc8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .stat-label {
+            font-size: 0.95em;
+            color: #666;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .stat-detail {
+            font-size: 0.85em;
+            color: #999;
+            margin-top: 0.5em;
+            line-height: 1.4;
+        }
+    }
+    
+    // 响应式优化
+    @include breakpoint($small) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+        margin: 1.5em 0 2em 0;
+        
+        .stat-card {
+            padding: 1.2em;
+            
+            .stat-number {
+                font-size: 2em;
+            }
+            
+            .stat-label {
+                font-size: 0.85em;
+            }
+        }
+    }
+    
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+        
+        .stat-card {
+            .stat-number {
+                font-size: 1.8em;
+            }
+        }
+    }
 }
 
 .news-scroll-container {
-    max-height: 400px;
+    max-height: 500px;
     overflow-y: auto;
-    padding-right: 1em;
-    margin-top: 1em;
+    padding: 1.5em 1em 1em 2.5em;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    position: relative;
+    background: linear-gradient(to right, #f8f9fa 0%, #ffffff 5%);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    
+    // 滚动渐变遮罩 - 顶部（使用伪元素创建遮罩效果）
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 30px;
+        background: linear-gradient(to bottom, rgba(248, 249, 250, 0.95), rgba(248, 249, 250, 0));
+        pointer-events: none;
+        z-index: 10;
+        border-radius: 8px 8px 0 0;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    // 滚动渐变遮罩 - 底部
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 30px;
+        background: linear-gradient(to top, rgba(248, 249, 250, 0.95), rgba(248, 249, 250, 0));
+        pointer-events: none;
+        z-index: 10;
+        border-radius: 0 0 8px 8px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    // 滚动时显示遮罩（通过 hover 或 scroll 事件，这里使用 hover 作为简单实现）
+    &:hover::before,
+    &:hover::after {
+        opacity: 1;
+    }
+    
+    // 当内容可以滚动时，始终显示底部遮罩
+    &:not(:hover)::after {
+        opacity: 0.6;
+    }
     
     // 自定义滚动条样式（Webkit浏览器）
     &::-webkit-scrollbar {
-        width: 8px;
+        width: 10px;
     }
     
     &::-webkit-scrollbar-track {
-        background: #f1f1f1;
-        border-radius: 4px;
+        background: linear-gradient(to bottom, #f1f1f1, #f8f8f8);
+        border-radius: 5px;
+        margin: 5px 0;
     }
     
     &::-webkit-scrollbar-thumb {
-        background: #888;
-        border-radius: 4px;
+        background: linear-gradient(to bottom, #224b8d, #4a7bc8, #224b8d);
+        border-radius: 5px;
+        border: 2px solid transparent;
+        background-clip: padding-box;
+        transition: all 0.3s ease;
         
         &:hover {
-            background: #555;
+            background: linear-gradient(to bottom, #1a3a6f, #3d6bb3, #1a3a6f);
+            background-clip: padding-box;
+        }
+        
+        &:active {
+            background: linear-gradient(to bottom, #0f2440, #2a4d7a, #0f2440);
+            background-clip: padding-box;
         }
     }
     
     // Firefox 滚动条样式
     scrollbar-width: thin;
-    scrollbar-color: #888 #f1f1f1;
+    scrollbar-color: #224b8d #f1f1f1;
     
     ul {
         margin: 0;
-        padding-left: 1.5em;
+        padding-left: 0;
+        list-style: none;
     }
     
     li {
-        margin-bottom: 0.8em;
-        line-height: 1.6;
+        position: relative;
+        margin-bottom: 1.5em;
+        padding: 1em 1.2em;
+        padding-left: 1.2em;
+        line-height: 1.7;
+        background: #ffffff;
+        border-radius: 6px;
+        border-left: 3px solid #e0e0e0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        animation: fadeInUp 0.5s ease forwards;
+        opacity: 0;
+        
+        // 悬停效果
+        &:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            border-left-color: #224b8d;
+        }
+        
+        // 最新消息高亮（前3条）
+        &:nth-child(-n+3) {
+            background: linear-gradient(to right, #f0f4ff 0%, #ffffff 30%);
+            border-left-color: #224b8d;
+            box-shadow: 0 2px 8px rgba(34, 75, 141, 0.15);
+            
+            // 最新消息徽章
+            &::after {
+                content: 'NEW';
+                position: absolute;
+                top: 0.5em;
+                right: 0.8em;
+                background: linear-gradient(135deg, #224b8d, #4a7bc8);
+                color: white;
+                font-size: 0.65em;
+                font-weight: bold;
+                padding: 0.25em 0.6em;
+                border-radius: 12px;
+                letter-spacing: 0.5px;
+                box-shadow: 0 2px 4px rgba(34, 75, 141, 0.3);
+            }
+        }
+        
+        // 第一条消息特殊样式
+        &:first-child {
+            background: linear-gradient(to right, #e8f0ff 0%, #ffffff 40%);
+            border-left-width: 4px;
+            border-left-color: #224b8d;
+            box-shadow: 0 3px 10px rgba(34, 75, 141, 0.2);
+        }
+        
+        // 日期样式
+        em {
+            font-style: normal;
+            font-weight: 600;
+            color: #224b8d;
+            display: inline-block;
+            min-width: 5em;
+            margin-right: 0.5em;
+        }
+        
+        // 链接样式
+        a {
+            color: #224b8d;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.2s ease;
+            
+            &:hover {
+                color: #4a7bc8;
+                border-bottom-color: #4a7bc8;
+            }
+        }
+        
+        // 动画延迟
+        @for $i from 1 through 20 {
+            &:nth-child(#{$i}) {
+                animation-delay: #{$i * 0.05}s;
+            }
+        }
+    }
+    
+    // 响应式优化 - 移动端适配
+    @include breakpoint($small) {
+        padding: 1em 0.8em 1em 1em;
+        margin-top: 1em;
+        
+        li {
+            padding: 0.8em 1em;
+            padding-left: 1em;
+            margin-bottom: 1.2em;
+            
+            // 移动端减小悬停效果
+            &:hover {
+                transform: translateX(3px);
+            }
+            
+            // 移动端调整日期标签
+            em {
+                min-width: 4em;
+                font-size: 0.9em;
+            }
+            
+            // 移动端调整NEW徽章
+            &::after {
+                font-size: 0.6em;
+                padding: 0.2em 0.5em;
+                top: 0.4em;
+                right: 0.6em;
+            }
+        }
+    }
+    
+    // 响应式优化 - 超小屏幕
+    @media (max-width: 480px) {
+        padding: 0.8em 0.6em 0.8em 0.8em;
+        
+        li {
+            padding: 0.7em 0.8em;
+            padding-left: 0.8em;
+            
+            em {
+                min-width: 3.5em;
+                font-size: 0.85em;
+            }
+        }
+    }
+}
+
+// 淡入向上动画
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// 链接样式优化
+a {
+    color: #224b8d;
+    text-decoration: underline;
+    text-decoration-color: rgba(34, 75, 141, 0.3);
+    transition: all 0.2s ease;
+    position: relative;
+    
+    // 外部链接检测和图标添加（所有 http/https 链接）
+    &[href^="http://"]:not([href^="http://localhost"]):not([href^="http://127.0.0.1"]),
+    &[href^="https://"]:not([href^="https://localhost"]):not([href^="https://127.0.0.1"]) {
+        &::after {
+            content: '\f35d'; // Font Awesome external-link-alt 图标
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            font-size: 0.75em;
+            margin-left: 0.3em;
+            opacity: 0.6;
+            vertical-align: middle;
+            transition: all 0.2s ease;
+        }
+    }
+    
+    // 悬停效果
+    &:hover {
+        color: #4a7bc8;
+        text-decoration-color: #4a7bc8;
+        
+        &::after {
+            opacity: 1;
+            transform: translate(2px, -2px);
+        }
+    }
+    
+    // 已访问链接样式
+    &:visited {
+        color: #5a6c8d;
+        
+        &:hover {
+            color: #4a7bc8;
+        }
+    }
+    
+    // 特殊链接样式（如 Homepage, PDF 等）
+    &[href*="github.com"],
+    &[href*="arxiv.org"],
+    &[href*="homepage"],
+    &[href*="Homepage"] {
+        font-weight: 500;
+    }
+}
+
+// 排除侧边栏中的外部链接图标
+.sidebar a,
+.author__urls a,
+.author__urls_sm a {
+    &[href^="http://"]::after,
+    &[href^="https://"]::after {
+        display: none !important;
+    }
+}
+
+// 排除包含图片的链接的外部链接图标（如 Code Star 统计）
+// 使用 :has() 选择器（现代浏览器支持）
+a:has(img) {
+    &[href^="http://"]::after,
+    &[href^="https://"]::after {
+        display: none !important;
+    }
+}
+
+// 针对 shields.io 图片链接的特殊处理
+a[href*="github.com"]:has(img[src*="shields.io"])::after,
+a[href*="github.com"]:has(img[src*="img.shields.io"])::after {
+    display: none !important;
+}
+
+// 在 paper-box 中的链接样式
+.paper-box-text {
+    a {
+        color: #224b8d;
+        
+        &:hover {
+            color: #4a7bc8;
+        }
+    }
+}
+
+// 在 news-scroll-container 中的链接样式已在上面定义，保持与容器内样式一致
+
+// Honors & Awards 时间轴卡片网格布局
+.honors-timeline {
+    position: relative;
+    margin: 2em 0;
+    padding: 0;
+    
+    // 时间轴连接线
+    &::before {
+        content: '';
+        position: absolute;
+        left: 2.5em;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: linear-gradient(to bottom, 
+            rgba(34, 75, 141, 0.3) 0%, 
+            rgba(34, 75, 141, 0.5) 50%, 
+            rgba(34, 75, 141, 0.3) 100%);
+        border-radius: 2px;
+        z-index: 1;
+        
+        @include breakpoint($small) {
+            left: 1.5em;
+            width: 2px;
+        }
+    }
+    
+    .honor-card {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1.5em;
+        margin-bottom: 2em;
+        padding-left: 1em;
+        animation: fadeInUp 0.6s ease forwards;
+        opacity: 0;
+        
+        // 时间轴节点（奖杯图标）
+        .timeline-icon {
+            position: relative;
+            z-index: 2;
+            width: 3.5em;
+            height: 3.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: -0.45em; // 往左移动，与竖线对齐
+            background: linear-gradient(135deg, #224b8d 0%, #4a7bc8 50%, #6b9de8 100%);
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(34, 75, 141, 0.3),
+                        0 0 0 4px rgba(255, 255, 255, 1),
+                        0 0 0 6px rgba(34, 75, 141, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            
+            i {
+                font-size: 1.5em;
+                color: #fff;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            }
+            
+            @include breakpoint($small) {
+                width: 3em;
+                height: 3em;
+                margin-left: -0.4em; // 移动端也调整
+                
+                i {
+                    font-size: 1.2em;
+                }
+            }
+        }
+        
+        // 卡片内容
+        .honor-content {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 250, 0.95) 100%);
+            border-radius: 12px;
+            padding: 1.5em;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(34, 75, 141, 0.1);
+            border-left: 4px solid #224b8d;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            
+            // 装饰性渐变背景
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 3px;
+                background: linear-gradient(90deg, #224b8d 0%, #4a7bc8 50%, #6b9de8 100%);
+                opacity: 0.6;
+            }
+            
+            // 悬停效果
+            &:hover {
+                transform: translateX(8px);
+                box-shadow: 0 8px 24px rgba(34, 75, 141, 0.15);
+                border-left-color: #224b8d;
+                
+                &::before {
+                    opacity: 1;
+                }
+            }
+            
+            .honor-date {
+                font-size: 0.9em;
+                font-weight: 600;
+                color: #224b8d;
+                margin-bottom: 0.8em;
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
+                
+                &::before {
+                    content: '\f073'; // Font Awesome calendar icon
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                    font-size: 0.9em;
+                    opacity: 0.7;
+                }
+            }
+            
+            .honor-title {
+                font-size: 1.1em;
+                font-weight: 600;
+                color: #333;
+                line-height: 1.5;
+                margin-bottom: 0.5em;
+            }
+            
+            .honor-description {
+                font-size: 0.95em;
+                color: #666;
+                line-height: 1.6;
+            }
+        }
+        
+        // 悬停时图标放大
+        &:hover .timeline-icon {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(34, 75, 141, 0.4),
+                        0 0 0 4px rgba(255, 255, 255, 1),
+                        0 0 0 6px rgba(34, 75, 141, 0.2);
+        }
+        
+        // 动画延迟
+        @for $i from 1 through 10 {
+            &:nth-child(#{$i}) {
+                animation-delay: #{$i * 0.1}s;
+            }
+        }
+    }
+    
+    // 响应式优化
+    @include breakpoint($small) {
+        &::before {
+            left: 1.5em;
+        }
+        
+        .honor-card {
+            gap: 1em;
+            padding-left: 0.5em;
+            margin-bottom: 1.5em;
+            
+            .honor-content {
+                padding: 1.2em;
+                
+                .honor-date {
+                    font-size: 0.85em;
+                }
+                
+                .honor-title {
+                    font-size: 1em;
+                }
+                
+                .honor-description {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+    
+    // 移动端禁用悬停上移效果
+    @media (hover: none) {
+        .honor-card {
+            .honor-content:hover {
+                transform: none;
+            }
+            
+            &:hover .timeline-icon {
+                transform: none;
+            }
+        }
+    }
+}
+
+// Education 时间轴卡片网格布局
+.education-timeline {
+    position: relative;
+    margin: 2em 0;
+    padding: 0;
+    
+    // 时间轴连接线
+    &::before {
+        content: '';
+        position: absolute;
+        left: 2.5em;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: linear-gradient(to bottom, 
+            rgba(34, 75, 141, 0.3) 0%, 
+            rgba(34, 75, 141, 0.5) 50%, 
+            rgba(34, 75, 141, 0.3) 100%);
+        border-radius: 2px;
+        z-index: 1;
+        
+        @include breakpoint($small) {
+            left: 1.5em;
+            width: 2px;
+        }
+    }
+    
+    .education-card {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1.5em;
+        margin-bottom: 2em;
+        padding-left: 1em;
+        animation: fadeInUp 0.6s ease forwards;
+        opacity: 0;
+        
+        // 时间轴节点（毕业帽图标）
+        .timeline-icon {
+            position: relative;
+            z-index: 2;
+            width: 3.5em;
+            height: 3.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: -0.45em; // 往左移动，与竖线对齐
+            background: linear-gradient(135deg, #224b8d 0%, #4a7bc8 50%, #6b9de8 100%);
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(34, 75, 141, 0.3),
+                        0 0 0 4px rgba(255, 255, 255, 1),
+                        0 0 0 6px rgba(34, 75, 141, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            
+            i {
+                font-size: 1.5em;
+                color: #fff;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            }
+            
+            @include breakpoint($small) {
+                width: 3em;
+                height: 3em;
+                margin-left: -0.4em; // 移动端也调整
+                
+                i {
+                    font-size: 1.2em;
+                }
+            }
+        }
+        
+        // 卡片内容
+        .education-content {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 250, 0.95) 100%);
+            border-radius: 12px;
+            padding: 1.5em;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(34, 75, 141, 0.1);
+            border-left: 4px solid #224b8d;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            
+            // 装饰性渐变背景
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 3px;
+                background: linear-gradient(90deg, #224b8d 0%, #4a7bc8 50%, #6b9de8 100%);
+                opacity: 0.6;
+            }
+            
+            // 悬停效果
+            &:hover {
+                transform: translateX(8px);
+                box-shadow: 0 8px 24px rgba(34, 75, 141, 0.15);
+                border-left-color: #224b8d;
+                
+                &::before {
+                    opacity: 1;
+                }
+            }
+            
+            .education-date {
+                font-size: 0.9em;
+                font-weight: 600;
+                color: #224b8d;
+                margin-bottom: 0.8em;
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
+                
+                &::before {
+                    content: '\f073'; // Font Awesome calendar icon
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                    font-size: 0.9em;
+                    opacity: 0.7;
+                }
+            }
+            
+            .education-title {
+                font-size: 1.1em;
+                font-weight: 600;
+                color: #333;
+                line-height: 1.5;
+                margin-bottom: 0.5em;
+            }
+            
+            .education-institution {
+                font-size: 1em;
+                font-weight: 500;
+                color: #224b8d;
+                margin-bottom: 0.5em;
+                line-height: 1.4;
+                
+                a {
+                    color: #224b8d;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+                    
+                    &:hover {
+                        color: #4a7bc8;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            
+            .education-description {
+                font-size: 0.95em;
+                color: #666;
+                line-height: 1.6;
+            }
+        }
+        
+        // 悬停时图标放大
+        &:hover .timeline-icon {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(34, 75, 141, 0.4),
+                        0 0 0 4px rgba(255, 255, 255, 1),
+                        0 0 0 6px rgba(34, 75, 141, 0.2);
+        }
+        
+        // 动画延迟
+        @for $i from 1 through 10 {
+            &:nth-child(#{$i}) {
+                animation-delay: #{$i * 0.1}s;
+            }
+        }
+    }
+    
+    // 响应式优化
+    @include breakpoint($small) {
+        &::before {
+            left: 1.5em;
+        }
+        
+        .education-card {
+            gap: 1em;
+            padding-left: 0.5em;
+            margin-bottom: 1.5em;
+            
+            .education-content {
+                padding: 1.2em;
+                
+                .education-date {
+                    font-size: 0.85em;
+                }
+                
+                .education-title {
+                    font-size: 1em;
+                }
+                
+                .education-institution {
+                    font-size: 0.95em;
+                }
+                
+                .education-description {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+    
+    // 移动端禁用悬停上移效果
+    @media (hover: none) {
+        .education-card {
+            .education-content:hover {
+                transform: none;
+            }
+            
+            &:hover .timeline-icon {
+                transform: none;
+            }
+        }
+    }
+}
+
+// Experience 时间轴卡片布局（与 Education 样式一致）
+.experience-timeline {
+    position: relative;
+    margin: 2em 0;
+    padding: 0;
+    
+    // 时间轴连接线
+    &::before {
+        content: '';
+        position: absolute;
+        left: 2.5em;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: linear-gradient(to bottom, 
+            rgba(34, 75, 141, 0.3) 0%, 
+            rgba(34, 75, 141, 0.5) 50%, 
+            rgba(34, 75, 141, 0.3) 100%);
+        border-radius: 2px;
+        z-index: 1;
+        
+        @include breakpoint($small) {
+            left: 1.5em;
+            width: 2px;
+        }
+    }
+    
+    .experience-card {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1.5em;
+        margin-bottom: 2em;
+        padding-left: 1em;
+        animation: fadeInUp 0.6s ease forwards;
+        opacity: 0;
+        
+        // 时间轴节点图标
+        .timeline-icon {
+            position: relative;
+            z-index: 2;
+            width: 3.5em;
+            height: 3.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: -0.45em;
+            background: linear-gradient(135deg, #224b8d 0%, #4a7bc8 50%, #6b9de8 100%);
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(34, 75, 141, 0.3),
+                        0 0 0 4px rgba(255, 255, 255, 1),
+                        0 0 0 6px rgba(34, 75, 141, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            
+            i {
+                font-size: 1.5em;
+                color: #fff;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            }
+            
+            @include breakpoint($small) {
+                width: 3em;
+                height: 3em;
+                margin-left: -0.4em;
+                
+                i {
+                    font-size: 1.2em;
+                }
+            }
+        }
+        
+        // 卡片内容
+        .experience-content {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 250, 0.95) 100%);
+            border-radius: 12px;
+            padding: 1.5em;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(34, 75, 141, 0.1);
+            border-left: 4px solid #224b8d;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 3px;
+                background: linear-gradient(90deg, #224b8d 0%, #4a7bc8 50%, #6b9de8 100%);
+                opacity: 0.6;
+            }
+            
+            &:hover {
+                transform: translateX(8px);
+                box-shadow: 0 8px 24px rgba(34, 75, 141, 0.15);
+                border-left-color: #224b8d;
+                
+                &::before {
+                    opacity: 1;
+                }
+            }
+            
+            .experience-date {
+                font-size: 0.9em;
+                font-weight: 600;
+                color: #224b8d;
+                margin-bottom: 0.8em;
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
+                
+                &::before {
+                    content: '\f073';
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                    font-size: 0.9em;
+                    opacity: 0.7;
+                }
+            }
+            
+            .experience-title {
+                font-size: 1.1em;
+                font-weight: 600;
+                color: #333;
+                line-height: 1.5;
+                margin-bottom: 0.5em;
+            }
+            
+            .experience-institution {
+                font-size: 1em;
+                font-weight: 500;
+                color: #224b8d;
+                margin-bottom: 0.3em;
+                line-height: 1.4;
+                
+                a {
+                    color: #224b8d;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+                    
+                    &:hover {
+                        color: #4a7bc8;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            
+            .experience-location {
+                font-size: 0.9em;
+                color: #666;
+                margin-bottom: 0.5em;
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
+                
+                &::before {
+                    content: '\f3c5';
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                    font-size: 0.85em;
+                    opacity: 0.6;
+                }
+            }
+            
+            .experience-description {
+                font-size: 0.95em;
+                color: #666;
+                line-height: 1.6;
+            }
+        }
+        
+        &:hover .timeline-icon {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(34, 75, 141, 0.4),
+                        0 0 0 4px rgba(255, 255, 255, 1),
+                        0 0 0 6px rgba(34, 75, 141, 0.2);
+        }
+        
+        @for $i from 1 through 10 {
+            &:nth-child(#{$i}) {
+                animation-delay: #{$i * 0.1}s;
+            }
+        }
+    }
+    
+    @include breakpoint($small) {
+        &::before {
+            left: 1.5em;
+        }
+        
+        .experience-card {
+            gap: 1em;
+            padding-left: 0.5em;
+            margin-bottom: 1.5em;
+            
+            .experience-content {
+                padding: 1.2em;
+                
+                .experience-date {
+                    font-size: 0.85em;
+                }
+                
+                .experience-title {
+                    font-size: 1em;
+                }
+                
+                .experience-institution {
+                    font-size: 0.95em;
+                }
+                
+                .experience-location {
+                    font-size: 0.85em;
+                }
+                
+                .experience-description {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+    
+    @media (hover: none) {
+        .experience-card {
+            .experience-content:hover {
+                transform: none;
+            }
+            
+            &:hover .timeline-icon {
+                transform: none;
+            }
+        }
+    }
+}
+
+// Services 网格布局
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5em;
+    margin: 2em 0;
+    
+    .service-card {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 250, 0.95) 100%);
+        border-radius: 12px;
+        padding: 1.5em;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        border: 1px solid rgba(34, 75, 141, 0.1);
+        border-top: 4px solid #224b8d;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        align-items: flex-start;
+        gap: 1.2em;
+        animation: fadeInUp 0.6s ease forwards;
+        opacity: 0;
+        
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(34, 75, 141, 0.15);
+            border-top-color: #4a7bc8;
+        }
+        
+        .service-icon {
+            width: 3em;
+            height: 3em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #224b8d 0%, #4a7bc8 50%, #6b9de8 100%);
+            border-radius: 10px;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(34, 75, 141, 0.2);
+            transition: all 0.3s ease;
+            
+            i {
+                font-size: 1.3em;
+                color: #fff;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            }
+        }
+        
+        .service-content {
+            flex: 1;
+            
+            .service-title {
+                font-size: 1.1em;
+                font-weight: 600;
+                color: #333;
+                margin-bottom: 0.5em;
+                line-height: 1.4;
+            }
+            
+            .service-detail {
+                font-size: 0.95em;
+                color: #666;
+                line-height: 1.5;
+            }
+        }
+        
+        &:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 6px 16px rgba(34, 75, 141, 0.3);
+        }
+        
+        @for $i from 1 through 10 {
+            &:nth-child(#{$i}) {
+                animation-delay: #{$i * 0.1}s;
+            }
+        }
+    }
+    
+    @include breakpoint($small) {
+        grid-template-columns: 1fr;
+        gap: 1em;
+        
+        .service-card {
+            padding: 1.2em;
+            
+            .service-icon {
+                width: 2.5em;
+                height: 2.5em;
+                
+                i {
+                    font-size: 1.1em;
+                }
+            }
+            
+            .service-content {
+                .service-title {
+                    font-size: 1em;
+                }
+                
+                .service-detail {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+    
+    @media (hover: none) {
+        .service-card:hover {
+            transform: none;
+        }
     }
 }

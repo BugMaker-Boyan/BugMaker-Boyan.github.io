@@ -1,4 +1,9 @@
-source "https://rubygems.org"
+# 使用国内镜像源（如果卡住可以切换）
+source "https://gems.ruby-china.com"
+# 备用源（如果上面不行可以试试这个）
+# source "https://mirrors.aliyun.com/rubygems/"
+# 官方源（如果国内源有问题可以切回）
+# source "https://rubygems.org"
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
