@@ -22,6 +22,7 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
 
 # <i class="fas fa-newspaper"></i> News
 
+<div class="news-scroll-wrapper">
 <div class="news-scroll-container">
 <ul>
 <li><em>2025.10</em>  We proposed <a href="https://arxiv.org/abs/2510.23587">A Survey of Data Agents: Emerging Paradigm or Overstated Hype?</a>, introducing the first systematic hierarchical taxonomy for data agents with six levels (L0-L5) that delineate progressive shifts in autonomy, from manual operations to fully autonomous data agents. This survey clarifies capability boundaries and responsibility allocation, offering a structured review of existing research and a forward-looking roadmap. <strong>Ranked Top-3 in <a href="https://huggingface.co/papers/2510.23587">Hugging Face Daily Papers</a>!</strong></li>
@@ -43,6 +44,7 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
 <li><em>2024.06</em>  Paper <a href="https://arxiv.org/abs/2406.01265">The Dawn of Natural Language to SQL: Are We Fully Ready?</a> has been accepted by VLDB'24.</li>
 <li><em>2024.04</em>  Paper <a href="https://ieeexplore.ieee.org/abstract/document/10535518">Efficient Deep Spiking Multilayer Perceptrons With Multiplication-Free Inference</a> has been accepted by TNNLS'24.</li>
 </ul>
+</div>
 </div>
 
 # <i class="fas fa-file-alt"></i> Publications 
