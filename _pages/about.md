@@ -20,6 +20,8 @@ redirect_from:
 I am a second-year PhD student at the [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/), honored to be supervised by Professor [Yuyu Luo](https://luoyuyu.vip/). Currently, I am working as a research intern in the Database Group led by Professor [Guoliang Li](https://dbgroup.cs.tsinghua.edu.cn/ligl/) at [Tsinghua University](https://www.tsinghua.edu.cn). Previously, I obtained my bachelor's degree from the [Southern University of Science and Technology](https://www.sustech.edu.cn/). My current research interests focus on Text-to-SQL and Data Agent, which are intelligent systems that can autonomously handle data-related tasks such as query generation, data analysis, and visualization through natural language interaction.
 
 
+<span class='anchor' id='news'></span>
+
 # <i class="fas fa-newspaper"></i> News
 
 <div class="news-scroll-wrapper">
@@ -27,11 +29,11 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
 <ul>
 <li><em>2025.10</em>  We proposed <a href="https://arxiv.org/abs/2510.23587">A Survey of Data Agents: Emerging Paradigm or Overstated Hype?</a>, introducing the first systematic hierarchical taxonomy for data agents with six levels (L0-L5) that delineate progressive shifts in autonomy, from manual operations to fully autonomous data agents. This survey clarifies capability boundaries and responsibility allocation, offering a structured review of existing research and a forward-looking roadmap. <strong>Ranked Top-3 in <a href="https://huggingface.co/papers/2510.23587">Hugging Face Daily Papers</a>!</strong></li>
 <li><em>2025.10</em>  We proposed <a href="https://arxiv.org/abs/2510.17586">DeeyEye-SQL</a>, a software-engineering-inspired Text-to-SQL framework, achieving 73.5% EX on BIRD-Dev and 89.8% EX on Spider-Test using a ~30B LLM without any fine-tuning!</li>
-<li><em>2025.09</em>  Our <a href="https://nvbench2.github.io">nvBench 2.0</a> paper has benn accepted by <a href="https://neurips.cc/Conferences/2025">NIPS'25</a>, a new benchmark designed to evaluate Text2VIS systems in scenarios involving ambiguous queries.</li>
-<li><em>2025.07</em>  Our <a href="https://arxiv.org/abs/2508.01700">DeepVIS</a> paper has benn accepted by <a href="https://ieeevis.org/year/2025/welcome">VIS'25</a>, an interactive visual interface that tightly integrates with the CoT reasoning process, allowing users to inspect reasoning steps, identify errors, and make targeted adjustments to improve visualization outcomes.</li>
-<li><em>2025.07</em>  Our <a href="https://arxiv.org/abs/2408.05109">NL2SQL-Survey</a> paper has benn accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69">TKDE'25</a>! For a comprehensive overview of the latest Text-to-SQL techniques and practical guidance, we warmly invite you to read our continuously updated <a href="https://github.com/HKUSTDial/NL2SQL_Handbook">NL2SQL Handbook</a>.</li>
-<li><em>2025.07</em>  Our <a href="https://elliesql.github.io/">EllieSQL</a> paper has benn accepted by <a href="https://colmweb.org/">COLM'25</a>, a complexity-aware routing framework that assigns queries to suitable SQL generation pipelines based on estimated complexity.</li>
-<li><em>2025.05</em>  Our <a href="https://nl2sql-bugs.github.io/">NL2SQL-BUGs</a> paper has benn accepted by <a href="https://kdd2025.kdd.org/">KDD'25</a>, the first benchmark specifically designed to detect and categorize semantic errors in NL2SQL translation.</li>
+<li><em>2025.09</em>  Our <a href="https://nvbench2.github.io">nvBench 2.0</a> paper has been accepted by <a href="https://neurips.cc/Conferences/2025">NIPS'25</a>, a new benchmark designed to evaluate Text2VIS systems in scenarios involving ambiguous queries.</li>
+<li><em>2025.07</em>  Our <a href="https://arxiv.org/abs/2508.01700">DeepVIS</a> paper has been accepted by <a href="https://ieeevis.org/year/2025/welcome">VIS'25</a>, an interactive visual interface that tightly integrates with the CoT reasoning process, allowing users to inspect reasoning steps, identify errors, and make targeted adjustments to improve visualization outcomes.</li>
+<li><em>2025.07</em>  Our <a href="https://arxiv.org/abs/2408.05109">NL2SQL-Survey</a> paper has been accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69">TKDE'25</a>! For a comprehensive overview of the latest Text-to-SQL techniques and practical guidance, we warmly invite you to read our continuously updated <a href="https://github.com/HKUSTDial/NL2SQL_Handbook">NL2SQL Handbook</a>.</li>
+<li><em>2025.07</em>  Our <a href="https://elliesql.github.io/">EllieSQL</a> paper has been accepted by <a href="https://colmweb.org/">COLM'25</a>, a complexity-aware routing framework that assigns queries to suitable SQL generation pipelines based on estimated complexity.</li>
+<li><em>2025.05</em>  Our <a href="https://nl2sql-bugs.github.io/">NL2SQL-BUGs</a> paper has been accepted by <a href="https://kdd2025.kdd.org/">KDD'25</a>, the first benchmark specifically designed to detect and categorize semantic errors in NL2SQL translation.</li>
 <li><em>2025.05</em>  Our <a href="https://arxiv.org/abs/2502.17248">Alpha-SQL</a> paper has been accepted by <a href="https://icml.cc/">ICML'25</a>, see you in <a href="https://icml.cc/">Vancouver, Canada</a>!</li>
 <li><em>2025.04</em>  We proposed <a href="https://arxiv.org/abs/2504.01990">Advances and Challenges in Foundation Agents</a>, a survey covers the design, evaluation, and improvement of intelligent agents based on modular, brain-inspired architectures, focusing on self-enhancement, multi-agent collaboration, and safety in AI systems.</li>
 <li><em>2025.04</em>  We proposed <a href="https://elliesql.github.io/">EllieSQL</a>, a complexity-aware routing framework that assigns queries to suitable SQL generation methods based on estimated complexity.</li>
@@ -46,6 +48,8 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
 </ul>
 </div>
 </div>
+
+<span class='anchor' id='publications'></span>
 
 # <i class="fas fa-file-alt"></i> Publications 
 
@@ -312,6 +316,8 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
 
 </div>
 
+<span class='anchor' id='honors-and-awards'></span>
+
 # <i class="fas fa-trophy"></i> Honors and Awards
 
 <div class="honors-timeline">
@@ -349,6 +355,8 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
   </div>
 </div>
 
+<span class='anchor' id='education'></span>
+
 # <i class="fas fa-graduation-cap"></i> Education
 
 <div class="education-timeline">
@@ -376,6 +384,8 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
     </div>
   </div>
 </div>
+
+<span class='anchor' id='experience'></span>
 
 # <i class="fas fa-briefcase"></i> Experience
 
@@ -418,6 +428,8 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
     </div>
   </div>
 </div>
+
+<span class='anchor' id='services'></span>
 
 # <i class="fas fa-handshake"></i> Services
 
