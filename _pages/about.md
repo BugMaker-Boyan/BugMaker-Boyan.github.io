@@ -326,6 +326,17 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
       <i class="fas fa-trophy"></i>
     </div>
     <div class="honor-content">
+      <div class="honor-date">2025.10</div>
+      <div class="honor-title">AI Agent 2025 (Best Open-source Project Award)</div>
+      <div class="honor-description">Led the DeepEye Data Agent System team to win the AI Agent 2025 Best Open-source Project Award.</div>
+    </div>
+  </div>
+
+  <div class="honor-card">
+    <div class="timeline-icon">
+      <i class="fas fa-trophy"></i>
+    </div>
+    <div class="honor-content">
       <div class="honor-date">2025.01</div>
       <div class="honor-title">Merit Prize for the 2024 DSA Excellent Research Award</div>
       <div class="honor-description">Recognized for outstanding research contributions in Data Science and Analytics.</div>
@@ -334,7 +345,7 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
   
   <div class="honor-card">
     <div class="timeline-icon">
-      <i class="fas fa-medal"></i>
+      <i class="fas fa-trophy"></i>
     </div>
     <div class="honor-content">
       <div class="honor-date">2023.07</div>
@@ -345,7 +356,7 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
   
   <div class="honor-card">
     <div class="timeline-icon">
-      <i class="fas fa-award"></i>
+      <i class="fas fa-trophy"></i>
     </div>
     <div class="honor-content">
       <div class="honor-date">2023.07</div>
