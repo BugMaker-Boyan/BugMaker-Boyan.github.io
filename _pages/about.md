@@ -17,7 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a second-year PhD student at the [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/), honored to be supervised by Professor [Yuyu Luo](https://luoyuyu.vip/). Currently, I am working as a research intern in the Database Group led by Professor [Guoliang Li](https://dbgroup.cs.tsinghua.edu.cn/ligl/) at [Tsinghua University](https://www.tsinghua.edu.cn). Previously, I obtained my bachelor's degree from the [Southern University of Science and Technology](https://www.sustech.edu.cn/). My current research interests focus on Text-to-SQL and Data Agent, which are intelligent systems that can autonomously handle data-related tasks such as query generation, data analysis, and visualization through natural language interaction.
+I am a second-year PhD student at the [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/), honored to be supervised by Professor [Yuyu Luo](https://luoyuyu.vip/). Currently, I am working as a research intern in the Database Group led by Professor [Guoliang Li](https://dbgroup.cs.tsinghua.edu.cn/ligl/) at [Tsinghua University](https://www.tsinghua.edu.cn). Previously, I obtained my bachelor's degree from the [Southern University of Science and Technology](https://www.sustech.edu.cn/). My current research interests focus on Text-to-SQL and Data Agent, which are intelligent systems that can autonomously handle data-related tasks such as query generation, data analysis, and visualization through natural language interaction. 
+
+You can find my CV here: [Curriculum Vitae](presentations/Boyan_Li_CV.pdf).
 
 
 <span class='anchor' id='news'></span>
@@ -327,8 +329,8 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
     </div>
     <div class="honor-content">
       <div class="honor-date">2025.10</div>
-      <div class="honor-title">AI Agent 2025 (Best Open-source Project Award)</div>
-      <div class="honor-description">Led the DeepEye Data Agent System team to win the AI Agent 2025 Best Open-source Project Award.</div>
+      <div class="honor-title">Best Open-source Project Award</div>
+      <div class="honor-description">AI Agent 2025 Competition</div>
     </div>
   </div>
 
@@ -338,8 +340,19 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
     </div>
     <div class="honor-content">
       <div class="honor-date">2025.01</div>
-      <div class="honor-title">Merit Prize for the 2024 DSA Excellent Research Award</div>
-      <div class="honor-description">Recognized for outstanding research contributions in Data Science and Analytics.</div>
+      <div class="honor-title">Merit Prize</div>
+      <div class="honor-description">DSA Excellent Research Award 2024</div>
+    </div>
+  </div>
+
+  <div class="honor-card">
+    <div class="timeline-icon">
+      <i class="fas fa-trophy"></i>
+    </div>
+    <div class="honor-content">
+      <div class="honor-date">2024.12</div>
+      <div class="honor-title">DSAA 5021 Best Project Award</div>
+      <div class="honor-description">Hong Kong University of Science and Technology (Guangzhou)</div>
     </div>
   </div>
   
@@ -348,8 +361,8 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
       <i class="fas fa-trophy"></i>
     </div>
     <div class="honor-content">
-      <div class="honor-date">2023.07</div>
-      <div class="honor-title">Highest Honors in Computer Science and Engineering</div>
+      <div class="honor-date">2023.06</div>
+      <div class="honor-title">Highest Honors in Computer Science & Engineering</div>
       <div class="honor-description">Southern University of Science and Technology</div>
     </div>
   </div>
@@ -359,9 +372,42 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
       <i class="fas fa-trophy"></i>
     </div>
     <div class="honor-content">
-      <div class="honor-date">2023.07</div>
-      <div class="honor-title">Outstanding Graduates</div>
+      <div class="honor-date">2023.06</div>
+      <div class="honor-title">Outstanding Graduate</div>
       <div class="honor-description">Southern University of Science and Technology</div>
+    </div>
+  </div>
+
+  <div class="honor-card">
+    <div class="timeline-icon">
+      <i class="fas fa-trophy"></i>
+    </div>
+    <div class="honor-content">
+      <div class="honor-date">2022.05</div>
+      <div class="honor-title">Huawei Scholarship</div>
+      <div class="honor-description">Huawei Technologies</div>
+    </div>
+  </div>
+
+  <div class="honor-card">
+    <div class="timeline-icon">
+      <i class="fas fa-trophy"></i>
+    </div>
+    <div class="honor-content">
+      <div class="honor-date">2020, 2021, 2022</div>
+      <div class="honor-title">Excellent Student Scholarship</div>
+      <div class="honor-description">Southern University of Science and Technology</div>
+    </div>
+  </div>
+
+  <div class="honor-card">
+    <div class="timeline-icon">
+      <i class="fas fa-trophy"></i>
+    </div>
+    <div class="honor-content">
+      <div class="honor-date">2020.4</div>
+      <div class="honor-title">National Encouragement Scholarship</div>
+      <div class="honor-description">Ministry of Education of China</div>
     </div>
   </div>
 </div>
