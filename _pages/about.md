@@ -405,7 +405,7 @@ You can find my CV here: [Curriculum Vitae](presentations/Boyan_Li_CV.pdf).
       <i class="fas fa-trophy"></i>
     </div>
     <div class="honor-content">
-      <div class="honor-date">2020.4</div>
+      <div class="honor-date">2020.04</div>
       <div class="honor-title">National Encouragement Scholarship</div>
       <div class="honor-description">Ministry of Education of China</div>
     </div>
