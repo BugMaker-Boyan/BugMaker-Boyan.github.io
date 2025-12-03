@@ -323,6 +323,18 @@ You can find my CV here: [Curriculum Vitae](presentations/Boyan_Li_CV.pdf).
 # <i class="fas fa-trophy"></i> Honors and Awards
 
 <div class="honors-timeline">
+
+  <div class="honor-card">
+    <div class="timeline-icon">
+      <i class="fas fa-trophy"></i>
+    </div>
+    <div class="honor-content">
+      <div class="honor-date">2025.11</div>
+      <div class="honor-title">Runner-up, Best Project Award</div>
+      <div class="honor-description">Data Intelligence: When Databases Meet AI (DSAA 6000R), HKUST(GZ)</div>
+    </div>
+  </div>
+
   <div class="honor-card">
     <div class="timeline-icon">
       <i class="fas fa-trophy"></i>
@@ -351,8 +363,8 @@ You can find my CV here: [Curriculum Vitae](presentations/Boyan_Li_CV.pdf).
     </div>
     <div class="honor-content">
       <div class="honor-date">2024.12</div>
-      <div class="honor-title">DSAA 5021 Best Project Award</div>
-      <div class="honor-description">Hong Kong University of Science and Technology (Guangzhou)</div>
+      <div class="honor-title">Best Project Award</div>
+      <div class="honor-description">Data Science Computing (DSAA5021), HKUST(GZ)</div>
     </div>
   </div>
   
