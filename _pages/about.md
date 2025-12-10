@@ -19,7 +19,7 @@ redirect_from:
 
 I am a second-year PhD student at the [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/), honored to be supervised by Professor [Yuyu Luo](https://luoyuyu.vip/). Currently, I am working as a research intern in the Database Group led by Professor [Guoliang Li](https://dbgroup.cs.tsinghua.edu.cn/ligl/) at [Tsinghua University](https://www.tsinghua.edu.cn). Previously, I obtained my bachelor's degree from the [Southern University of Science and Technology](https://www.sustech.edu.cn/). My current research interests focus on Text-to-SQL and Data Agent, which are intelligent systems that can autonomously handle data-related tasks such as query generation, data analysis, and visualization through natural language interaction. 
 
-You can find my CV here: [Curriculum Vitae](presentations/Boyan_Li_CV.pdf).
+Feel free to email me to discuss potential collaboration opportunities. You can find my CV here: [Curriculum Vitae](presentations/Boyan_Li_CV.pdf).
 
 
 <span class='anchor' id='news'></span>
