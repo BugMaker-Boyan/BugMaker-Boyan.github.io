@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a second-year PhD student at the [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/), honored to be supervised by Professor [Yuyu Luo](https://luoyuyu.vip/). Currently, I am working as a research intern in the Database Group led by Professor [Guoliang Li](https://dbgroup.cs.tsinghua.edu.cn/ligl/) at [Tsinghua University](https://www.tsinghua.edu.cn). Previously, I obtained my bachelor's degree from the [Southern University of Science and Technology](https://www.sustech.edu.cn/). My current research interests focus on Text-to-SQL and Data Agent, which are intelligent systems that can autonomously handle data-related tasks such as query generation, data analysis, and visualization through natural language interaction. 
+I am a second-year PhD student at the [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/), honored to be supervised by Professor [Yuyu Luo](https://luoyuyu.vip/). Previously, I worked as a research intern in the Database Group led by Professor [Guoliang Li](https://dbgroup.cs.tsinghua.edu.cn/ligl/) at [Tsinghua University](https://www.tsinghua.edu.cn), and obtained my bachelor's degree from the [Southern University of Science and Technology](https://www.sustech.edu.cn/). My current research interests focus on Text-to-SQL and Data Agent, which are intelligent systems that can autonomously handle data-related tasks such as query generation, data analysis, and visualization through natural language interaction. 
 
 Feel free to email me to discuss potential collaboration opportunities. You can find my CV here: [Curriculum Vitae](presentations/Boyan_Li_CV.pdf).
 
@@ -464,11 +464,11 @@ Feel free to email me to discuss potential collaboration opportunities. You can 
       <i class="fas fa-exchange-alt"></i>
     </div>
     <div class="experience-content">
-      <div class="experience-date">2025.06 - Present</div>
+      <div class="experience-date">2025.06 - 2025.12</div>
       <div class="experience-title">Exchange Student</div>
       <div class="experience-institution"><a href="https://www.tsinghua.edu.cn" target="_blank">Tsinghua University</a></div>
       <div class="experience-location">Beijing, China</div>
-      <div class="experience-description">Working as a research intern in the Database Group led by Professor Guoliang Li</div>
+      <div class="experience-description">Worked as a research intern in the Database Group led by Professor Guoliang Li</div>
     </div>
   </div>
   
