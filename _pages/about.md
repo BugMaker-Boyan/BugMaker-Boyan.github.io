@@ -29,6 +29,7 @@ Feel free to email me to discuss potential collaboration opportunities. You can 
 <div class="news-scroll-wrapper">
 <div class="news-scroll-container">
 <ul>
+<li><em>2025.12</em>  I was awarded the <strong>DSA Excellence Awards 2025 – Research Excellence Awards</strong>!</li>
 <li><em>2025.10</em>  We proposed <a href="https://arxiv.org/abs/2510.23587">A Survey of Data Agents: Emerging Paradigm or Overstated Hype?</a>, introducing the first systematic hierarchical taxonomy for data agents with six levels (L0-L5) that delineate progressive shifts in autonomy, from manual operations to fully autonomous data agents. This survey clarifies capability boundaries and responsibility allocation, offering a structured review of existing research and a forward-looking roadmap. <strong>Ranked Top-3 in <a href="https://huggingface.co/papers/2510.23587">Hugging Face Daily Papers</a>!</strong></li>
 <li><em>2025.10</em>  We proposed <a href="https://arxiv.org/abs/2510.17586">DeeyEye-SQL</a>, a software-engineering-inspired Text-to-SQL framework, achieving 73.5% EX on BIRD-Dev and 89.8% EX on Spider-Test using a ~30B LLM without any fine-tuning!</li>
 <li><em>2025.09</em>  Our <a href="https://nvbench2.github.io">nvBench 2.0</a> paper has been accepted by <a href="https://neurips.cc/Conferences/2025">NIPS'25</a>, a new benchmark designed to evaluate Text2VIS systems in scenarios involving ambiguous queries.</li>
@@ -323,6 +324,17 @@ Feel free to email me to discuss potential collaboration opportunities. You can 
 # <i class="fas fa-trophy"></i> Honors and Awards
 
 <div class="honors-timeline">
+
+  <div class="honor-card">
+    <div class="timeline-icon">
+      <i class="fas fa-trophy"></i>
+    </div>
+    <div class="honor-content">
+      <div class="honor-date">2025.12</div>
+      <div class="honor-title">Research Excellence Awards</div>
+      <div class="honor-description">DSA Excellence Awards 2025</div>
+    </div>
+  </div>
 
   <div class="honor-card">
     <div class="timeline-icon">
