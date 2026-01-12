@@ -29,6 +29,7 @@ Feel free to email me to discuss potential collaboration opportunities. You can 
 <div class="news-scroll-wrapper">
 <div class="news-scroll-container">
 <ul>
+<li><em>2026.01</em>  I was invited to give a talk at <strong>Huawei Squirrel Webinar</strong> on "DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework"!</li>
 <li><em>2025.12</em>  I was awarded the <strong>DSA Excellence Awards 2025 – Research Excellence Awards</strong>!</li>
 <li><em>2025.10</em>  We proposed <a href="https://arxiv.org/abs/2510.23587">A Survey of Data Agents: Emerging Paradigm or Overstated Hype?</a>, introducing the first systematic hierarchical taxonomy for data agents with six levels (L0-L5) that delineate progressive shifts in autonomy, from manual operations to fully autonomous data agents. This survey clarifies capability boundaries and responsibility allocation, offering a structured review of existing research and a forward-looking roadmap. <strong>Ranked Top-3 in <a href="https://huggingface.co/papers/2510.23587">Hugging Face Daily Papers</a>!</strong></li>
 <li><em>2025.10</em>  We proposed <a href="https://arxiv.org/abs/2510.17586">DeeyEye-SQL</a>, a software-engineering-inspired Text-to-SQL framework, achieving 73.5% EX on BIRD-Dev and 89.8% EX on Spider-Test using a ~30B LLM without any fine-tuning!</li>
@@ -515,6 +516,15 @@ Feel free to email me to discuss potential collaboration opportunities. You can 
 # <i class="fas fa-handshake"></i> Services
 
 <div class="services-grid">
+  <div class="service-card">
+    <div class="service-icon">
+      <i class="fas fa-microphone-alt"></i>
+    </div>
+    <div class="service-content">
+      <div class="service-title">Invited Talk</div>
+      <div class="service-detail">Huawei Squirrel Webinar: "DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework"</div>
+    </div>
+  </div>
   <div class="service-card">
     <div class="service-icon">
       <i class="fas fa-clipboard-check"></i>
