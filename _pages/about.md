@@ -30,7 +30,7 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
 <div class="news-scroll-wrapper">
 <div class="news-scroll-container">
 <ul>
-<li><em>2026.02</em>  Our <a href="https://arxiv.org/abs/2510.17586">DeepEye-SQL</a> paper has been accepted by <a href="https://sigmod2026.org/">SIGMOD 2026</a>!</li>
+<li><em>2026.02</em>  Our <a href="https://arxiv.org/abs/2510.17586">DeepEye-SQL</a> paper has been accepted by <a href="https://2026.sigmod.org/">SIGMOD 2026</a>!</li>
 <li><em>2026.01</em>  I was invited to give a talk at <strong>Huawei Squirrel Webinar</strong> on "DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework"!</li>
 <li><em>2025.12</em>  I was awarded the <strong>DSA Excellence Awards 2025 – Research Excellence Awards</strong>!</li>
 <li><em>2025.10</em>  We proposed <a href="https://arxiv.org/abs/2510.23587">A Survey of Data Agents: Emerging Paradigm or Overstated Hype?</a>, introducing the first systematic hierarchical taxonomy for data agents with six levels (L0-L5) that delineate progressive shifts in autonomy, from manual operations to fully autonomous data agents. This survey clarifies capability boundaries and responsibility allocation, offering a structured review of existing research and a forward-looking roadmap. <strong>Ranked Top-3 in <a href="https://huggingface.co/papers/2510.23587">Hugging Face Daily Papers</a>!</strong></li>
