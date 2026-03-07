@@ -30,6 +30,7 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
 <div class="news-scroll-wrapper">
 <div class="news-scroll-container">
 <ul>
+<li><em>2026.03</em>  Our Demonstration paper "DeepEye: A Steerable Self-driving Data Agent System" has been accepted by <a href="https://2026.sigmod.org/">SIGMOD 2026</a>!</li>
 <li><em>2026.02</em>  Our <a href="https://arxiv.org/abs/2510.17586">DeepEye-SQL</a> paper has been accepted by <a href="https://2026.sigmod.org/">SIGMOD 2026</a>!</li>
 <li><em>2026.01</em>  I was invited to give a talk at <strong>Huawei Squirrel Webinar</strong> on "DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework"!</li>
 <li><em>2025.12</em>  I was awarded the <strong>DSA Excellence Awards 2025 – Research Excellence Awards</strong>!</li>
@@ -76,11 +77,29 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
     <div class="stat-detail">Google Scholar</div>
   </div>
   <div class="stat-card">
-    <div class="stat-number">14</div>
+    <div class="stat-number">15</div>
     <div class="stat-label">Total Papers</div>
     <div class="stat-detail">Published & Accepted</div>
   </div>
 </div>
+
+<div class='paper-box'>
+
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">SIGMOD 2026 (Demo)</div>
+      <img src='images/paper/deepeye.png' alt="DeepEye" width="100%">
+    </div>
+  </div>
+
+  <div class='paper-box-text' markdown="1">
+  [DeepEye: A Steerable Self-driving Data Agent System](#) \\
+  **Boyan Li**, Yiran Peng, Yupeng Xie, Sirong Lu, Yizhang Zhu, Xing Mu, Xinyu Liu, Yuyu Luo
+
+  </div>
+
+</div>
+
 
 <div class='paper-box'>
 
