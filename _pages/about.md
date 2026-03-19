@@ -30,8 +30,8 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
 <div class="news-scroll-wrapper">
 <div class="news-scroll-container">
 <ul>
-<li><em>2026.03</em>  Our "DeepEye" data agent system received the <strong>Silver Medal</strong> at the <strong>51st Geneva Inventions Exhibition</strong>. [Certificate](presentations/Geneva_Invention_Exhibition_DeepEye.pdf)</li>
-<li><em>2026.03</em>  Our project "The Low-Altitude Economy Ground-Air Collaborative Delivery Digital Twin Platform" received the <strong>Silver Medal</strong> at the <strong>51st Geneva Inventions Exhibition</strong>. [Certificate](presentations/Geneva_Invention_Exhibition_Low_Altitude_Economy.pdf)</li>
+<li><em>2026.03</em>  Our "DeepEye" data agent system received the <strong>Silver Medal</strong> at the <strong>51st Geneva Inventions Exhibition</strong>. <a href="presentations/Geneva_Invention_Exhibition_DeepEye.pdf">[Certificate]</a></li>
+<li><em>2026.03</em>  Our project "The Low-Altitude Economy Ground-Air Collaborative Delivery Digital Twin Platform" received the <strong>Silver Medal</strong> at the <strong>51st Geneva Inventions Exhibition</strong>. <a href="presentations/Geneva_Invention_Exhibition_Low_Altitude_Economy.pdf">[Certificate]</a></li>
 <li><em>2026.03</em>  Our Demonstration paper "DeepEye: A Steerable Self-driving Data Agent System" has been accepted by <a href="https://2026.sigmod.org/">SIGMOD 2026</a>!</li>
 <li><em>2026.02</em>  Our <a href="https://arxiv.org/abs/2510.17586">DeepEye-SQL</a> paper has been accepted by <a href="https://2026.sigmod.org/">SIGMOD 2026</a>!</li>
 <li><em>2026.01</em>  I was invited to give a talk at <strong>Huawei Squirrel Webinar</strong> on "DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework"!</li>
@@ -97,6 +97,9 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
   <div class='paper-box-text' markdown="1">
   [DeepEye: A Steerable Self-driving Data Agent System](#) \\
   **Boyan Li**, Yiran Peng, Yupeng Xie, Sirong Lu, Yizhang Zhu, Xing Mu, Xinyu Liu, Yuyu Luo
+
+  <br><small><strong>Silver Medal</strong>, 51st Geneva International Exhibition of Inventions</small>  
+  <small><strong>Best Open-source Project Award</strong>, AI Agent 2025 Competition</small>
 
   </div>
 
