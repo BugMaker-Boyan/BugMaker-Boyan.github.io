@@ -15,10 +15,7 @@ docker run --rm \
   --publish 35729:35729 \
   --user root \
   jekyll/jekyll:latest \
-  sh -c "gem sources --remove https://rubygems.org/ && \
-         gem sources --add https://gems.ruby-china.com/ && \
-         bundle config mirror.https://rubygems.org https://gems.ruby-china.com && \
-         touch /srv/jekyll/Gemfile.lock && \
+  sh -c "touch /srv/jekyll/Gemfile.lock && \
          chmod 666 /srv/jekyll/Gemfile.lock && \
          mkdir -p /srv/jekyll/_site && \
          chmod -R 777 /srv/jekyll/_site && \
