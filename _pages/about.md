@@ -98,8 +98,8 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
   [DeepEye: A Steerable Self-driving Data Agent System](#) \\
   **Boyan Li**, Yiran Peng, Yupeng Xie, Sirong Lu, Yizhang Zhu, Xing Mu, Xinyu Liu, Yuyu Luo
 
-  <br><small><strong>Silver Medal</strong>, 51st Geneva International Exhibition of Inventions</small>  
-  <small><strong>Best Open-source Project Award</strong>, AI Agent 2025 Competition</small>
+  <br><small>🏅 <strong>Silver Medal</strong>, 51st Geneva International Exhibition of Inventions</small>  
+  <small>🏆 <strong>Best Open-source Project Award</strong>, AI Agent 2025 Competition</small>
 
   </div>
 
