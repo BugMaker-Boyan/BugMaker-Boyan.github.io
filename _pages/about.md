@@ -30,6 +30,7 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
 <div class="news-scroll-wrapper">
 <div class="news-scroll-container">
 <ul>
+<li><em>2026.03</em>  We are organizing <a href="https://dataagent.top"><strong>KDD Cup 2026: Data Agents for Complex Data Analysis</strong></a>—Hop in and join the competition!</li>
 <li><em>2026.03</em>  Our "DeepEye" data agent system received the <strong>Silver Medal</strong> at the <strong>51st Geneva Inventions Exhibition</strong>. <a href="presentations/Geneva_Invention_Exhibition_DeepEye.pdf">[Certificate]</a></li>
 <li><em>2026.03</em>  Our project "The Low-Altitude Economy Ground-Air Collaborative Delivery Digital Twin Platform" received the <strong>Silver Medal</strong> at the <strong>51st Geneva Inventions Exhibition</strong>. <a href="presentations/Geneva_Invention_Exhibition_Low_Altitude_Economy.pdf">[Certificate]</a></li>
 <li><em>2026.03</em>  Our Demonstration paper "DeepEye: A Steerable Self-driving Data Agent System" has been accepted by <a href="https://2026.sigmod.org/">SIGMOD 2026</a>!</li>
@@ -566,6 +567,15 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
 <div class="services-grid">
   <div class="service-card">
     <div class="service-icon">
+      <i class="fas fa-trophy"></i>
+    </div>
+    <div class="service-content">
+      <div class="service-title">KDD Cup 2026 Organizing Committee</div>
+      <div class="service-detail"><strong>General Chair</strong>, <a href="https://dataagent.top">KDD Cup 2026: Data Agents for Complex Data Analysis</a>.</div>
+    </div>
+  </div>
+  <div class="service-card">
+    <div class="service-icon">
       <i class="fas fa-microphone-alt"></i>
     </div>
     <div class="service-content">
@@ -583,8 +593,3 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
     </div>
   </div>
 </div>
-
-<!-- <div style="text-align: center;">
-  <span>Website Record:&nbsp;</span>
-    <a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备2024081733号-1</a>
-</div> -->
