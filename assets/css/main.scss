@@ -40,23 +40,122 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+@keyframes fade-up-soft {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes page-ambient {
+    0%,
+    100% {
+        background-position: 0% 0%, 100% 0%, 50% 0%, 0 0;
+    }
+    50% {
+        background-position: 3% 5%, 97% 5%, 50% 3%, 0 0;
+    }
+}
+
+@keyframes hero-glow {
+    0%,
+    100% {
+        transform: translate3d(-8%, -6%, 0) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate3d(8%, 6%, 0) scale(1.08);
+        opacity: 0.9;
+    }
+}
+
+@keyframes hero-surface {
+    0%,
+    100% {
+        background-position: 0% 0%, 0 0;
+    }
+    50% {
+        background-position: 12% 8%, 0 0;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 .hero-panel {
     display: block;
     margin: 0.75rem 0 1.5rem;
 }
 
 .hero-copy {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
     padding: 2rem;
     border-radius: 24px;
-    border: 1px solid rgba(34, 75, 141, 0.1);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(245, 248, 255, 0.96) 100%);
-    box-shadow: 0 18px 45px rgba(20, 47, 86, 0.08);
+    border: 1px solid rgba(34, 75, 141, 0.09);
+    background:
+        radial-gradient(circle at 14% 16%, rgba(136, 168, 220, 0.14) 0%, rgba(136, 168, 220, 0) 34%),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.97) 0%, rgba(247, 249, 255, 0.97) 52%, rgba(239, 244, 255, 0.95) 100%);
+    background-size: 145% 145%, 100% 100%;
+    box-shadow:
+        0 24px 58px rgba(20, 47, 86, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.85),
+        inset 0 -24px 44px rgba(107, 145, 208, 0.04);
+    backdrop-filter: blur(10px);
+    animation: hero-surface 20s ease-in-out infinite;
+}
+
+.hero-copy::before {
+    content: '';
+    position: absolute;
+    inset: -22% -6% auto auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(90, 136, 208, 0.1) 0%, rgba(90, 136, 208, 0) 74%);
+    pointer-events: none;
+    z-index: 0;
+    animation: hero-glow 15s ease-in-out infinite;
+}
+
+.hero-copy > * {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    animation: fade-up-soft 0.72s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero-copy > *:nth-child(1) {
+    animation-delay: 0.08s;
+}
+
+.hero-copy > *:nth-child(2) {
+    animation-delay: 0.16s;
+}
+
+.hero-copy > *:nth-child(3) {
+    animation-delay: 0.24s;
+}
+
+.hero-copy > *:nth-child(4) {
+    animation-delay: 0.32s;
 }
 
 .hero-eyebrow {
     display: inline-flex;
     align-items: center;
+    padding: 0.48rem 0.82rem;
     margin-bottom: 1rem;
+    border-radius: 999px;
+    border: 1px solid rgba(34, 75, 141, 0.08);
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: 0 10px 24px rgba(20, 47, 86, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.92);
     font-size: 0.85em;
     font-weight: 700;
     letter-spacing: 0.14em;
@@ -80,6 +179,8 @@
 }
 
 .hero-action {
+    position: relative;
+    overflow: hidden;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -93,24 +194,28 @@
     text-decoration: none;
 }
 
+.hero-action::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent 20%, rgba(255, 255, 255, 0.45) 50%, transparent 80%);
+    transform: translateX(-140%);
+    transition: transform 0.65s ease;
+    pointer-events: none;
+}
+
 .hero-action:visited {
     color: #15345f !important;
 }
 
 .hero-action:hover {
-    transform: translateY(-1px);
+    transform: translateY(-2px);
     background: #ffffff;
+    box-shadow: 0 12px 24px rgba(20, 47, 86, 0.1);
 }
 
-.hero-action--primary,
-.hero-action--primary:visited {
-    color: #ffffff !important;
-    background: linear-gradient(135deg, #173869 0%, #224b8d 55%, #4a7bc8 100%);
-    border-color: transparent;
-}
-
-.hero-action--primary:hover {
-    background: linear-gradient(135deg, #102b4e 0%, #1c4075 55%, #4674bc 100%);
+.hero-action:hover::after {
+    transform: translateX(140%);
 }
 
 .section-intro {
@@ -208,6 +313,8 @@
     border: 1px solid rgba(34, 75, 141, 0.1);
     background: rgba(255, 255, 255, 0.92);
     box-shadow: 0 14px 35px rgba(20, 47, 86, 0.06);
+    animation: fade-up-soft 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: 0.18s;
 }
 
 .news-list {
@@ -219,6 +326,8 @@
 }
 
 .news-list li {
+    position: relative;
+    overflow: hidden;
     padding: 1rem 1.1rem;
     border-radius: 16px;
     border: 1px solid rgba(34, 75, 141, 0.08);
@@ -226,6 +335,26 @@
     box-shadow: 0 6px 18px rgba(20, 47, 86, 0.04);
     font-weight: 400;
     line-height: 1.75;
+}
+
+.news-list li::before {
+    content: '';
+    position: absolute;
+    left: 0.85rem;
+    top: 0.9rem;
+    bottom: 0.9rem;
+    width: 3px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #224b8d, #7aa4e4);
+    transform: scaleY(0.15);
+    transform-origin: center top;
+    opacity: 0.18;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.news-list li:hover::before {
+    transform: scaleY(1);
+    opacity: 0.95;
 }
 
 .news-date {
@@ -380,7 +509,13 @@
 }
 
 .paper-box {
+    --spotlight-x: 50%;
+    --spotlight-y: 50%;
+    --spotlight-opacity: 0;
     display: flex;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
     justify-content: left;
     align-items: flex-start;
     flex-direction: row;
@@ -391,9 +526,26 @@
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 18px;
     margin-bottom: 1.2em;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(320px circle at var(--spotlight-x) var(--spotlight-y), rgba(99, 145, 220, 0.14) 0%, rgba(99, 145, 220, 0.05) 24%, rgba(99, 145, 220, 0) 64%);
+        opacity: var(--spotlight-opacity);
+        transition: opacity 0.26s ease;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    > * {
+        position: relative;
+        z-index: 1;
+    }
     
     // 悬停效果：阴影加深、轻微上移
     &:hover {
+        --spotlight-opacity: 1;
         transform: translateY(-3px);
         box-shadow: 0 12px 28px rgba(20, 47, 86, 0.1);
         border-color: rgba(34, 75, 141, 0.18);
@@ -565,6 +717,32 @@
     display: block;
 }
 
+.paper-box-image > div {
+    position: relative;
+}
+
+.paper-box-image > div::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent 22%, rgba(255, 255, 255, 0.35) 50%, transparent 78%);
+    transform: translateX(-135%);
+    transition: transform 0.8s ease;
+    pointer-events: none;
+}
+
+.paper-box-image img {
+    transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.paper-box:hover .paper-box-image img {
+    transform: scale(1.035);
+}
+
+.paper-box:hover .paper-box-image > div::after {
+    transform: translateX(135%);
+}
+
 @media (max-width: 980px) {
     .selected-work-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -606,6 +784,12 @@ h1:before, .anchor:before {
 }
 
 // 图标系统优化 - 统一标题图标样式
+.page__content h1 {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
 h1 {
     i.fas {
         color: #224b8d;
@@ -627,73 +811,49 @@ h1 {
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(135deg, rgba(248, 249, 250, 0.8) 0%, rgba(255, 255, 255, 1) 50%, rgba(240, 244, 255, 0.6) 100%);
+        background:
+            radial-gradient(circle at 22% 12%, rgba(234, 240, 251, 0.72) 0%, rgba(234, 240, 251, 0) 31%),
+            radial-gradient(circle at 78% 12%, rgba(234, 240, 251, 0.72) 0%, rgba(234, 240, 251, 0) 31%),
+            radial-gradient(circle at 50% 0%, rgba(244, 247, 253, 0.92) 0%, rgba(244, 247, 253, 0) 36%),
+            linear-gradient(180deg, rgba(250, 251, 253, 0.92) 0%, rgba(255, 255, 255, 1) 46%, rgba(244, 247, 252, 0.72) 100%);
+        background-size: 120% 120%, 120% 120%, 110% 110%, 100% 100%;
         z-index: -1;
         pointer-events: none;
+        animation: page-ambient 34s ease-in-out infinite;
     }
     
     // 几何装饰图形 - 圆形
     &::after {
-        content: '';
-        position: fixed;
-        top: 10%;
-        right: 5%;
-        width: 300px;
-        height: 300px;
-        background: radial-gradient(circle, rgba(34, 75, 141, 0.05) 0%, transparent 70%);
-        border-radius: 50%;
-        z-index: -1;
-        pointer-events: none;
-        opacity: 0.6;
-        
-        @include breakpoint($small) {
-            width: 200px;
-            height: 200px;
-            top: 5%;
-            right: 2%;
-        }
+        display: none;
     }
 }
 
 // 为页面内容区域添加装饰元素
 .page__content {
     position: relative;
-    
-    // 左侧装饰线条
-    &::before {
-        content: '';
-        position: absolute;
-        left: -20px;
-        top: 0;
-        bottom: 0;
-        width: 3px;
-        background: linear-gradient(to bottom, transparent, rgba(34, 75, 141, 0.1), transparent);
-        z-index: 0;
-        
-        @include breakpoint($small) {
-            display: none;
-        }
-    }
 }
 
 // 链接样式优化
 a {
     color: #224b8d;
     text-decoration: underline;
-    text-decoration-color: rgba(34, 75, 141, 0.3);
+    text-decoration-color: rgba(34, 75, 141, 0.26);
     text-decoration-thickness: 0.08em;
     text-underline-offset: 0.14em;
-    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+    transition: color 0.22s ease, text-decoration-color 0.22s ease, text-decoration-thickness 0.22s ease, text-underline-offset 0.22s ease;
     
     // 悬停效果
-    &:hover {
+    &:hover,
+    &:focus {
         color: #4a7bc8;
-        text-decoration-color: #4a7bc8;
+        text-decoration-color: rgba(74, 123, 200, 0.6);
+        text-decoration-thickness: 0.11em;
+        text-underline-offset: 0.18em;
     }
     
     // 已访问链接样式
     &:visited {
-        color: #5a6c8d;
+        color: #224b8d;
         
         &:hover {
             color: #4a7bc8;
@@ -766,6 +926,14 @@ a {
     box-shadow: 0 12px 28px rgba(20, 47, 86, 0.08);
 }
 
+.year-list,
+.cv-list,
+.compact-list,
+.visitor-map-panel {
+    animation: fade-up-soft 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: 0.22s;
+}
+
 .compact-item-title,
 .cv-title {
     font-size: 1.02em;
@@ -784,6 +952,36 @@ a {
 
 .compact-item-meta {
     margin-top: 0.15rem;
+}
+
+.visitor-map-panel {
+    width: min(100%, 900px);
+    margin: 2.4rem auto 1rem;
+    padding: 1.4rem 0 0.35rem;
+    border-top: 1px solid rgba(34, 75, 141, 0.1);
+    box-sizing: border-box;
+}
+
+.visitor-map-heading {
+    display: none;
+}
+
+.visitor-map-heading i {
+    font-size: 0.95em;
+}
+
+.visitor-map-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 0;
+    padding: 0;
+    overflow-x: auto;
+    line-height: 0;
+}
+
+.visitor-map-frame > * {
+    max-width: 100%;
 }
 
 .cv-list {
@@ -839,11 +1037,60 @@ a {
     .cv-item {
         padding: 0.9rem 1rem;
     }
+
+    .visitor-map-panel {
+        width: 100%;
+        margin-top: 1.6rem;
+        margin-bottom: 0.4rem;
+        padding-top: 1rem;
+    }
+
+    .visitor-map-frame {
+        justify-content: flex-start;
+    }
 }
 
 @media (hover: none) {
     .compact-item:hover,
     .cv-item:hover {
         transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .page::before,
+    .page::after,
+    .hero-copy,
+    .hero-copy::before,
+    .hero-copy > *,
+    .news-panel,
+    .year-list,
+    .cv-list,
+    .compact-list,
+    .visitor-map-panel {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .hero-action,
+    .paper-box,
+    .paper-box::before,
+    .paper-box-image img,
+    .paper-box-image > div::after,
+    .paper-link,
+    .compact-item,
+    .cv-item,
+    .news-list li::before {
+        transition: none !important;
+    }
+
+    .hero-action::after,
+    .paper-box-image > div::after {
+        display: none !important;
     }
 }

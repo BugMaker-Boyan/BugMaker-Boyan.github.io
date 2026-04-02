@@ -16,7 +16,7 @@ redirect_from:
     <p class="hero-summary">I am a second-year PhD student at <a href="https://www.hkust-gz.edu.cn/">HKUST(GZ)</a>, honored to be advised by Professor <a href="https://luoyuyu.vip/">Yuyu Luo</a>. Previously, I worked with Professor <a href="https://dbgroup.cs.tsinghua.edu.cn/ligl/">Guoliang Li</a> at <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a> and received my bachelor's degree from <a href="https://www.sustech.edu.cn/">Southern University of Science and Technology</a>.</p>
     <p class="hero-summary">My current research interests focus on Text-to-SQL and Data Agents, which are intelligent systems that can autonomously handle data-related tasks such as query generation, data analysis, and visualization through natural language interaction. I am currently looking for collaborators on interesting projects in these areas, and I would be happy to connect if you are interested.</p>
     <div class="hero-actions">
-      <a class="hero-action hero-action--primary" href="{{ '/presentations/Boyan_Li_CV.pdf' | relative_url }}">View CV</a>
+      <a class="hero-action" href="{{ '/presentations/Boyan_Li_CV.pdf' | relative_url }}">View CV</a>
       <a class="hero-action" href="mailto:{{ site.author.email }}">Collaborate</a>
       <a class="hero-action" href="{{ site.author.googlescholar }}">Google Scholar</a>
     </div>
@@ -254,5 +254,11 @@ redirect_from:
   <div class="compact-item">
     <div class="compact-item-title">Conference Reviewer</div>
     <div class="compact-item-meta">ICLR 2026</div>
+  </div>
+</div>
+
+<div class="visitor-map-panel">
+  <div class="visitor-map-frame">
+    <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=fbfcf8&w=720&t=tt&d=HXG0sptVKKeWqALNaz5MIelX9K8Gbr9G2CYNjZc7Rrc&cmo=9a6a63&co=557fa9&cmn=6fc85b&ct=ffffff"></script>
   </div>
 </div>
