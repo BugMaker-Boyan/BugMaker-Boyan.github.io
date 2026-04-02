@@ -8,480 +8,174 @@ redirect_from:
   - /about.html
 ---
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
-
 <span class='anchor' id='about-me'></span>
 
-I am a second-year PhD student at the [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/), honored to be supervised by Professor [Yuyu Luo](https://luoyuyu.vip/). Previously, I worked as a research intern in the Database Group led by Professor [Guoliang Li](https://dbgroup.cs.tsinghua.edu.cn/ligl/) at [Tsinghua University](https://www.tsinghua.edu.cn), and obtained my bachelor's degree from the [Southern University of Science and Technology](https://www.sustech.edu.cn/). My current research interests focus on Text-to-SQL and Data Agent, which are intelligent systems that can autonomously handle data-related tasks such as query generation, data analysis, and visualization through natural language interaction. 
-
- You can find my CV here: [Curriculum Vitae](presentations/Boyan_Li_CV.pdf).
-
- I am currently calling for co-authors for interesting projects in Text-to-SQL and Data Agents; our group can provide research ideas, experimental/compute support, and a stipend. Feel free to email me to discuss potential collaboration opportunities.
+<section class="hero-panel">
+  <div class="hero-copy">
+    <div class="hero-eyebrow">Boyan Li · Second-year PhD Student · HKUST(GZ)</div>
+    <p class="hero-summary">I am a second-year PhD student at <a href="https://www.hkust-gz.edu.cn/">HKUST(GZ)</a>, honored to be advised by Professor <a href="https://luoyuyu.vip/">Yuyu Luo</a>. Previously, I worked with Professor <a href="https://dbgroup.cs.tsinghua.edu.cn/ligl/">Guoliang Li</a> at <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a> and received my bachelor's degree from <a href="https://www.sustech.edu.cn/">Southern University of Science and Technology</a>.</p>
+    <p class="hero-summary">My current research interests focus on Text-to-SQL and Data Agents, which are intelligent systems that can autonomously handle data-related tasks such as query generation, data analysis, and visualization through natural language interaction. I am currently looking for collaborators on interesting projects in these areas, and I would be happy to connect if you are interested.</p>
+    <div class="hero-actions">
+      <a class="hero-action hero-action--primary" href="{{ '/presentations/Boyan_Li_CV.pdf' | relative_url }}">View CV</a>
+      <a class="hero-action" href="mailto:{{ site.author.email }}">Collaborate</a>
+      <a class="hero-action" href="{{ site.author.googlescholar }}">Google Scholar</a>
+    </div>
+  </div>
+</section>
 
 <span class='anchor' id='news'></span>
 
-# <i class="fas fa-newspaper"></i> News
+# <i class="fas fa-newspaper"></i> Recent News
 
-<div class="news-scroll-wrapper">
-<div class="news-scroll-container">
-<ul>
-<li><em>2026.03</em>  We are organizing <a href="https://dataagent.top"><strong>KDD Cup 2026: Data Agents for Complex Data Analysis</strong></a>—Hop in and join the competition!</li>
-<li><em>2026.03</em>  Our "DeepEye" data agent system received the <strong>Silver Medal</strong> at the <strong>51st Geneva Inventions Exhibition</strong>. <a href="presentations/Geneva_Invention_Exhibition_DeepEye.pdf">[Certificate]</a></li>
-<li><em>2026.03</em>  Our project "The Low-Altitude Economy Ground-Air Collaborative Delivery Digital Twin Platform" received the <strong>Silver Medal</strong> at the <strong>51st Geneva Inventions Exhibition</strong>. <a href="presentations/Geneva_Invention_Exhibition_Low_Altitude_Economy.pdf">[Certificate]</a></li>
-<li><em>2026.03</em>  Our Demonstration paper "DeepEye: A Steerable Self-driving Data Agent System" has been accepted by <a href="https://2026.sigmod.org/">SIGMOD 2026</a>!</li>
-<li><em>2026.02</em>  Our <a href="https://arxiv.org/abs/2510.17586">DeepEye-SQL</a> paper has been accepted by <a href="https://2026.sigmod.org/">SIGMOD 2026</a>!</li>
-<li><em>2026.01</em>  I was invited to give a talk at <strong>Huawei Squirrel Webinar</strong> on "DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework"!</li>
-<li><em>2025.12</em>  I was awarded the <strong>DSA Excellence Awards 2025 – Research Excellence Awards</strong>!</li>
-<li><em>2025.10</em>  We proposed <a href="https://arxiv.org/abs/2510.23587">A Survey of Data Agents: Emerging Paradigm or Overstated Hype?</a>, introducing the first systematic hierarchical taxonomy for data agents with six levels (L0-L5) that delineate progressive shifts in autonomy, from manual operations to fully autonomous data agents. This survey clarifies capability boundaries and responsibility allocation, offering a structured review of existing research and a forward-looking roadmap. <strong>Ranked Top-3 in <a href="https://huggingface.co/papers/2510.23587">Hugging Face Daily Papers</a>!</strong></li>
-<li><em>2025.10</em>  We proposed <a href="https://arxiv.org/abs/2510.17586">DeeyEye-SQL</a>, a software-engineering-inspired Text-to-SQL framework, achieving 73.5% EX on BIRD-Dev and 89.8% EX on Spider-Test using a ~30B LLM without any fine-tuning!</li>
-<li><em>2025.09</em>  Our <a href="https://nvbench2.github.io">nvBench 2.0</a> paper has been accepted by <a href="https://neurips.cc/Conferences/2025">NIPS'25</a>, a new benchmark designed to evaluate Text2VIS systems in scenarios involving ambiguous queries.</li>
-<li><em>2025.07</em>  Our <a href="https://arxiv.org/abs/2508.01700">DeepVIS</a> paper has been accepted by <a href="https://ieeevis.org/year/2025/welcome">VIS'25</a>, an interactive visual interface that tightly integrates with the CoT reasoning process, allowing users to inspect reasoning steps, identify errors, and make targeted adjustments to improve visualization outcomes.</li>
-<li><em>2025.07</em>  Our <a href="https://arxiv.org/abs/2408.05109">NL2SQL-Survey</a> paper has been accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69">TKDE'25</a>! For a comprehensive overview of the latest Text-to-SQL techniques and practical guidance, we warmly invite you to read our continuously updated <a href="https://github.com/HKUSTDial/NL2SQL_Handbook">NL2SQL Handbook</a>.</li>
-<li><em>2025.07</em>  Our <a href="https://elliesql.github.io/">EllieSQL</a> paper has been accepted by <a href="https://colmweb.org/">COLM'25</a>, a complexity-aware routing framework that assigns queries to suitable SQL generation pipelines based on estimated complexity.</li>
-<li><em>2025.05</em>  Our <a href="https://nl2sql-bugs.github.io/">NL2SQL-BUGs</a> paper has been accepted by <a href="https://kdd2025.kdd.org/">KDD'25</a>, the first benchmark specifically designed to detect and categorize semantic errors in NL2SQL translation.</li>
-<li><em>2025.05</em>  Our <a href="https://arxiv.org/abs/2502.17248">Alpha-SQL</a> paper has been accepted by <a href="https://icml.cc/">ICML'25</a>, see you in <a href="https://icml.cc/">Vancouver, Canada</a>!</li>
-<li><em>2025.04</em>  We proposed <a href="https://arxiv.org/abs/2504.01990">Advances and Challenges in Foundation Agents</a>, a survey covers the design, evaluation, and improvement of intelligent agents based on modular, brain-inspired architectures, focusing on self-enhancement, multi-agent collaboration, and safety in AI systems.</li>
-<li><em>2025.04</em>  We proposed <a href="https://elliesql.github.io/">EllieSQL</a>, a complexity-aware routing framework that assigns queries to suitable SQL generation methods based on estimated complexity.</li>
-<li><em>2025.03</em>  We proposed <a href="https://nl2sql-bugs.github.io/">NL2SQL-BUGs</a>, a new benchmark dedicated to detecting and categorizing semantic errors in NL2SQL translation.</li>
-<li><em>2025.03</em>  We proposed <a href="https://nvbench2.github.io/">nvBench 2.0</a>, a new benchmark designed to evaluate NL2VIS systems in scenarios involving ambiguous queries.</li>
-<li><em>2025.01</em>  We proposed <a href="https://arxiv.org/abs/2502.17248">Alpha-SQL</a>, the o1 moment for NL2SQL!</li>
-<li><em>2025.01</em>  Paper <a href="https://dl.acm.org/doi/full/10.1145/3706598.3714320">Augmenting Realistic Charts with Virtual Overlays</a> has been accepted by CHI'25.</li>
-<li><em>2025.01</em>  I was awarded the <strong>Merit Prize</strong> for the 2024 DSA Excellent Research Award!</li>
-<li><em>2024.09</em>  Paper <a href="https://arxiv.org/abs/2406.07815">Are Large Language Models Good Statisticians?</a> has been accepted by NIPS'24.</li>
-<li><em>2024.06</em>  Paper <a href="https://arxiv.org/abs/2406.01265">The Dawn of Natural Language to SQL: Are We Fully Ready?</a> has been accepted by VLDB'24.</li>
-<li><em>2024.04</em>  Paper <a href="https://ieeexplore.ieee.org/abstract/document/10535518">Efficient Deep Spiking Multilayer Perceptrons With Multiplication-Free Inference</a> has been accepted by TNNLS'24.</li>
-</ul>
+<div class="section-intro">
+  The latest updates are shown here; older news stays available in the archive.
 </div>
+
+<div class="news-panel">
+  <ul class="news-list">
+    <li><span class="news-date">2026.03</span> We are organizing <a href="https://dataagent.top">KDD Cup 2026: Data Agents for Complex Data Analysis</a>.</li>
+    <li><span class="news-date">2026.03</span> Our "DeepEye" data agent system received the <strong>Silver Medal</strong> at the 51st Geneva Inventions Exhibition.</li>
+    <li><span class="news-date">2026.03</span> Our low-altitude economy digital-twin project received the <strong>Silver Medal</strong> at the 51st Geneva Inventions Exhibition.</li>
+    <li><span class="news-date">2026.03</span> Our demonstration paper "DeepEye: A Steerable Self-driving Data Agent System" has been accepted by <a href="https://2026.sigmod.org/">SIGMOD 2026</a>.</li>
+    <li><span class="news-date">2026.02</span> Our <a href="https://arxiv.org/abs/2510.17586">DeepEye-SQL</a> paper has been accepted by <a href="https://2026.sigmod.org/">SIGMOD 2026</a>.</li>
+    <li><span class="news-date">2026.01</span> I was invited to give a talk at Huawei Squirrel Webinar on "DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework".</li>
+  </ul>
+
+  <details class="news-archive">
+    <summary>Show earlier updates</summary>
+    <ul class="news-list news-list--archive">
+      <li><span class="news-date">2025.12</span> I was awarded the <strong>DSA Excellence Awards 2025 - Research Excellence Awards</strong>.</li>
+      <li><span class="news-date">2025.10</span> We proposed <a href="https://arxiv.org/abs/2510.23587">A Survey of Data Agents: Emerging Paradigm or Overstated Hype?</a>, introducing a systematic taxonomy for data agents with six levels of autonomy. Ranked Top-3 in <a href="https://huggingface.co/papers/2510.23587">Hugging Face Daily Papers</a>.</li>
+      <li><span class="news-date">2025.10</span> We proposed <a href="https://arxiv.org/abs/2510.17586">DeepEye-SQL</a>, a software-engineering-inspired Text-to-SQL framework achieving 73.5% EX on BIRD-Dev and 89.8% EX on Spider-Test using a ~30B LLM without fine-tuning.</li>
+      <li><span class="news-date">2025.09</span> Our <a href="https://nvbench2.github.io">nvBench 2.0</a> paper has been accepted by <a href="https://neurips.cc/Conferences/2025">NeurIPS 2025</a>.</li>
+      <li><span class="news-date">2025.07</span> Our <a href="https://arxiv.org/abs/2508.01700">DeepVIS</a> paper has been accepted by <a href="https://ieeevis.org/year/2025/welcome">VIS 2025</a>.</li>
+      <li><span class="news-date">2025.07</span> Our <a href="https://arxiv.org/abs/2408.05109">NL2SQL-Survey</a> paper has been accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69">TKDE 2025</a>. We also maintain the <a href="https://github.com/HKUSTDial/NL2SQL_Handbook">NL2SQL Handbook</a>.</li>
+      <li><span class="news-date">2025.07</span> Our <a href="https://elliesql.github.io/">EllieSQL</a> paper has been accepted by <a href="https://colmweb.org/">COLM 2025</a>.</li>
+      <li><span class="news-date">2025.05</span> Our <a href="https://nl2sql-bugs.github.io/">NL2SQL-BUGs</a> paper has been accepted by <a href="https://kdd2025.kdd.org/">KDD 2025</a>.</li>
+      <li><span class="news-date">2025.05</span> Our <a href="https://arxiv.org/abs/2502.17248">Alpha-SQL</a> paper has been accepted by <a href="https://icml.cc/">ICML 2025</a>.</li>
+      <li><span class="news-date">2025.04</span> We proposed <a href="https://arxiv.org/abs/2504.01990">Advances and Challenges in Foundation Agents</a>, a survey on modular, collaborative, and safe agent systems.</li>
+      <li><span class="news-date">2025.04</span> We proposed <a href="https://elliesql.github.io/">EllieSQL</a>, a complexity-aware routing framework for Text-to-SQL.</li>
+      <li><span class="news-date">2025.03</span> We proposed <a href="https://nl2sql-bugs.github.io/">NL2SQL-BUGs</a>, a benchmark for detecting semantic errors in NL2SQL translation.</li>
+      <li><span class="news-date">2025.03</span> We proposed <a href="https://nvbench2.github.io/">nvBench 2.0</a>, a benchmark for ambiguous NL2VIS queries.</li>
+      <li><span class="news-date">2025.01</span> We proposed <a href="https://arxiv.org/abs/2502.17248">Alpha-SQL</a>.</li>
+      <li><span class="news-date">2025.01</span> Our paper <a href="https://dl.acm.org/doi/full/10.1145/3706598.3714320">Augmenting Realistic Charts with Virtual Overlays</a> has been accepted by CHI 2025.</li>
+      <li><span class="news-date">2025.01</span> I was awarded the <strong>Merit Prize</strong> for the 2024 DSA Excellent Research Award.</li>
+      <li><span class="news-date">2024.09</span> Our paper <a href="https://arxiv.org/abs/2406.07815">Are Large Language Models Good Statisticians?</a> has been accepted by <a href="https://neurips.cc/Conferences/2024">NeurIPS 2024</a>.</li>
+      <li><span class="news-date">2024.06</span> Our paper <a href="https://arxiv.org/abs/2406.01265">The Dawn of Natural Language to SQL: Are We Fully Ready?</a> has been accepted by VLDB 2024.</li>
+      <li><span class="news-date">2024.04</span> Our paper <a href="https://ieeexplore.ieee.org/abstract/document/10535518">Efficient Deep Spiking Multilayer Perceptrons With Multiplication-Free Inference</a> has been accepted by TNNLS 2024.</li>
+    </ul>
+  </details>
 </div>
 
 <span class='anchor' id='publications'></span>
 
-# <i class="fas fa-file-alt"></i> Publications 
+# <i class="fas fa-file-alt"></i> Publications
 
-<div class="publication-stats">
-  <div class="stat-card">
-    <div class="stat-number" id="total_cit">-</div>
-    <div class="stat-label">Total Citations</div>
-    <div class="stat-detail">Google Scholar</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-number" id="h_index">-</div>
-    <div class="stat-label">h-index</div>
-    <div class="stat-detail">Google Scholar</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-number" id="i10_index">-</div>
-    <div class="stat-label">i10-index</div>
-    <div class="stat-detail">Google Scholar</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-number">15</div>
-    <div class="stat-label">Total Papers</div>
-    <div class="stat-detail">Published & Accepted</div>
-  </div>
+<div class="section-intro">
+  Full publication list in reverse chronological order.
 </div>
 
-<div class='paper-box'>
-
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">SIGMOD 2026 (Demo)</div>
-      <img src='images/paper/deepeye.png' alt="DeepEye" width="100%">
-    </div>
-  </div>
-
-  <div class='paper-box-text' markdown="1">
-  [DeepEye: A Steerable Self-driving Data Agent System](#) \\
-  **Boyan Li**, Yiran Peng, Yupeng Xie, Sirong Lu, Yizhang Zhu, Xing Mu, Xinyu Liu, Yuyu Luo
-
-  <br><small>🏅 <strong>Silver Medal</strong>, 51st Geneva International Exhibition of Inventions</small>  
-  <small>🏆 <strong>Best Open-source Project Award</strong>, AI Agent 2025 Competition</small>
-
-  </div>
-
-</div>
-
-
-<div class='paper-box'>
-
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">SIGMOD 2026</div>
-      <img src='images/paper/deepeye-sql.png' alt="sym" width="100%">
-    </div>
-  </div>
-
-  <div class='paper-box-text' markdown="1">
-  [DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework](https://arxiv.org/abs/2510.17586) \\
-  **Boyan Li**, Chong Chen, Zhujun Xue, Yinan Mei, Yuyu Luo
-
-  </div>
-
-</div>
-
-
-<div class='paper-box'>
-
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">Arxiv 2025</div>
-      <img src='images/paper/data-agent-survey.png' alt="sym" width="100%">
-    </div>
-  </div>
-
-  <div class='paper-box-text' markdown="1">
-  [A Survey of Data Agents: Emerging Paradigm or Overstated Hype?](https://arxiv.org/abs/2510.23587) \\
-  Yizhang Zhu, ..., **Boyan Li**, et.al
-
-  [**Awesome Data Agents**](https://github.com/HKUSTDial/awesome-data-agents/) \| [**Slides**](https://github.com/HKUSTDial/awesome-data-agents/blob/main/slides/从智能问数到数据智能体：范式演进与反思.pdf) \| [![](https://img.shields.io/github/stars/HKUSTDial/awesome-data-agents?style=social&label=Code+Stars)](https://github.com/HKUSTDial/awesome-data-agents) 
-
-  </div>
-
-</div>
-
-<div class='paper-box'>
-
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">ICML 2025</div>
-      <img src='images/paper/Alpha-SQL-overview.png' alt="sym" width="100%">
-    </div>
-  </div>
-
-  <div class='paper-box-text' markdown="1">
-  [Alpha-SQL: Zero-Shot Text-to-SQL using Monte Carlo Tree Search](https://arxiv.org/abs/2502.17248) \\
-  **Boyan Li**, Jiayi Zhang, Ju Fan, Yanwei Xu, Chong Chen, Nan Tang, Yuyu Luo
-
-  [**Homepage**](https://alpha-sql-hkust.github.io/) \| [**Slides**](presentations/Alpha-SQL.pptx) \| [**PDF**](presentations/Alpha-SQL.pdf) \| [![](https://img.shields.io/github/stars/HKUSTDial/Alpha-SQL?style=social&label=Code+Stars)](https://github.com/HKUSTDial/Alpha-SQL) 
-
-  </div>
-
-</div>
-
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">VIS 2025</div>
-      <img src='images/paper/deepvis.png' alt="sym" width="100%">
-    </div>
-  </div>
-  <div class='paper-box-text' markdown="1">
-  [DeepVIS: Bridging Natural Language and Data Visualization Through Step-wise Reasoning](https://arxiv.org/abs/2508.01700) \\
-  Zhihao Shuai<sup>*</sup>, **Boyan Li**<sup>*</sup>, Siyu Yan, Yuyu Luo, Weikai Yang
-  <br><small>*Equal contribution</small>
-
-  [![](https://img.shields.io/github/stars/Bvivib-shuai/DeepVIS?style=social&label=Code+Stars)](https://github.com/Bvivib-shuai/DeepVIS)
-  </div>
-</div>
-
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">KDD 2025</div>
-      <img src='images/paper/nl2sql-bugs.png' alt="sym" width="100%">
-    </div>
-  </div>
-  <div class='paper-box-text' markdown="1">
-  [NL2SQL-BUGs: A Benchmark for Detecting Semantic Errors in NL2SQL Translation](https://arxiv.org/abs/2503.11984) \\
-  Xinyu Liu, Shuyu Shen, **Boyan Li**, Nan Tang, Yuyu Luo
-
-  [**Homepage**](https://nl2sql-bugs.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/NL2SQL-Bugs-Benchmark?style=social&label=Code+Stars)](https://github.com/HKUSTDial/NL2SQL-Bugs-Benchmark)
-  </div>
-</div>
-
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">NIPS 2025</div>
-      <img src='images/paper/nvbench2.png' alt="sym" width="100%">
-    </div>
-  </div>
-  <div class='paper-box-text' markdown="1">
-  [nvBench 2.0: A Benchmark for Natural Language to Visualization under Ambiguity](https://arxiv.org/abs/2503.12880) \\
-  Tianqi Luo, Chuhan Huang, Leixian Shen, **Boyan Li**, Shuyu Shen, Wei Zeng, Nan Tang, Yuyu Luo
-
-  [**Homepage**](https://nvbench2.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/nvBench-2.0?style=social&label=Code+Stars)](https://github.com/HKUSTDial/nvBench-2.0)
-  </div>
-</div>
-
-<div class='paper-box'>
-
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">COLM 2025</div>
-      <img src='images/paper/EllieSQL.png' alt="sym" width="100%">
-    </div>
-  </div>
-
-  <div class='paper-box-text' markdown="1">
-  [EllieSQL: Cost-Efficient Text-to-SQL with Complexity-Aware Routing](https://arxiv.org/abs/2503.22402) \\
-  Yizhang Zhu, Runzhi Jiang, **Boyan Li**, Nan Tang, Yuyu Luo
-
-  [**Homepage**](https://elliesql.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/EllieSQL?style=social&label=Code+Stars)](https://github.com/HKUSTDial/EllieSQL)
-  </div>
-
-</div>
-
-<div class='paper-box'>
-
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">TKDE 2025</div>
-      <img src='images/paper/nl2sql_survey.png' alt="sym" width="100%">
-    </div>
-  </div>
-
-  <div class='paper-box-text' markdown="1">
-  [A Survey of NL2SQL with Large Language Models: Where are we, and where are we going?](https://arxiv.org/abs/2408.05109) \\
-  Xinyu Liu, Shuyu Shen, **Boyan Li**, Peixian Ma, Runzhi Jiang, Yuyu Luo, Yuxin Zhang, Ju Fan, Guoliang Li, Nan Tang
-
-  [**Homepage**](https://github.com/HKUSTDial/NL2SQL_Handbook) \| [![](https://img.shields.io/github/stars/HKUSTDial/NL2SQL_Handbook?style=social&label=Code+Stars)](https://github.com/HKUSTDial/NL2SQL_Handbook)
-  </div>
-
-</div>
-
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">ARXIV 2025</div>
-      <img src='images/paper/advances-foundation-agents.png' alt="sym" width="100%">
-    </div>
-  </div>
-  <div class='paper-box-text' markdown="1">
-  [Advances and Challenges in Foundation Agents](https://arxiv.org/abs/2504.01990) \\
-  Bang Liu, ..., Boyan Li, et al.
-
-  [**Top-1 Daily Paper in Hugging Face**](https://huggingface.co/papers/2504.01990) \| [![](https://img.shields.io/github/stars/FoundationAgents/awesome-foundation-agents?style=social&label=Code+Stars)](https://github.com/FoundationAgents/awesome-foundation-agents)
-  </div>
-</div>
-
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">CHI 2025</div>
-      <img src='images/paper/harvis.png' alt="sym" width="100%">
-    </div>
-  </div>
-  <div class='paper-box-text' markdown="1">
-  [Augmenting Realistic Charts with Virtual Overlays](https://dl.acm.org/doi/full/10.1145/3706598.3714320) \\
-  Yao Shi, **Boyan Li**, Yuyu Luo, Lei Chen, Nan Tang
-  </div>
-</div>
-
-<div class='paper-box'>
-
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">ARXIV 2024</div>
-      <img src='images/paper/nl_rewriter.png' alt="sym" width="100%">
-    </div>
-  </div>
-
-  <div class='paper-box-text' markdown="1">
-  [A Plug-and-Play Natural Language Rewriter for Natural Language to SQL](https://arxiv.org/abs/2412.17068) \\
-  Peixian Ma, **Boyan Li**, Runzhi Jiang, Ju Fan, Nan Tang, Yuyu Luo
-
-  </div>
-
-</div>
-
-<div class='paper-box'>
-
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">VLDB 2024</div>
-      <img src='images/paper/nl2sql360.png' alt="sym" width="100%">
-    </div>
-  </div>
-
-  <div class='paper-box-text' markdown="1">
-  [The Dawn of Natural Language to SQL: Are We Fully Ready?](https://arxiv.org/abs/2406.01265) \\
-  **Boyan Li**, Yuyu Luo, Chengliang Chai, Guoliang Li, Nan Tang
-
-  [**Homepage**](https://nl2sql360.github.io/) \| [![](https://img.shields.io/github/stars/HKUSTDial/NL2SQL360?style=social&label=Code+Stars)](https://github.com/HKUSTDial/NL2SQL360)
-
-  [**VLDB 2024 Highly Cited Papers Top-2 (Google Metrics)**](https://scholar.google.com/citations?hl=en&view_op=list_hcore&venue=HgMIeQ05CyMJ.2025&vq=eng_databasesinformationsystems&cstart=60)
-
-  </div>
-
-</div>
-
-<div class='paper-box'>
-
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">NIPS 2024</div>
-      <img src='images/paper/statqa.png' alt="sym" width="100%">
-    </div>
-  </div>
-
-  <div class='paper-box-text' markdown="1">
-  [Are Large Language Models Good Statisticians?](https://arxiv.org/abs/2406.07815) \\
-  Yizhang Zhu, Shiyin Du, **Boyan Li**, Yuyu Luo, Nan Tang
-
-  [**Homepage**](https://statqa.github.io/) \| [![](https://img.shields.io/github/stars/derrickzhuyz/StatQA?style=social&label=Code+Stars)](https://github.com/HKUSTDial/StatQA)
-  </div>
-
-</div>
-
-<div class='paper-box'>
-
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">TNNLS 2024</div>
-      <img src='images/paper/mixer_snn.png' alt="sym" width="100%">
-    </div>
-  </div>
-
-  <div class='paper-box-text' markdown="1">
-  [Efficient Deep Spiking Multi-Layer Perceptrons with Multiplication-Free Inference](https://ieeexplore.ieee.org/abstract/document/10535518) \\
-  **Boyan Li**, Luziwei Leng, Shuaijie Shen, Kaixuan Zhang, Jianguo Zhang, Jianxing Liao, Ran Cheng
-
-  [**Code**](https://github.com/EMI-Group/mixer-snn) \| [![](https://img.shields.io/github/stars/EMI-Group/mixer-snn?style=social&label=Code+Stars)](https://github.com/EMI-Group/mixer-snn)
-  </div>
-
-</div>
+{% assign current_pub_year = "" %}
+{% for paper in site.data.publications.items %}
+{% unless paper.year == current_pub_year %}
+{% assign current_pub_year = paper.year %}
+<div class="pub-year-divider">{{ current_pub_year }}</div>
+{% endunless %}
+{% include publication_card.html paper=paper %}
+{% endfor %}
 
 <span class='anchor' id='honors-and-awards'></span>
 
 # <i class="fas fa-trophy"></i> Honors and Awards
 
-<div class="honors-timeline">
-
-  <div class="honor-card">
-    <div class="timeline-icon">
-      <i class="fas fa-trophy"></i>
-    </div>
-    <div class="honor-content">
-      <div class="honor-date">2026.03</div>
-      <div class="honor-title">Silver Medal, 51st Geneva Inventions Exhibition</div>
-      <div class="honor-description">DeepEye Data Agent System</div>
-    </div>
-  </div>
-
-  <div class="honor-card">
-    <div class="timeline-icon">
-      <i class="fas fa-trophy"></i>
-    </div>
-    <div class="honor-content">
-      <div class="honor-date">2026.03</div>
-      <div class="honor-title">Silver Medal, 51st Geneva Inventions Exhibition</div>
-      <div class="honor-description">Low-Altitude Economy Ground-Air Collaborative Delivery Digital Twin Platform</div>
+<div class="year-list">
+  <div class="year-group">
+    <div class="year-group-label">2026</div>
+    <div class="year-group-body">
+      <div class="compact-item">
+        <div class="compact-item-title">Silver Medal, 51st Geneva Inventions Exhibition</div>
+        <div class="compact-item-meta">DeepEye Data Agent System</div>
+      </div>
+      <div class="compact-item">
+        <div class="compact-item-title">Silver Medal, 51st Geneva Inventions Exhibition</div>
+        <div class="compact-item-meta">Low-Altitude Economy Ground-Air Collaborative Delivery Digital Twin Platform</div>
+      </div>
     </div>
   </div>
 
-  <div class="honor-card">
-    <div class="timeline-icon">
-      <i class="fas fa-trophy"></i>
-    </div>
-    <div class="honor-content">
-      <div class="honor-date">2025.12</div>
-      <div class="honor-title">Research Excellence Awards</div>
-      <div class="honor-description">DSA Excellence Awards 2025</div>
-    </div>
-  </div>
-
-  <div class="honor-card">
-    <div class="timeline-icon">
-      <i class="fas fa-trophy"></i>
-    </div>
-    <div class="honor-content">
-      <div class="honor-date">2025.11</div>
-      <div class="honor-title">Runner-up, Best Project Award</div>
-      <div class="honor-description">Data Intelligence: When Databases Meet AI (DSAA 6000R), HKUST(GZ)</div>
+  <div class="year-group">
+    <div class="year-group-label">2025</div>
+    <div class="year-group-body">
+      <div class="compact-item">
+        <div class="compact-item-title">Research Excellence Awards</div>
+        <div class="compact-item-meta">DSA Excellence Awards 2025</div>
+      </div>
+      <div class="compact-item">
+        <div class="compact-item-title">Runner-up, Best Project Award</div>
+        <div class="compact-item-meta">Data Intelligence: When Databases Meet AI (DSAA 6000R), HKUST(GZ)</div>
+      </div>
+      <div class="compact-item">
+        <div class="compact-item-title">Best Open-source Project Award</div>
+        <div class="compact-item-meta">AI Agent 2025 Competition</div>
+      </div>
     </div>
   </div>
 
-  <div class="honor-card">
-    <div class="timeline-icon">
-      <i class="fas fa-trophy"></i>
-    </div>
-    <div class="honor-content">
-      <div class="honor-date">2025.10</div>
-      <div class="honor-title">Best Open-source Project Award</div>
-      <div class="honor-description">AI Agent 2025 Competition</div>
-    </div>
-  </div>
-
-  <div class="honor-card">
-    <div class="timeline-icon">
-      <i class="fas fa-trophy"></i>
-    </div>
-    <div class="honor-content">
-      <div class="honor-date">2025.01</div>
-      <div class="honor-title">Merit Prize</div>
-      <div class="honor-description">DSA Excellent Research Award 2024</div>
+  <div class="year-group">
+    <div class="year-group-label">2024</div>
+    <div class="year-group-body">
+      <div class="compact-item">
+        <div class="compact-item-title">Merit Prize</div>
+        <div class="compact-item-meta">DSA Excellent Research Award 2024</div>
+      </div>
+      <div class="compact-item">
+        <div class="compact-item-title">Best Project Award</div>
+        <div class="compact-item-meta">Data Science Computing (DSAA5021), HKUST(GZ)</div>
+      </div>
     </div>
   </div>
 
-  <div class="honor-card">
-    <div class="timeline-icon">
-      <i class="fas fa-trophy"></i>
-    </div>
-    <div class="honor-content">
-      <div class="honor-date">2024.12</div>
-      <div class="honor-title">Best Project Award</div>
-      <div class="honor-description">Data Science Computing (DSAA5021), HKUST(GZ)</div>
-    </div>
-  </div>
-  
-  <div class="honor-card">
-    <div class="timeline-icon">
-      <i class="fas fa-trophy"></i>
-    </div>
-    <div class="honor-content">
-      <div class="honor-date">2023.06</div>
-      <div class="honor-title">Highest Honors in Computer Science & Engineering</div>
-      <div class="honor-description">Southern University of Science and Technology</div>
-    </div>
-  </div>
-  
-  <div class="honor-card">
-    <div class="timeline-icon">
-      <i class="fas fa-trophy"></i>
-    </div>
-    <div class="honor-content">
-      <div class="honor-date">2023.06</div>
-      <div class="honor-title">Outstanding Graduate</div>
-      <div class="honor-description">Southern University of Science and Technology</div>
+  <div class="year-group">
+    <div class="year-group-label">2023</div>
+    <div class="year-group-body">
+      <div class="compact-item">
+        <div class="compact-item-title">Highest Honors in Computer Science & Engineering</div>
+        <div class="compact-item-meta">Southern University of Science and Technology</div>
+      </div>
+      <div class="compact-item">
+        <div class="compact-item-title">Outstanding Graduate</div>
+        <div class="compact-item-meta">Southern University of Science and Technology</div>
+      </div>
     </div>
   </div>
 
-  <div class="honor-card">
-    <div class="timeline-icon">
-      <i class="fas fa-trophy"></i>
-    </div>
-    <div class="honor-content">
-      <div class="honor-date">2022.05</div>
-      <div class="honor-title">Huawei Scholarship</div>
-      <div class="honor-description">Huawei Technologies</div>
-    </div>
-  </div>
-
-  <div class="honor-card">
-    <div class="timeline-icon">
-      <i class="fas fa-trophy"></i>
-    </div>
-    <div class="honor-content">
-      <div class="honor-date">2020, 2021, 2022</div>
-      <div class="honor-title">Excellent Student Scholarship</div>
-      <div class="honor-description">Southern University of Science and Technology</div>
+  <div class="year-group">
+    <div class="year-group-label">2022</div>
+    <div class="year-group-body">
+      <div class="compact-item">
+        <div class="compact-item-title">Huawei Scholarship</div>
+        <div class="compact-item-meta">Huawei Technologies</div>
+      </div>
     </div>
   </div>
 
-  <div class="honor-card">
-    <div class="timeline-icon">
-      <i class="fas fa-trophy"></i>
+  <div class="year-group">
+    <div class="year-group-label">2020-2022</div>
+    <div class="year-group-body">
+      <div class="compact-item">
+        <div class="compact-item-title">Excellent Student Scholarship</div>
+        <div class="compact-item-meta">Southern University of Science and Technology</div>
+      </div>
     </div>
-    <div class="honor-content">
-      <div class="honor-date">2020.04</div>
-      <div class="honor-title">National Encouragement Scholarship</div>
-      <div class="honor-description">Ministry of Education of China</div>
+  </div>
+
+  <div class="year-group">
+    <div class="year-group-label">2020</div>
+    <div class="year-group-body">
+      <div class="compact-item">
+        <div class="compact-item-title">National Encouragement Scholarship</div>
+        <div class="compact-item-meta">Ministry of Education of China</div>
+      </div>
     </div>
   </div>
 </div>
@@ -490,28 +184,22 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
 
 # <i class="fas fa-graduation-cap"></i> Education
 
-<div class="education-timeline">
-  <div class="education-card">
-    <div class="timeline-icon">
-      <i class="fas fa-graduation-cap"></i>
-    </div>
-    <div class="education-content">
-      <div class="education-date">2024.09 - Present</div>
-      <div class="education-title">PhD Student</div>
-      <div class="education-institution"><a href="https://www.hkust-gz.edu.cn/" target="_blank">Hong Kong University of Science and Technology (Guangzhou)</a></div>
-      <div class="education-description">Pursuing doctoral studies in Data Science and Analytics</div>
+<div class="cv-list">
+  <div class="cv-item">
+    <div class="cv-period">2024.09 - Present</div>
+    <div class="cv-main">
+      <div class="cv-title">PhD Student</div>
+      <div class="cv-subtitle"><a href="https://www.hkust-gz.edu.cn/" target="_blank">Hong Kong University of Science and Technology (Guangzhou)</a></div>
+      <div class="cv-note">Pursuing doctoral studies in Data Science and Analytics</div>
     </div>
   </div>
-  
-  <div class="education-card">
-    <div class="timeline-icon">
-      <i class="fas fa-university"></i>
-    </div>
-    <div class="education-content">
-      <div class="education-date">2019.09 - 2023.07</div>
-      <div class="education-title">Bachelor of Computer Science and Technology</div>
-      <div class="education-institution"><a href="https://www.sustech.edu.cn/" target="_blank">Southern University of Science and Technology</a></div>
-      <div class="education-description">GPA 3.91/4.0, Ranking 2/183</div>
+
+  <div class="cv-item">
+    <div class="cv-period">2019.09 - 2023.07</div>
+    <div class="cv-main">
+      <div class="cv-title">Bachelor of Computer Science and Technology</div>
+      <div class="cv-subtitle"><a href="https://www.sustech.edu.cn/" target="_blank">Southern University of Science and Technology</a></div>
+      <div class="cv-note">GPA 3.91/4.0, Ranking 2/183</div>
     </div>
   </div>
 </div>
@@ -520,42 +208,30 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
 
 # <i class="fas fa-briefcase"></i> Experience
 
-<div class="experience-timeline">
-  <div class="experience-card">
-    <div class="timeline-icon">
-      <i class="fas fa-exchange-alt"></i>
-    </div>
-    <div class="experience-content">
-      <div class="experience-date">2025.06 - 2025.12</div>
-      <div class="experience-title">Exchange Student</div>
-      <div class="experience-institution"><a href="https://www.tsinghua.edu.cn" target="_blank">Tsinghua University</a></div>
-      <div class="experience-location">Beijing, China</div>
-      <div class="experience-description">Worked as a research intern in the Database Group led by Professor Guoliang Li</div>
+<div class="cv-list">
+  <div class="cv-item">
+    <div class="cv-period">2025.06 - 2025.12</div>
+    <div class="cv-main">
+      <div class="cv-title">Exchange Student</div>
+      <div class="cv-subtitle"><a href="https://www.tsinghua.edu.cn" target="_blank">Tsinghua University</a> · Beijing, China</div>
+      <div class="cv-note">Worked as a research intern in the Database Group led by Professor Guoliang Li</div>
     </div>
   </div>
-  
-  <div class="experience-card">
-    <div class="timeline-icon">
-      <i class="fas fa-flask"></i>
-    </div>
-    <div class="experience-content">
-      <div class="experience-date">2023.07 - 2024.09</div>
-      <div class="experience-title">Research Assistant</div>
-      <div class="experience-institution"><a href="https://www.hkust-gz.edu.cn/" target="_blank">Hong Kong University of Science and Technology (Guangzhou)</a></div>
-      <div class="experience-location">Guangzhou, China</div>
-      <div class="experience-description">Conducted research in Text-to-SQL and Data Agent systems</div>
+
+  <div class="cv-item">
+    <div class="cv-period">2023.07 - 2024.09</div>
+    <div class="cv-main">
+      <div class="cv-title">Research Assistant</div>
+      <div class="cv-subtitle"><a href="https://www.hkust-gz.edu.cn/" target="_blank">Hong Kong University of Science and Technology (Guangzhou)</a> · Guangzhou, China</div>
+      <div class="cv-note">Conducted research in Text-to-SQL and Data Agent systems</div>
     </div>
   </div>
-  
-  <div class="experience-card">
-    <div class="timeline-icon">
-      <i class="fas fa-building"></i>
-    </div>
-    <div class="experience-content">
-      <div class="experience-date">2022.07 - 2022.09</div>
-      <div class="experience-title">Research Intern</div>
-      <div class="experience-institution"><a href="https://www.huawei.com/cn/" target="_blank">Huawei Central Research Institute</a></div>
-      <div class="experience-location">Shenzhen, China</div>
+
+  <div class="cv-item">
+    <div class="cv-period">2022.07 - 2022.09</div>
+    <div class="cv-main">
+      <div class="cv-title">Research Intern</div>
+      <div class="cv-subtitle"><a href="https://www.huawei.com/cn/" target="_blank">Huawei Central Research Institute</a> · Shenzhen, China</div>
     </div>
   </div>
 </div>
@@ -564,32 +240,19 @@ I am a second-year PhD student at the [Hong Kong University of Science and Techn
 
 # <i class="fas fa-handshake"></i> Services
 
-<div class="services-grid">
-  <div class="service-card">
-    <div class="service-icon">
-      <i class="fas fa-trophy"></i>
-    </div>
-    <div class="service-content">
-      <div class="service-title">KDD Cup 2026 Organizing Committee</div>
-      <div class="service-detail"><strong>General Chair</strong>, <a href="https://dataagent.top">KDD Cup 2026: Data Agents for Complex Data Analysis</a>.</div>
-    </div>
+<div class="compact-list">
+  <div class="compact-item">
+    <div class="compact-item-title">General Chair</div>
+    <div class="compact-item-meta"><a href="https://dataagent.top">KDD Cup 2026: Data Agents for Complex Data Analysis</a></div>
   </div>
-  <div class="service-card">
-    <div class="service-icon">
-      <i class="fas fa-microphone-alt"></i>
-    </div>
-    <div class="service-content">
-      <div class="service-title">Invited Talk</div>
-      <div class="service-detail">Huawei Squirrel Webinar: "DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework"</div>
-    </div>
+
+  <div class="compact-item">
+    <div class="compact-item-title">Invited Talk</div>
+    <div class="compact-item-meta">Huawei Squirrel Webinar: "DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework"</div>
   </div>
-  <div class="service-card">
-    <div class="service-icon">
-      <i class="fas fa-clipboard-check"></i>
-    </div>
-    <div class="service-content">
-      <div class="service-title">Conference Reviewer</div>
-      <div class="service-detail">ICLR 2026</div>
-    </div>
+
+  <div class="compact-item">
+    <div class="compact-item-title">Conference Reviewer</div>
+    <div class="compact-item-meta">ICLR 2026</div>
   </div>
 </div>

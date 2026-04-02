@@ -31,6 +31,7 @@
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
       {% endif %}
+      <li><a href="{{ '/presentations/Boyan_Li_CV.pdf' | relative_url }}"><i class="fas fa-fw fa-file-alt" aria-hidden="true"></i> CV</a></li>
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>
       {% endif %}
@@ -65,7 +66,7 @@
         <li><a href="https://bitbucket.org/{{ author.bitbucket }}"><i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
       {% endif %}
       {% if author.github %}
-        <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+        <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
       {% endif %}
       {% if author.stackoverflow %}
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
@@ -118,12 +119,6 @@
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
       {% endif %}
-
-      <!-- Clustrmaps -->
-      <li>
-        <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=HXG0sptVKKeWqALNaz5MIelX9K8Gbr9G2CYNjZc7Rrc&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
-      </li>
-
     </ul>
       <div class="author__urls_sm">
       {% if author.uri %}
@@ -132,6 +127,7 @@
       {% if author.email %}
         <a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>
       {% endif %}
+      <a href="{{ '/presentations/Boyan_Li_CV.pdf' | relative_url }}"><i class="fas fa-fw fa-file-alt" aria-hidden="true"></i></a>
       {% if author.keybase %}
         <a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i></a>
       {% endif %}

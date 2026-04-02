@@ -1,38 +1,95 @@
 <script>
-    $(document).ready(function () {
-        var gsDataUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/refs/heads/google-scholar-stats/gs_data.json';
-        $.getJSON(gsDataUrl, function (data) {
-            // 更新总引用数
-            var totalCitation = data['citedby']
-            if (document.getElementById('total_cit')) {
-                document.getElementById('total_cit').innerHTML = totalCitation;
+    document.addEventListener('DOMContentLoaded', function () {
+        var gsDataUrls = [
+            {% if site.google_scholar_stats_use_cdn %}
+            'https://cdn.jsdelivr.net/gh/{{ site.repository }}@google-scholar-stats/gs_data.json',
+            'https://raw.githubusercontent.com/{{ site.repository }}/google-scholar-stats/gs_data.json',
+            {% else %}
+            'https://raw.githubusercontent.com/{{ site.repository }}/google-scholar-stats/gs_data.json',
+            'https://cdn.jsdelivr.net/gh/{{ site.repository }}@google-scholar-stats/gs_data.json',
+            {% endif %}
+            'https://raw.githubusercontent.com/{{ site.repository }}/refs/heads/google-scholar-stats/gs_data.json'
+        ];
+
+        function firstDefined(values) {
+            for (var i = 0; i < values.length; i++) {
+                if (values[i] !== undefined && values[i] !== null) {
+                    return values[i];
+                }
             }
-            
-            // 更新 h-index (支持多种字段名格式和位置)
-            var hIndex = data['hindex'] || data['h_index'] || 
-                        (data['indices'] && (data['indices']['hindex'] || data['indices']['h_index']));
-            if (hIndex && document.getElementById('h_index')) {
-                document.getElementById('h_index').innerHTML = hIndex;
+            return null;
+        }
+
+        function updateText(id, value) {
+            if (value === undefined || value === null) {
+                return;
             }
-            
-            // 更新 i10-index (支持多种字段名格式和位置)
-            var i10Index = data['i10index'] || data['i10_index'] || 
-                          (data['indices'] && (data['indices']['i10index'] || data['indices']['i10_index']));
-            if (i10Index && document.getElementById('i10_index')) {
-                document.getElementById('i10_index').innerHTML = i10Index;
+
+            var element = document.getElementById(id);
+            if (element) {
+                element.textContent = value;
             }
-            
-            // 更新每篇论文的引用数
-            var citationEles = document.getElementsByClassName('show_paper_citations')
-            Array.prototype.forEach.call(citationEles, element => {
-                var paperId = element.getAttribute('data')
-                if (data['publications'] && data['publications'][paperId]) {
-                    var numCitations = data['publications'][paperId]['num_citations']
-                    element.innerHTML = '| Citations: ' + numCitations;
+        }
+
+        function updatePaperCitations(data) {
+            var citationEles = document.getElementsByClassName('show_paper_citations');
+
+            Array.prototype.forEach.call(citationEles, function (element) {
+                var paperId = element.getAttribute('data');
+                var publication = data.publications && data.publications[paperId];
+
+                if (publication && publication.num_citations !== undefined) {
+                    element.textContent = '| Citations: ' + publication.num_citations;
                 }
             });
-        }).fail(function(jqxhr, textStatus, error) {
-            console.log("Failed to load Google Scholar data: " + textStatus + ", " + error);
+        }
+
+        function applyGoogleScholarStats(data) {
+            updateText('total_cit', firstDefined([
+                data.citedby,
+                data.cited_by,
+                data.total_citations
+            ]));
+
+            updateText('h_index', firstDefined([
+                data.hindex,
+                data.h_index,
+                data.indices && data.indices.hindex,
+                data.indices && data.indices.h_index
+            ]));
+
+            updateText('i10_index', firstDefined([
+                data.i10index,
+                data.i10_index,
+                data.indices && data.indices.i10index,
+                data.indices && data.indices.i10_index
+            ]));
+
+            updatePaperCitations(data);
+        }
+
+        function fetchGoogleScholarStats(urls, index) {
+            if (index >= urls.length) {
+                return Promise.reject(new Error('No Google Scholar endpoints responded successfully.'));
+            }
+
+            var url = urls[index];
+
+            return fetch(url, { cache: 'no-store' }).then(function (response) {
+                if (!response.ok) {
+                    throw new Error('HTTP ' + response.status);
+                }
+                return response.json();
+            }).catch(function (error) {
+                console.warn('Failed to load Google Scholar data from ' + url + ': ' + error.message);
+                return fetchGoogleScholarStats(urls, index + 1);
+            });
+        }
+
+        fetchGoogleScholarStats(gsDataUrls, 0).then(function (data) {
+            applyGoogleScholarStats(data);
+        }).catch(function (error) {
+            console.error('Failed to load Google Scholar data from all endpoints: ' + error.message);
         });
-    })
+    });
 </script>

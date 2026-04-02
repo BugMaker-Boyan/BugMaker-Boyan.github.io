@@ -1,5 +1,7 @@
 _site/
 push.sh
 .DS_Store
+.bundle/
+vendor/
 
 cv_tex/

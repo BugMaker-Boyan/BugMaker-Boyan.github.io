@@ -3,13 +3,15 @@ version: '3.8'
 services:
   jekyll:
     image: jekyll/jekyll:latest
-    user: root
+    user: "${DOCKER_UID:-1000}:${DOCKER_GID:-1000}"
+    working_dir: /srv/jekyll
     ports:
       - "4000:4000"
       - "35729:35729"
     volumes:
       - .:/srv/jekyll
-    command: sh -c "gem sources --remove https://rubygems.org/ && gem sources --add https://gems.ruby-china.com/ && bundle config mirror.https://rubygems.org https://gems.ruby-china.com && rm -f Gemfile.lock && bundle install && jekyll serve --force_polling --host 0.0.0.0"
+    command: sh -c "mkdir -p \"$$HOME\" \"$$BUNDLE_APP_CONFIG\" && bundle config set path vendor/bundle && bundle config set mirror.https://rubygems.org https://gems.ruby-china.com && bundle install && jekyll serve --force_polling --host 0.0.0.0"
     environment:
+      - HOME=/tmp/jekyll-home
+      - BUNDLE_APP_CONFIG=/tmp/jekyll-bundle
       - JEKYLL_ENV=development
-

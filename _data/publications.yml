@@ -1,0 +1,239 @@
+# `featured` controls which papers appear in the Selected Work section.
+# `items` are rendered in order for the full Publications list.
+# Optional fields:
+# - `paper_url`
+# - `note_html`
+# - `links`: [{label, url}] or [{badge_image, url}]
+# - `featured_meta`, `featured_summary`, `featured_tags`, `featured_links`
+featured:
+  - deepeye-sql
+  - data-agents-survey
+  - alpha-sql
+
+items:
+  - id: deepeye
+    year: 2026
+    badge: "SIGMOD 2026 (Demo)"
+    image: "/images/paper/deepeye.png"
+    image_alt: "DeepEye"
+    title: "DeepEye: A Steerable Self-driving Data Agent System"
+    paper_url: "https://arxiv.org/abs/2603.28889v1"
+    authors: "**Boyan Li**, Yiran Peng, Yupeng Xie, Sirong Lu, Yizhang Zhu, Xing Mu, Xinyu Liu, Yuyu Luo"
+    note_html: |
+      <br><small>🏅 <strong>Silver Medal</strong>, 51st Geneva International Exhibition of Inventions</small>
+      <small>🏆 <strong>Best Open-source Project Award</strong>, AI Agent 2025 Competition</small>
+
+  - id: deepeye-sql
+    year: 2026
+    badge: "SIGMOD 2026"
+    image: "/images/paper/deepeye-sql.png"
+    image_alt: "DeepEye-SQL"
+    title: "DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework"
+    paper_url: "https://arxiv.org/abs/2510.17586"
+    authors: "**Boyan Li**, Chong Chen, Zhujun Xue, Yinan Mei, Yuyu Luo"
+    links:
+      - label: "Code"
+        url: "https://github.com/HKUSTDial/DeepEye-SQL"
+      - badge_image: "https://img.shields.io/github/stars/HKUSTDial/DeepEye-SQL?style=social&label=Code+Stars"
+        url: "https://github.com/HKUSTDial/DeepEye-SQL"
+    featured_meta: "SIGMOD 2026"
+    featured_summary: "A software-engineering-inspired Text-to-SQL framework that improves reliability through structured decomposition, explicit intermediate artifacts, and controllable execution stages."
+    featured_tags:
+      - "73.5% EX on BIRD-Dev"
+      - "89.8% EX on Spider-Test"
+      - "~30B model, no fine-tuning"
+    featured_links:
+      - label: "Paper"
+        url: "https://arxiv.org/abs/2510.17586"
+      - label: "Code"
+        url: "https://github.com/HKUSTDial/DeepEye-SQL"
+
+  - id: alpha-sql
+    year: 2025
+    badge: "ICML 2025"
+    image: "/images/paper/Alpha-SQL-overview.png"
+    image_alt: "Alpha-SQL"
+    title: "Alpha-SQL: Zero-Shot Text-to-SQL using Monte Carlo Tree Search"
+    paper_url: "https://arxiv.org/abs/2502.17248"
+    authors: "**Boyan Li**, Jiayi Zhang, Ju Fan, Yanwei Xu, Chong Chen, Nan Tang, Yuyu Luo"
+    links:
+      - label: "Homepage"
+        url: "https://alpha-sql-hkust.github.io/"
+      - label: "Slides"
+        url: "/presentations/Alpha-SQL.pptx"
+      - label: "PDF"
+        url: "/presentations/Alpha-SQL.pdf"
+      - badge_image: "https://img.shields.io/github/stars/HKUSTDial/Alpha-SQL?style=social&label=Code+Stars"
+        url: "https://github.com/HKUSTDial/Alpha-SQL"
+    featured_meta: "ICML 2025"
+    featured_summary: "A zero-shot Text-to-SQL method that uses Monte Carlo Tree Search to explore and refine candidate SQL programs instead of relying on a single-shot generation pass."
+    featured_tags:
+      - "Zero-shot Text-to-SQL"
+      - "Monte Carlo Tree Search"
+      - "ICML 2025"
+    featured_links:
+      - label: "Paper"
+        url: "https://arxiv.org/abs/2502.17248"
+      - label: "Homepage"
+        url: "https://alpha-sql-hkust.github.io/"
+      - label: "Code"
+        url: "https://github.com/HKUSTDial/Alpha-SQL"
+
+  - id: deepvis
+    year: 2025
+    badge: "VIS 2025"
+    image: "/images/paper/deepvis.png"
+    image_alt: "DeepVIS"
+    title: "DeepVIS: Bridging Natural Language and Data Visualization Through Step-wise Reasoning"
+    paper_url: "https://arxiv.org/abs/2508.01700"
+    authors: "Zhihao Shuai<sup>*</sup>, **Boyan Li**<sup>*</sup>, Siyu Yan, Yuyu Luo, Weikai Yang"
+    links:
+      - badge_image: "https://img.shields.io/github/stars/Bvivib-shuai/DeepVIS?style=social&label=Code+Stars"
+        url: "https://github.com/Bvivib-shuai/DeepVIS"
+
+  - id: nl2sql-bugs
+    year: 2025
+    badge: "KDD 2025"
+    image: "/images/paper/nl2sql-bugs.png"
+    image_alt: "NL2SQL-BUGs"
+    title: "NL2SQL-BUGs: A Benchmark for Detecting Semantic Errors in NL2SQL Translation"
+    paper_url: "https://arxiv.org/abs/2503.11984"
+    authors: "Xinyu Liu, Shuyu Shen, **Boyan Li**, Nan Tang, Yuyu Luo"
+    links:
+      - label: "Homepage"
+        url: "https://nl2sql-bugs.github.io/"
+      - badge_image: "https://img.shields.io/github/stars/HKUSTDial/NL2SQL-Bugs-Benchmark?style=social&label=Code+Stars"
+        url: "https://github.com/HKUSTDial/NL2SQL-Bugs-Benchmark"
+
+  - id: nvbench-2
+    year: 2025
+    badge: "NeurIPS 2025"
+    image: "/images/paper/nvbench2.png"
+    image_alt: "nvBench 2.0"
+    title: "nvBench 2.0: A Benchmark for Natural Language to Visualization under Ambiguity"
+    paper_url: "https://arxiv.org/abs/2503.12880"
+    authors: "Tianqi Luo, Chuhan Huang, Leixian Shen, **Boyan Li**, Shuyu Shen, Wei Zeng, Nan Tang, Yuyu Luo"
+    links:
+      - label: "Homepage"
+        url: "https://nvbench2.github.io/"
+      - badge_image: "https://img.shields.io/github/stars/HKUSTDial/nvBench-2.0?style=social&label=Code+Stars"
+        url: "https://github.com/HKUSTDial/nvBench-2.0"
+
+  - id: elliesql
+    year: 2025
+    badge: "COLM 2025"
+    image: "/images/paper/EllieSQL.png"
+    image_alt: "EllieSQL"
+    title: "EllieSQL: Cost-Efficient Text-to-SQL with Complexity-Aware Routing"
+    paper_url: "https://arxiv.org/abs/2503.22402"
+    authors: "Yizhang Zhu, Runzhi Jiang, **Boyan Li**, Nan Tang, Yuyu Luo"
+    links:
+      - label: "Homepage"
+        url: "https://elliesql.github.io/"
+      - badge_image: "https://img.shields.io/github/stars/HKUSTDial/EllieSQL?style=social&label=Code+Stars"
+        url: "https://github.com/HKUSTDial/EllieSQL"
+
+  - id: nl2sql-survey
+    year: 2025
+    badge: "TKDE 2025"
+    image: "/images/paper/nl2sql_survey.png"
+    image_alt: "NL2SQL Survey"
+    title: "A Survey of NL2SQL with Large Language Models: Where are we, and where are we going?"
+    paper_url: "https://arxiv.org/abs/2408.05109"
+    authors: "Xinyu Liu, Shuyu Shen, **Boyan Li**, Peixian Ma, Runzhi Jiang, Yuyu Luo, Yuxin Zhang, Ju Fan, Guoliang Li, Nan Tang"
+    links:
+      - label: "Homepage"
+        url: "https://github.com/HKUSTDial/NL2SQL_Handbook"
+      - badge_image: "https://img.shields.io/github/stars/HKUSTDial/NL2SQL_Handbook?style=social&label=Code+Stars"
+        url: "https://github.com/HKUSTDial/NL2SQL_Handbook"
+
+  - id: data-agents-survey
+    year: 2025
+    badge: "ArXiv 2025"
+    image: "/images/paper/data-agent-survey.png"
+    image_alt: "Data Agents Survey"
+    title: "A Survey of Data Agents: Emerging Paradigm or Overstated Hype?"
+    paper_url: "https://arxiv.org/abs/2510.23587"
+    authors: "Yizhang Zhu, ..., **Boyan Li**, et al."
+    links:
+      - label: "Homepage"
+        url: "https://github.com/HKUSTDial/awesome-data-agents/"
+      - label: "Slides"
+        url: "https://github.com/HKUSTDial/awesome-data-agents/blob/main/slides/从智能问数到数据智能体：范式演进与反思.pdf"
+      - label: "Top-3 Daily Paper on Hugging Face"
+        url: "https://huggingface.co/papers/2510.23587"
+    featured_meta: "ArXiv 2025"
+    featured_summary: "A structured view of the emerging data-agent landscape, organizing systems by autonomy and clarifying where current methods are genuinely agentic versus overstated."
+    featured_tags:
+      - "Hierarchical taxonomy"
+      - "L0-L5 autonomy levels"
+      - "Top-3 Hugging Face Daily Papers"
+    featured_links:
+      - label: "Paper"
+        url: "https://arxiv.org/abs/2510.23587"
+      - label: "Homepage"
+        url: "https://github.com/HKUSTDial/awesome-data-agents/"
+      - label: "Slides"
+        url: "https://github.com/HKUSTDial/awesome-data-agents/blob/main/slides/从智能问数到数据智能体：范式演进与反思.pdf"
+
+  - id: foundation-agents
+    year: 2025
+    badge: "ArXiv 2025"
+    image: "/images/paper/advances-foundation-agents.png"
+    image_alt: "Foundation Agents"
+    title: "Advances and Challenges in Foundation Agents"
+    paper_url: "https://arxiv.org/abs/2504.01990"
+    authors: "Bang Liu, ..., **Boyan Li**, et al."
+    links:
+      - label: "Top-1 Daily Paper in Hugging Face"
+        url: "https://huggingface.co/papers/2504.01990"
+      - badge_image: "https://img.shields.io/github/stars/FoundationAgents/awesome-foundation-agents?style=social&label=Code+Stars"
+        url: "https://github.com/FoundationAgents/awesome-foundation-agents"
+
+  - id: harvis
+    year: 2025
+    badge: "CHI 2025"
+    image: "/images/paper/harvis.png"
+    image_alt: "Harvis"
+    title: "Augmenting Realistic Charts with Virtual Overlays"
+    paper_url: "https://dl.acm.org/doi/full/10.1145/3706598.3714320"
+    authors: "Yao Shi, **Boyan Li**, Yuyu Luo, Lei Chen, Nan Tang"
+
+  - id: nl2sql360
+    year: 2024
+    badge: "VLDB 2024"
+    image: "/images/paper/nl2sql360.png"
+    image_alt: "NL2SQL360"
+    title: "The Dawn of Natural Language to SQL: Are We Fully Ready?"
+    paper_url: "https://arxiv.org/abs/2406.01265"
+    authors: "**Boyan Li**, Yuyu Luo, Chengliang Chai, Guoliang Li, Nan Tang"
+    links:
+      - label: "Homepage"
+        url: "https://nl2sql360.github.io/"
+      - badge_image: "https://img.shields.io/github/stars/HKUSTDial/NL2SQL360?style=social&label=Code+Stars"
+        url: "https://github.com/HKUSTDial/NL2SQL360"
+      - label: "VLDB 2024 Highly Cited Papers Top-2 (Google Metrics)"
+        url: "https://scholar.google.com/citations?hl=en&view_op=list_hcore&venue=HgMIeQ05CyMJ.2025&vq=eng_databasesinformationsystems&cstart=60"
+
+  - id: statqa
+    year: 2024
+    badge: "NeurIPS 2024"
+    image: "/images/paper/statqa.png"
+    image_alt: "StatQA"
+    title: "Are Large Language Models Good Statisticians?"
+    paper_url: "https://arxiv.org/abs/2406.07815"
+    authors: "Yizhang Zhu, Shiyin Du, **Boyan Li**, Yuyu Luo, Nan Tang"
+    links:
+      - label: "Homepage"
+        url: "https://statqa.github.io/"
+      - badge_image: "https://img.shields.io/github/stars/derrickzhuyz/StatQA?style=social&label=Code+Stars"
+        url: "https://github.com/HKUSTDial/StatQA"
+
+  - id: nl-rewriter
+    year: 2024
+    badge: "ArXiv 2024"
+    image: "/images/paper/nl_rewriter.png"
+    image_alt: "NL Rewriter"
+    title: "A Plug-and-Play Natural Language Rewriter for Natural Language to SQL"
+    paper_url: "https://arxiv.org/abs/2412.17068"
+    authors: "Peixian Ma, **Boyan Li**, Runzhi Jiang, Ju Fan, Nan Tang, Yuyu Luo"

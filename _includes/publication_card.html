@@ -1,0 +1,53 @@
+{% assign paper = include.paper %}
+{% assign paper_url = paper.paper_url %}
+{% unless paper_url contains '://' or paper_url contains 'mailto:' or paper_url == nil %}
+  {% assign paper_url = paper_url | relative_url %}
+{% endunless %}
+{% capture paper_authors %}{{ paper.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% endcapture %}
+{% assign paper_note = paper.note_html | default: '' | replace: '<br />', '' | replace: '<br/>', '' | replace: '<br>', '' | strip %}
+
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <img src='{{ paper.image | relative_url }}' alt="{{ paper.image_alt | default: paper.title }}" width="100%">
+    </div>
+  </div>
+
+  <div class='paper-box-text'>
+    <div class="paper-meta">
+      <span class="paper-badge">{{ paper.badge }}</span>
+    </div>
+
+    <div class="paper-title">
+      {% if paper_url %}
+        <a href="{{ paper_url }}">{{ paper.title }}</a>
+      {% else %}
+        {{ paper.title }}
+      {% endif %}
+    </div>
+
+    <div class="paper-authors">{{ paper_authors }}</div>
+
+    {% if paper_note != "" %}
+      <div class="paper-note">{{ paper_note }}</div>
+    {% endif %}
+
+    {% if paper.links %}
+      <div class="paper-links">
+        {% for link in paper.links %}
+          {% assign link_url = link.url %}
+          {% assign same_url_links = paper.links | where: "url", link.url %}
+          {% unless link_url contains '://' or link_url contains 'mailto:' %}
+            {% assign link_url = link_url | relative_url %}
+          {% endunless %}
+          {% if link.badge_image and same_url_links.size > 1 %}
+          {% elsif link.badge_image %}
+            <a class="paper-link" href="{{ link_url }}">{{ link.label | default: "Code" }}</a>
+          {% else %}
+            <a class="paper-link" href="{{ link_url }}">{{ link.label }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>

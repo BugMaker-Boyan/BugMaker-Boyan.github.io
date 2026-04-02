@@ -9,7 +9,7 @@
 title                    : "Boyan Li"
 description              : ""
 repository               : "bugmaker-boyan/bugmaker-boyan.github.io"
-google_scholar_stats_use_cdn : false
+google_scholar_stats_use_cdn : true
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Boyan Li"
   avatar           : "images/avatar.jpg"
-  bio              : "HKUST(GZ)"
+  bio              : "PhD Student · Text-to-SQL · Data Agents"
   location         : "Guangzhou, China"
   employer         :
   pubmed           : 

@@ -1,0 +1,27 @@
+{% assign paper = include.paper %}
+
+<article class="selected-work-card">
+  <div class="selected-work-meta">{{ paper.featured_meta | default: paper.badge }}</div>
+  <h2 class="selected-work-title">{{ paper.title }}</h2>
+  <p class="selected-work-summary">{{ paper.featured_summary }}</p>
+
+  {% if paper.featured_tags %}
+    <div class="selected-work-tags">
+      {% for tag in paper.featured_tags %}
+        <span>{{ tag }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if paper.featured_links %}
+    <div class="selected-work-links">
+      {% for link in paper.featured_links %}
+        {% assign link_url = link.url %}
+        {% unless link_url contains '://' or link_url contains 'mailto:' %}
+          {% assign link_url = link_url | relative_url %}
+        {% endunless %}
+        <a href="{{ link_url }}">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+</article>
