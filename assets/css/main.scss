@@ -440,6 +440,8 @@ html {
 }
 
 .author__avatar img {
+    display: block;
+    margin: 0 auto;
     max-width: 148px;
     border: 4px solid #ffffff;
     box-shadow: 0 10px 26px rgba(20, 47, 86, 0.16);
@@ -774,6 +776,13 @@ html {
 }
 
 $scroll_offset : 2em;
+.anchor {
+    display: block;
+    height: 0;
+    line-height: 0;
+    pointer-events: none;
+}
+
 h1:before, .anchor:before { 
     content: ''; 
     display: block; 
@@ -802,6 +811,7 @@ h1 {
 // 背景装饰元素
 .page {
     position: relative;
+    display: flow-root;
     
     // 微妙的渐变背景
     &::before {
