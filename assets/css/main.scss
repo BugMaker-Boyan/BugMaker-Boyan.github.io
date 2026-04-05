@@ -775,16 +775,12 @@ html {
     }
 }
 
-$scroll_offset : 5rem;
+$scroll_offset : 2em;
 .anchor {
     display: block;
     height: 0;
     line-height: 0;
     pointer-events: none;
-}
-
-#about-me.anchor {
-    margin-bottom: 1rem;
 }
 
 h1:before, .anchor:before { 
