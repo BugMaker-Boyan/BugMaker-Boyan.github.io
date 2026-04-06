@@ -90,6 +90,10 @@ html {
 .hero-panel {
     display: block;
     margin: 0.75rem 0 1.5rem;
+
+    @include breakpoint($large) {
+        margin-top: 1.5rem;
+    }
 }
 
 .hero-copy {
