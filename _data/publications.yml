@@ -48,6 +48,22 @@ items:
       - label: "Code"
         url: "https://github.com/HKUSTDial/DeepEye-SQL"
 
+  - id: dpc
+    year: 2026
+    badge: "ACL 2026 (Main)"
+    image: "/images/paper/dpc_overview.png"
+    image_alt: "DPC"
+    title: "DPC: Training-Free Text-to-SQL Candidate Selection via Dual-Paradigm Consistency"
+    authors: "**Boyan Li**<sup>*</sup>, Ou Ocean Kun Hei<sup>*</sup>, Yue Yu<sup>*</sup>, Yuyu Luo"
+
+  - id: rose
+    year: 2026
+    badge: "ACL 2026 (Main)"
+    image: "/images/paper/rose.png"
+    image_alt: "ROSE"
+    title: "ROSE: An Intent-Centered Evaluation Metric for NL2SQL"
+    authors: "Wenqi Pei<sup>*</sup>, Shizheng Hou<sup>*</sup>, **Boyan Li**<sup>*</sup>, CHEN Han, Zhichao Shi, Yuyu Luo"
+
   - id: alpha-sql
     year: 2025
     badge: "ICML 2025"

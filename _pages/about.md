@@ -33,17 +33,18 @@ redirect_from:
 
 <div class="news-panel">
   <ul class="news-list">
+    <li><span class="news-date">2026.04</span> Our papers "DPC" and "ROSE" have been accepted by <a href="https://2026.aclweb.org/">ACL 2026 Main Conference</a>.</li>
     <li><span class="news-date">2026.03</span> We are organizing <a href="https://dataagent.top">KDD Cup 2026: Data Agents for Complex Data Analysis</a>.</li>
     <li><span class="news-date">2026.03</span> Our "DeepEye" data agent system received the <strong>Silver Medal</strong> at the 51st Geneva Inventions Exhibition.</li>
     <li><span class="news-date">2026.03</span> Our low-altitude economy digital-twin project received the <strong>Silver Medal</strong> at the 51st Geneva Inventions Exhibition.</li>
     <li><span class="news-date">2026.03</span> Our demonstration paper "DeepEye: A Steerable Self-driving Data Agent System" has been accepted by <a href="https://2026.sigmod.org/">SIGMOD 2026</a>.</li>
     <li><span class="news-date">2026.02</span> Our <a href="https://arxiv.org/abs/2510.17586">DeepEye-SQL</a> paper has been accepted by <a href="https://2026.sigmod.org/">SIGMOD 2026</a>.</li>
-    <li><span class="news-date">2026.01</span> I was invited to give a talk at Huawei Squirrel Webinar on "DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework".</li>
   </ul>
 
   <details class="news-archive">
     <summary>Show earlier updates</summary>
     <ul class="news-list news-list--archive">
+      <li><span class="news-date">2026.01</span> I was invited to give a talk at Huawei Squirrel Webinar on "DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework".</li>
       <li><span class="news-date">2025.12</span> I was awarded the <strong>DSA Excellence Awards 2025 - Research Excellence Awards</strong>.</li>
       <li><span class="news-date">2025.10</span> We proposed <a href="https://arxiv.org/abs/2510.23587">A Survey of Data Agents: Emerging Paradigm or Overstated Hype?</a>, introducing a systematic taxonomy for data agents with six levels of autonomy. Ranked Top-3 in <a href="https://huggingface.co/papers/2510.23587">Hugging Face Daily Papers</a>.</li>
       <li><span class="news-date">2025.10</span> We proposed <a href="https://arxiv.org/abs/2510.17586">DeepEye-SQL</a>, a software-engineering-inspired Text-to-SQL framework achieving 73.5% EX on BIRD-Dev and 89.8% EX on Spider-Test using a ~30B LLM without fine-tuning.</li>
