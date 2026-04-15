@@ -22,6 +22,9 @@ items:
     note_html: |
       <br><small>🏅 <strong>Silver Medal</strong>, 51st Geneva International Exhibition of Inventions</small>
       <small>🏆 <strong>Best Open-source Project Award</strong>, AI Agent 2025 Competition</small>
+    links:
+      - label: "Homepage"
+        url: "https://deepeye.hk"
 
   - id: deepeye-sql
     year: 2026
@@ -32,6 +35,8 @@ items:
     paper_url: "https://arxiv.org/abs/2510.17586"
     authors: "**Boyan Li**, Chong Chen, Zhujun Xue, Yinan Mei, Yuyu Luo"
     links:
+      - label: "Homepage"
+        url: "https://deepeyesql-hahwwmgj.manus.space"
       - label: "Code"
         url: "https://github.com/HKUSTDial/DeepEye-SQL"
       - badge_image: "https://img.shields.io/github/stars/HKUSTDial/DeepEye-SQL?style=social&label=Code+Stars"
@@ -45,6 +50,8 @@ items:
     featured_links:
       - label: "Paper"
         url: "https://arxiv.org/abs/2510.17586"
+      - label: "Homepage"
+        url: "https://deepeyesql-hahwwmgj.manus.space"
       - label: "Code"
         url: "https://github.com/HKUSTDial/DeepEye-SQL"
 
