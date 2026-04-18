@@ -58,7 +58,7 @@ items:
     image: "/images/paper/dpc_overview.png"
     image_alt: "DPC"
     title: "DPC: Training-Free Text-to-SQL Candidate Selection via Dual-Paradigm Consistency"
-    authors: "**Boyan Li**<sup>*</sup>, Ou Ocean Kun Hei<sup>*</sup>, Yue Yu<sup>*</sup>, Yuyu Luo"
+    authors: "**Boyan Li**, Ou Ocean Kun Hei, Yue Yu, Yuyu Luo"
 
   - id: rose
     year: 2026
