@@ -756,6 +756,15 @@ html {
 }
 
 @include breakpoint($small) {
+    .page__content {
+        display: flow-root;
+        padding-top: 0.35rem;
+    }
+
+    .hero-panel {
+        margin-top: 0;
+    }
+
     .hero-copy {
         padding: 1.5rem;
     }
