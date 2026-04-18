@@ -67,7 +67,7 @@ items:
     image_alt: "ROSE"
     title: "ROSE: An Intent-Centered Evaluation Metric for NL2SQL"
     paper_url: "https://arxiv.org/abs/2604.12988"
-    authors: "Wenqi Pei<sup>*</sup>, Shizheng Hou<sup>*</sup>, **Boyan Li**<sup>*</sup>, CHEN Han, Zhichao Shi, Yuyu Luo"
+    authors: "Wenqi Pei, Shizheng Hou, **Boyan Li**, CHEN Han, Zhichao Shi, Yuyu Luo"
 
   - id: alpha-sql
     year: 2025
