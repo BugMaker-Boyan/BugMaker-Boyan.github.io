@@ -7,3 +7,15 @@ vendor/
 cv_tex/
 
 .codex
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Temporary LaTeX PDFs
+presentations/cv.pdf
