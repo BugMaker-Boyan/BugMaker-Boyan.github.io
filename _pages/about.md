@@ -44,7 +44,7 @@ redirect_from:
   <details class="news-archive">
     <summary>Show earlier updates</summary>
     <ul class="news-list news-list--archive">
-      <li><span class="news-date">2026.01</span> I was invited to give a talk at Huawei Squirrel Webinar on "DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework".</li>
+      <!-- <li><span class="news-date">2026.01</span> I was invited to give a talk at Huawei Squirrel Webinar on "DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework".</li> -->
       <li><span class="news-date">2025.12</span> I was awarded the <strong>DSA Excellence Awards 2025 - Research Excellence Awards</strong>.</li>
       <li><span class="news-date">2025.10</span> We proposed <a href="https://arxiv.org/abs/2510.23587">A Survey of Data Agents: Emerging Paradigm or Overstated Hype?</a>, introducing a systematic taxonomy for data agents with six levels of autonomy. Ranked Top-3 in <a href="https://huggingface.co/papers/2510.23587">Hugging Face Daily Papers</a>.</li>
       <li><span class="news-date">2025.10</span> We proposed <a href="https://arxiv.org/abs/2510.17586">DeepEye-SQL</a>, a software-engineering-inspired Text-to-SQL framework achieving 73.5% EX on BIRD-Dev and 89.8% EX on Spider-Test using a ~30B LLM without fine-tuning.</li>
@@ -150,7 +150,7 @@ redirect_from:
     </div>
   </div>
 
-  <div class="year-group">
+  <!-- <div class="year-group">
     <div class="year-group-label">2022</div>
     <div class="year-group-body">
       <div class="compact-item">
@@ -158,7 +158,7 @@ redirect_from:
         <div class="compact-item-meta">Huawei Technologies</div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="year-group">
     <div class="year-group-label">2020-2022</div>
@@ -228,13 +228,13 @@ redirect_from:
     </div>
   </div>
 
-  <div class="cv-item">
+  <!-- <div class="cv-item">
     <div class="cv-period">2022.07 - 2022.09</div>
     <div class="cv-main">
       <div class="cv-title">Research Intern</div>
       <div class="cv-subtitle"><a href="https://www.huawei.com/cn/" target="_blank">Huawei Central Research Institute</a> · Shenzhen, China</div>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <span class='anchor' id='services'></span>
@@ -247,10 +247,10 @@ redirect_from:
     <div class="compact-item-meta"><a href="https://dataagent.top">KDD Cup 2026: Data Agents for Complex Data Analysis</a></div>
   </div>
 
-  <div class="compact-item">
+  <!-- <div class="compact-item">
     <div class="compact-item-title">Invited Talk</div>
     <div class="compact-item-meta">Huawei Squirrel Webinar: "DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework"</div>
-  </div>
+  </div> -->
 
   <div class="compact-item">
     <div class="compact-item-title">Conference Reviewer</div>
