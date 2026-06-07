@@ -17,12 +17,14 @@ items:
     image: "/images/paper/deepeye.png"
     image_alt: "DeepEye"
     title: "DeepEye: A Steerable Self-driving Data Agent System"
-    paper_url: "https://deepeye.hk"
+    paper_url: "https://arxiv.org/abs/2603.28889"
     authors: "**Boyan Li**, Yiran Peng, Yupeng Xie, Sirong Lu, Yizhang Zhu, Xing Mu, Xinyu Liu, Yuyu Luo"
     note_html: |
       <br><small>🏅 <strong>Silver Medal</strong>, 51st Geneva International Exhibition of Inventions</small>
       <small>🏆 <strong>Best Open-source Project Award</strong>, AI Agent 2025 Competition</small>
     links:
+      - label: "Homepage"
+        url: "https://deepeye.hk"
       - label: "Code"
         url: "https://github.com/HKUSTDial/DeepEye"
       - badge_image: "https://img.shields.io/github/stars/HKUSTDial/DeepEye?style=social&label=Code+Stars"
