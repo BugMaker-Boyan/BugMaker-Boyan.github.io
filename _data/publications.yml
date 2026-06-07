@@ -22,6 +22,11 @@ items:
     note_html: |
       <br><small>🏅 <strong>Silver Medal</strong>, 51st Geneva International Exhibition of Inventions</small>
       <small>🏆 <strong>Best Open-source Project Award</strong>, AI Agent 2025 Competition</small>
+    links:
+      - label: "Code"
+        url: "https://github.com/HKUSTDial/DeepEye"
+      - badge_image: "https://img.shields.io/github/stars/HKUSTDial/DeepEye?style=social&label=Code+Stars"
+        url: "https://github.com/HKUSTDial/DeepEye"
 
   - id: deepeye-sql
     year: 2026
@@ -72,6 +77,14 @@ items:
     title: "ROSE: An Intent-Centered Evaluation Metric for NL2SQL"
     paper_url: "https://arxiv.org/abs/2604.12988"
     authors: "Wenqi Pei<sup>*</sup>, Shizheng Hou<sup>*</sup>, **Boyan Li**<sup>*</sup>, CHEN Han, Zhichao Shi, Yuyu Luo"
+
+  - id: datamagic
+    year: 2026
+    badge: "VLDB 2026 (Demo)"
+    image: "/images/paper/datamagic.png"
+    image_alt: "DataMagic"
+    title: "DataMagic: Transforming Tabular Data into Data Insight Video"
+    authors: "Yupeng Xie, Chenxi Ma, Zilong Wang, Liang Wang, Junjie Zhu, Chao Zeng, Zhiqiang Shen, **Boyan Li**, Yuyu Luo"
 
   - id: alpha-sql
     year: 2025

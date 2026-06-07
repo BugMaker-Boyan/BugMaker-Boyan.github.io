@@ -33,6 +33,7 @@ redirect_from:
 
 <div class="news-panel">
   <ul class="news-list">
+    <li><span class="news-date">2026.06</span> Our demonstration paper "DataMagic: Transforming Tabular Data into Data Insight Video" has been accepted by VLDB 2026 Demo Track.</li>
     <li><span class="news-date">2026.05</span> I received the <strong>Merit Prize</strong> of the INFH Research Excellence Award.</li>
     <li><span class="news-date">2026.04</span> Our papers "DPC" and "ROSE" have been accepted by <a href="https://2026.aclweb.org/">ACL 2026 Main Conference</a>.</li>
     <li><span class="news-date">2026.03</span> We are organizing <a href="https://dataagent.top">KDD Cup 2026: Data Agents for Complex Data Analysis</a>.</li>
