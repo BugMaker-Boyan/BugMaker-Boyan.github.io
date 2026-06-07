@@ -77,6 +77,11 @@ items:
     title: "ROSE: An Intent-Centered Evaluation Metric for NL2SQL"
     paper_url: "https://arxiv.org/abs/2604.12988"
     authors: "Wenqi Pei<sup>*</sup>, Shizheng Hou<sup>*</sup>, **Boyan Li**<sup>*</sup>, CHEN Han, Zhichao Shi, Yuyu Luo"
+    links:
+      - label: "Code"
+        url: "https://github.com/CedricPei/ROSE"
+      - badge_image: "https://img.shields.io/github/stars/CedricPei/ROSE?style=social&label=Code+Stars"
+        url: "https://github.com/CedricPei/ROSE"
 
   - id: datamagic
     year: 2026
