@@ -253,10 +253,10 @@ redirect_from:
     <div class="compact-item-meta"><a href="https://dataagent.top">KDD Cup 2026: Data Agents for Complex Data Analysis</a></div>
   </div>
 
-  <!-- <div class="compact-item">
-    <div class="compact-item-title">Invited Talk</div>
-    <div class="compact-item-meta">Huawei Squirrel Webinar: "DeepEye-SQL: A Software-Engineering-Inspired Text-to-SQL Framework"</div>
-  </div> -->
+  <div class="compact-item">
+    <div class="compact-item-title">Program Chair</div>
+    <div class="compact-item-meta"><a href="https://vldb-ads.top">Agentic Data Systems (VLDB 2026 Workshop)</a></div>
+  </div>
 
   <div class="compact-item">
     <div class="compact-item-title">Conference Reviewer</div>
@@ -266,6 +266,11 @@ redirect_from:
   <div class="compact-item">
     <div class="compact-item-title">Journal Reviewer</div>
     <div class="compact-item-meta">IEEE Transactions on Knowledge and Data Engineering (TKDE)</div>
+  </div>
+
+  <div class="compact-item">
+    <div class="compact-item-title">Invited Talk</div>
+    <div class="compact-item-meta">Huawei Squirrel Webinar: "DeepEye-SQL"</div>
   </div>
 </div>
 
