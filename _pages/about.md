@@ -260,7 +260,12 @@ redirect_from:
 
   <div class="compact-item">
     <div class="compact-item-title">Conference Reviewer</div>
-    <div class="compact-item-meta">ICLR 2026</div>
+    <div class="compact-item-meta">NeurIPS 2026; ICLR 2026</div>
+  </div>
+
+  <div class="compact-item">
+    <div class="compact-item-title">Journal Reviewer</div>
+    <div class="compact-item-meta">IEEE Transactions on Knowledge and Data Engineering (TKDE)</div>
   </div>
 </div>
 
