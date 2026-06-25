@@ -91,6 +91,7 @@ items:
     image: "/images/paper/datamagic.png"
     image_alt: "DataMagic"
     title: "DataMagic: Transforming Tabular Data into Data Insight Video"
+    paper_url: "https://arxiv.org/abs/2606.20388"
     authors: "Yupeng Xie, Chenxi Ma, Zilong Wang, Liang Wang, Junjie Zhu, Chao Zeng, Zhiqiang Shen, **Boyan Li**, Yuyu Luo"
 
   - id: alpha-sql
