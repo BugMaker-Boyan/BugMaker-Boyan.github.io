@@ -6,11 +6,34 @@
 # - `links`: [{label, url}] or [{badge_image, url}]
 # - `featured_meta`, `featured_summary`, `featured_tags`, `featured_links`
 featured:
+  - dataspace
   - deepeye-sql
-  - data-agents-survey
   - alpha-sql
 
 items:
+  - id: dataspace
+    year: 2026
+    badge: "arXiv 2026"
+    image: "/images/paper/dataspace.png"
+    image_alt: "DataSpace benchmark overview"
+    title: "DataSpace: Benchmarking Data Agents for Verifiable Analytics over Heterogeneous Workspaces"
+    paper_url: "https://arxiv.org/abs/2608.03451"
+    authors: "**Boyan Li**, Zhuowen Liang, Yupeng Xie, Xiaotian Lin, Tianqi Luo, Xinyu Liu, Yizhang Zhu, Zhangyang Peng, Yuan Li, Zhengxuan Zhang, Jiayi Zhang, Nan Tang, Guoliang Li, Yuyu Luo"
+    note_html: |
+      <br><small>🏆 Official evaluation benchmark for the KDD Cup 2026 Data Agents for Complex Data Analysis competition</small>
+    links:
+      - label: "Paper"
+        url: "https://arxiv.org/abs/2608.03451"
+    featured_meta: "arXiv 2026 · KDD Cup 2026 Benchmark"
+    featured_summary: "A benchmark for data agents that must discover heterogeneous evidence and return complete, deterministically verifiable tabular results across structured files, databases, documents, and video."
+    featured_tags:
+      - "410 cross-language tasks"
+      - "7,439 artifacts · 15.01 GB"
+      - "CSV · JSON · SQLite · Markdown · PDF · Video"
+    featured_links:
+      - label: "Paper"
+        url: "https://arxiv.org/abs/2608.03451"
+
   - id: deepeye
     year: 2026
     badge: "SIGMOD 2026 (Demo)"
