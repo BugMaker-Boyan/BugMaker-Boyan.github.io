@@ -33,7 +33,7 @@ redirect_from:
 
 <div class="news-panel">
   <ul class="news-list">
-    <li><span class="news-date">2026.08</span> We released <a href="https://arxiv.org/abs/2608.03451">DataSpace</a>, a benchmark for verifiable analytics over heterogeneous workspaces and the official evaluation benchmark for the KDD Cup 2026 Data Agents for Complex Data Analysis competition.</li>
+    <li><span class="news-date">2026.08</span> We released <a href="https://arxiv.org/abs/2608.03451">DataSpace</a>, a benchmark for verifiable analytics over heterogeneous workspaces and the official evaluation benchmark for the KDD Cup 2026 Data Agents for Complex Data Analysis competition; the <a href="https://huggingface.co/datasets/HKUSTDial/DataSpace">dataset</a> and <a href="https://dataspace-bench.github.io">leaderboard</a> are publicly available.</li>
     <li><span class="news-date">2026.06</span> Our demonstration paper "DataMagic: Transforming Tabular Data into Data Insight Video" has been accepted by VLDB 2026 Demo Track.</li>
     <li><span class="news-date">2026.05</span> I received the <strong>Merit Prize</strong> of the INFH Research Excellence Award.</li>
     <li><span class="news-date">2026.04</span> Our papers "DPC" and "ROSE" have been accepted by <a href="https://2026.aclweb.org/">ACL 2026 Main Conference</a>.</li>

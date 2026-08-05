@@ -24,6 +24,10 @@ items:
     links:
       - label: "Paper"
         url: "https://arxiv.org/abs/2608.03451"
+      - label: "Dataset"
+        url: "https://huggingface.co/datasets/HKUSTDial/DataSpace"
+      - label: "Leaderboard"
+        url: "https://dataspace-bench.github.io"
     featured_meta: "arXiv 2026 · KDD Cup 2026 Benchmark"
     featured_summary: "A benchmark for data agents that must discover heterogeneous evidence and return complete, deterministically verifiable tabular results across structured files, databases, documents, and video."
     featured_tags:
@@ -33,6 +37,10 @@ items:
     featured_links:
       - label: "Paper"
         url: "https://arxiv.org/abs/2608.03451"
+      - label: "Dataset"
+        url: "https://huggingface.co/datasets/HKUSTDial/DataSpace"
+      - label: "Leaderboard"
+        url: "https://dataspace-bench.github.io"
 
   - id: deepeye
     year: 2026
