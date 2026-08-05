@@ -18,7 +18,7 @@ items:
     image_alt: "DataSpace benchmark overview"
     title: "DataSpace: Benchmarking Data Agents for Verifiable Analytics over Heterogeneous Workspaces"
     paper_url: "https://arxiv.org/abs/2608.03451"
-    authors: "**Boyan Li**, Zhuowen Liang, Yupeng Xie, Xiaotian Lin, Tianqi Luo, Xinyu Liu, Yizhang Zhu, Zhangyang Peng, Yuan Li, Zhengxuan Zhang, Jiayi Zhang, Nan Tang, Guoliang Li, Yuyu Luo"
+    authors: "**Boyan Li**<sup>*</sup>, Zhuowen Liang<sup>*</sup>, Yupeng Xie<sup>*</sup>, Xiaotian Lin, Tianqi Luo, Xinyu Liu, Yizhang Zhu, Zhangyang Peng, Yuan Li, Zhengxuan Zhang, Jiayi Zhang, Nan Tang, Guoliang Li, Yuyu Luo"
     note_html: |
       <br><small>🏆 Official evaluation benchmark for the KDD Cup 2026 Data Agents for Complex Data Analysis competition</small>
     links:
