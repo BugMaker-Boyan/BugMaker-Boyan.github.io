@@ -42,6 +42,19 @@ items:
       - label: "Leaderboard"
         url: "https://dataspace-bench.github.io"
 
+  - id: efficient-tool-using-llm-agents-survey
+    year: 2026
+    badge: "Preprints 2026"
+    image: "/images/paper/tool-using-llm-agents-survey.png"
+    image_alt: "Overview of efficiency challenges and methods for tool-using LLM agents"
+    title: "How to Make Tool-Using LLM Agents Efficient? A Survey"
+    paper_url: "https://www.preprints.org/manuscript/202608.0365"
+    authors: >-
+      [Yunuo Hu](https://sciprofiles.com/profile/author/NFhOMXQwOUlnVzU4NlZkY01yakxGS3NHeVduVkw2ZGpxaENtaEJ2cFEzaz0=), [Ziyang Cheng](https://sciprofiles.com/profile/author/eXBpbHAvcS9VbnphZ3N3MHdQR2o0Rmt1ZFcxcVVTTEhwTVpnZ0JvSlZhUT0=), [Wenqi Pei](https://sciprofiles.com/profile/5534931), [Miaomiao Li](https://sciprofiles.com/profile/author/M1d2OWU5cDZkczlSK2Y3Mi9HeVdxMmNQMm5vOUZpQ05hbE9lR1FDekJ2VT0=), **[Boyan Li](https://sciprofiles.com/profile/author/bHZYT21kR0Z5MkNhUzVWL1ZRQlNob3Z1N1g4ZXVKUFpCVUtYZXhFRlNKVT0=)**, [Yizhang Zhu](https://sciprofiles.com/profile/author/OW1pbis4ZVppSW10UU5vOTI0S01CaGU1THZoTzlTUVlxM2wydmw4eWlGbz0=), [Yupeng Xie](https://sciprofiles.com/profile/author/L2NDZVNWalIvc3ZVQlBpTWFWSVEzRFU4QVZaOGZZOFdqbU9NY08vd29NVT0=), [Han Chen](https://sciprofiles.com/profile/author/VXNIVHdvd1pFK1pZVEdpamFFWU5iUHY4aDNOYUpFaURFU1huMmEzcU5SND0=), [Shizheng Hou](https://sciprofiles.com/profile/author/dTBraC9oSHU1T01LWndpTGxNSTlYVWNzQlBNejBoUUVmS0tJS3l0SEVPVT0=), [Yuyu Luo](https://sciprofiles.com/profile/author/Nk1KM2dMU0xIZTM3bVMxaW5LZ0RFbmNaemdaNFNBVFZpbVhWNUNyVThvRT0=), [Hongyang Du](https://sciprofiles.com/profile/author/WFp4QXJpRER6OE5UTXN4V2FGSXpBZz09)
+    links:
+      - label: "Paper"
+        url: "https://www.preprints.org/manuscript/202608.0365"
+
   - id: deepeye
     year: 2026
     badge: "SIGMOD 2026 (Demo)"
